@@ -15,13 +15,13 @@ jobs:
         with:
           python-version: '3.10'
       - name: Kutuphaneleri Yukle
-        run: pip install requests beautifulsoup4 cloudscraper
+        run: pip install requests
       - name: Filmleri Cek
         run: python film_cekici.py
       - name: Degisiklikleri Kaydet
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "huseyinakcagoz55@gmail.com"
+          git config --local user.name "Huseyin Akcagoz"
           git add FilmDizi.m3u
-          git commit -m "Filmler guncellendi" || echo "Degisiklik yok"
-          git push
+          git commit -m "Film listesi guncellendi: $(date)" || echo "Degisiklik yok"
+          git push origin main
