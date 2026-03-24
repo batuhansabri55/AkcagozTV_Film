@@ -1,46 +1,49 @@
-import cloudscraper
+import requests
 from bs4 import BeautifulSoup
-import time
+import xml.etree.ElementTree as ET
 
 def film_tara():
-    # Cloudscraper, standart requests'in asamadigi engelleri asar
-    scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'mobile': False})
+    # RSS beslemesi bot korumasina takilmaz
+    rss_url = "https://www.hdfilmcehennemi.nl/feed/"
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
     
-    url = "https://www.hdfilmcehennemi.nl/kategori/2026-filmleri/"
     liste = ["#EXTM3U\n#EXT-X-SESSION-DATA:ID='AkcagozTV'"]
     
     try:
-        print("Site korumasi asiliyor...")
-        response = scraper.get(url, timeout=30)
+        print("RSS verisi cekiliyor...")
+        res = requests.get(rss_url, headers=headers, timeout=20)
         
-        if response.status_code == 200:
-            soup = BeautifulSoup(response.text, "html.parser")
-            # Sitedeki film kutularini buluyoruz
-            items = soup.select(".poster")
+        if res.status_code == 200:
+            # XML verisini ayikla
+            root = ET.fromstring(res.content)
+            items = root.findall('.//item')
             
-            for film in items[:40]:
-                a = film.select_one("a")
-                img = film.select_one("img")
-                if a and img:
-                    isim = (img.get('alt') or a.get('title') or "Film").strip()
-                    link = a['href']
-                    afis = img.get('data-src') or img.get('src') or ""
-                    # Afis linkini duzelt
-                    if afis.startswith('//'): afis = "https:" + afis
-                    
-                    liste.append(f'#EXTINF:-1 tvg-logo="{afis}" group-title="🎬 01 Vizyon Filmleri",{isim}\n{link}')
+            for item in items[:40]:
+                title = item.find('title').text
+                link = item.find('link').text
+                
+                # Afis genelde aciklama (description) icinde img tagi olarak bulunur
+                desc = item.find('description').text
+                afis = ""
+                if desc:
+                    soup = BeautifulSoup(desc, "html.parser")
+                    img = soup.find('img')
+                    if img:
+                        afis = img.get('src', '')
+
+                liste.append(f'#EXTINF:-1 tvg-logo="{afis}" group-title="🎬 01 Vizyon Filmleri",{title}\n{link}')
             
             if len(liste) > 1:
                 with open("FilmDizi.m3u", "w", encoding="utf-8") as f:
                     f.write("\n".join(liste))
-                print(f"ISLEM TAMAM! {len(liste)-1} film eklendi.")
+                print(f"BASARILI! {len(liste)-1} film RSS ile eklendi.")
             else:
-                print("Hata: Siteye girildi ama film kutulari bulunamadi.")
+                print("Hata: RSS icinde film bulunamadi.")
         else:
-            print(f"Hata: Site {response.status_code} koduyla reddetti.")
+            print(f"Hata: RSS servisi {res.status_code} dondu.")
             
     except Exception as e:
-        print(f"Kritik Hata: {e}")
+        print(f"RSS Hatasi: {e}")
 
 if __name__ == "__main__":
     film_tara()
