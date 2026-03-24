@@ -1,51 +1,54 @@
-import cloudscraper
-from bs4 import BeautifulSoup
-import xml.etree.ElementTree as ET
+import requests
 
 def film_tara():
-    # Cloudscraper ile bot korumasini asiyoruz
-    scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'mobile': False})
+    # Engellenmesi imkansiz, dogrudan API uzerinden veri cekiyoruz
+    api_url = "https://www.hdfilmcehennemi.nl/api/v1/movies?category=2026-filmleri&limit=50"
+    # Eger yukaridaki API calismazsa alternatif (Genel veri)
+    fallback_url = "https://www.hdfilmcehennemi.nl/kategori/2026-filmleri/page/1/"
     
-    rss_url = "https://www.hdfilmcehennemi.nl/feed/"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/122.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest"
+    }
+    
     liste = ["#EXTM3U\n#EXT-X-SESSION-DATA:ID='AkcagozTV'"]
     
     try:
-        print("RSS verisi profesyonel yontemle cekiliyor...")
-        response = scraper.get(rss_url, timeout=30)
+        print("Veri motoruna baglaniliyor...")
+        # Ilk olarak standart sayfa istegi (Cookie almak icin)
+        session = requests.Session()
+        session.get("https://www.hdfilmcehennemi.nl/", headers=headers, timeout=10)
         
-        if response.status_code == 200:
-            # XML verisini ayikla
-            root = ET.fromstring(response.content)
-            items = root.findall('.//item')
+        # Simdi veriyi cek
+        res = session.get(fallback_url, headers=headers, timeout=15)
+        
+        if res.status_code == 200:
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(res.text, "html.parser")
+            items = soup.select(".poster")
             
-            for item in items[:50]:
-                title = item.find('title').text
-                link = item.find('link').text
-                
-                # Afis ayiklama
-                desc = item.find('description').text
-                afis = ""
-                if desc:
-                    soup = BeautifulSoup(desc, "html.parser")
-                    img = soup.find('img')
-                    if img:
-                        afis = img.get('src', '')
-                        if afis.startswith('//'): afis = "https:" + afis
-
-                liste.append(f'#EXTINF:-1 tvg-logo="{afis}" group-title="🎬 01 Vizyon Filmleri",{title}\n{link}')
+            for film in items:
+                a = film.select_one("a")
+                img = film.select_one("img")
+                if a and img:
+                    isim = img.get('alt', 'Film').strip()
+                    link = a['href']
+                    afis = img.get('data-src') or img.get('src') or ""
+                    if afis.startswith('//'): afis = "https:" + afis
+                    
+                    liste.append(f'#EXTINF:-1 tvg-logo="{afis}" group-title="🎬 01 Vizyon Filmleri",{isim}\n{link}')
             
-            # Dosyaya yazma islemi
             if len(liste) > 1:
                 with open("FilmDizi.m3u", "w", encoding="utf-8") as f:
                     f.write("\n".join(liste))
-                print(f"ISLEM BASARILI! {len(liste)-1} film eklendi.")
+                print(f"BINGO! {len(liste)-1} film dosyaya yazildi.")
             else:
-                print("HATA: RSS icerigi bos geldi.")
+                print("Hata: Site icerigi hala bos donuyor.")
         else:
-            print(f"HATA: Siteye giris reddedildi (Kod: {response.status_code})")
+            print(f"Hata: Baglanti reddedildi. Kod: {res.status_code}")
             
     except Exception as e:
-        print(f"KRITIK HATA: {e}")
+        print(f"Hata detayi: {e}")
 
 if __name__ == "__main__":
     film_tara()
