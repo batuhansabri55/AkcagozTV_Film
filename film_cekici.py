@@ -3,44 +3,52 @@ from bs4 import BeautifulSoup
 import os
 
 def film_tara():
-    url = "https://www.fullhdfilmizlesene.live/yil/2026-filmleri-izle"
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-    kategori_adi = "🎬 01 Vizyon Filmleri"
+    # Güncel 2026 Film Linkleri
+    siteler = [
+        {"url": "https://www.fullhdfilmizlesene.live/yil/2026-filmleri-izle", "kat": "🎬 01 Vizyon Filmleri"},
+        {"url": "https://www.hdfilmcehennemi.nl/kategori/2026-filmleri/", "kat": "🎬 01 Vizyon Filmleri"},
+        {"url": "https://sinemaizle.org/yil/2026-filmleri/", "kat": "🎬 01 Vizyon Filmleri"}
+    ]
     
-    try:
-        res = requests.get(url, headers=headers)
-        soup = BeautifulSoup(res.text, "html.parser")
-        yeni_filmler = []
-        
-        for film in soup.select(".film-item"): 
-            isim = film.select_one(".title").text.strip()
-            link = film.select_one("a")["href"]
-            afis = film.select_one("img")["src"]
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+    yeni_filmler = []
+
+    for site in siteler:
+        try:
+            print(f"Taraniyor: {site['url']}")
+            res = requests.get(site["url"], headers=headers, timeout=15)
+            soup = BeautifulSoup(res.text, "html.parser")
             
-            # İstediğin formatta ve kategoride satırı hazırlar
-            yeni_filmler.append(f'#EXTINF:-1 type="movie" tvg-logo="{afis}" group-title="{kategori_adi}",{isim}\n{link}')
-        
-        if yeni_filmler:
-            dosya_yolu = "FilmDizi.m3u"
-            mevcut_icerik = ""
+            # 2026 siteleri için en geniş kapsamlı arama seçicileri
+            items = soup.find_all(['div', 'article'], class_=['film-item', 'poster', 'movie-item', 'post-column'])
             
-            # Eğer dosya zaten varsa eski filmleri oku
-            if os.path.exists(dosya_yolu):
-                with open(dosya_yolu, "r", encoding="utf-8") as f:
-                    mevcut_icerik = f.read()
-            
-            # Dosya başlığını (M3U) ve yeni filmleri en üste koy, sonra eskileri ekle
-            # #EXTM3U satırı zaten varsa onu ayıklarız
-            icerik_temiz = mevcut_icerik.replace("#EXTM3U", "").strip()
-            tam_liste = "#EXTM3U\n" + "\n".join(yeni_filmler) + "\n" + icerik_temiz
-            
-            with open(dosya_yolu, "w", encoding="utf-8") as f:
-                f.write(tam_liste.strip())
+            for film in items[:15]: 
+                a_tag = film.find('a')
+                img_tag = film.find('img')
                 
-            print(f"Basarili: {len(yeni_filmler)} film listenin en basina, {kategori_adi} grubuna eklendi.")
-            
-    except Exception as e:
-        print(f"Hata olustu: {e}")
+                if a_tag and a_tag.get('href'):
+                    isim = (a_tag.get('title') or img_tag.get('alt') or a_tag.text).strip()
+                    link = a_tag['href']
+                    afis = img_tag.get('src') or img_tag.get('data-src') or ""
+                    
+                    if not afis.startswith('http'): afis = "https:" + afis if afis.startswith('//') else afis
+                    
+                    yeni_filmler.append(f'#EXTINF:-1 type="movie" tvg-logo="{afis}" group-title="{site["kat"]}",{isim}\n{link}')
+        except Exception as e:
+            print(f"Hata: {site['url']} -> {e}")
+
+    if yeni_filmler:
+        dosya = "FilmDizi.m3u"
+        eski_icerik = ""
+        if os.path.exists(dosya):
+            with open(dosya, "r", encoding="utf-8") as f:
+                eski_icerik = f.read().replace("#EXTM3U", "").strip()
+        
+        with open(dosya, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n" + "\n".join(yeni_filmler) + "\n" + eski_icerik)
+        print(f"Basarili: {len(yeni_filmler)} yeni film eklendi.")
+    else:
+        print("Uyari: Hic film bulunamadi, seciciler kontrol edilmeli.")
 
 if __name__ == "__main__":
     film_tara()
