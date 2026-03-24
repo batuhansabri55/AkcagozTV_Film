@@ -1,46 +1,60 @@
 import requests
+from bs4 import BeautifulSoup
 
-def film_tara():
-    # Bu kaynak (YTS API) GitHub Actions'tan asla engellenmez.
-    url = "https://yts.mx/api/v2/list_movies.json?limit=50&sort_by=year"
+def hdfilm_kazı():
+    # Güncel adresini buraya sabitledik
+    url = "https://www.hdfilmcehennemi.nl/"
+    
+    # Gerçek bir kullanıcı gibi görünmek için detaylı başlıklar
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+        'Referer': 'https://www.google.com/'
     }
     
-    # Başlık kısmını ekliyoruz
     liste = ["#EXTM3U\n#EXT-X-SESSION-DATA:ID='AkcagozTV'"]
     
     try:
-        print("Film veritabanına bağlanılıyor...")
-        res = requests.get(url, headers=headers, timeout=30)
+        print(f"{url} adresi taranıyor...")
+        session = requests.Session()
+        res = session.get(url, headers=headers, timeout=30)
+        res.encoding = 'utf-8'
         
         if res.status_code == 200:
-            data = res.json()
-            movies = data.get('data', {}).get('movies', [])
+            soup = BeautifulSoup(res.text, 'html.parser')
+            # Sitedeki film kartlarını buluyoruz
+            filmler = soup.find_all('div', class_='poster-container')
             
-            if not movies:
-                print("Hata: Film verisi boş geldi!")
-                return
-
-            for m in movies:
-                # TiviMate ve IPTV oynatıcılar için tam uyumlu format
-                isim = m.get('title', 'Film')
-                link = m.get('url', '')
-                afis = m.get('large_cover_image', '')
-                yil = m.get('year', '')
+            for film in filmler:
+                link_etiketi = film.find('a')
+                resim_etiketi = film.find('img')
                 
-                # Listeye ekle
-                liste.append(f'#EXTINF:-1 tvg-logo="{afis}" group-title="🎬 Yeni Filmler ({yil})",{isim}\n{link}')
+                if link_etiketi and resim_etiketi:
+                    # Film adını al
+                    isim = resim_etiketi.get('alt') or "Film"
+                    # Film sayfa linkini al
+                    link = link_etiketi['href']
+                    if not link.startswith('http'):
+                        link = "https://www.hdfilmcehennemi.nl" + link
+                    
+                    # Film afişini al
+                    afis = resim_etiketi.get('data-src') or resim_etiketi.get('src') or ""
+                    
+                    # M3U formatına ekle
+                    liste.append(f'#EXTINF:-1 tvg-logo="{afis}" group-title="HD Cehennemi (Yeni)",{isim}\n{link}')
             
-            # Dosyaya kaydet
-            with open("FilmDizi.m3u", "w", encoding="utf-8") as f:
-                f.write("\n".join(liste))
-            print(f"BAŞARILI! {len(movies)} adet film eklendi.")
+            # Dosyayı yazdır
+            if len(liste) > 1:
+                with open("FilmDizi.m3u", "w", encoding="utf-8") as f:
+                    f.write("\n".join(liste))
+                print(f"BAŞARILI! {len(liste)-1} adet film listeye eklendi.")
+            else:
+                print("Hata: Sitede film yapısı bulunamadı (Tasarım değişmiş olabilir).")
         else:
-            print(f"API Hatası: {res.status_code}")
+            print(f"Siteye erişilemedi. Hata kodu: {res.status_code}")
             
     except Exception as e:
         print(f"Hata oluştu: {e}")
 
 if __name__ == "__main__":
-    film_tara()
+    hdfilm_kazı()
