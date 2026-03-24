@@ -1,0 +1,25 @@
+name: Film Listesi Guncelle
+on:
+  schedule:
+    - cron: '0 */6 * * *' # 6 saatte bir otomatik calisir
+  workflow_dispatch: # Manuel calistirma butonu acar
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Python Kur
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Kutuphaneleri Yukle
+        run: pip install requests beautifulsoup4
+      - name: Filmleri Cek
+        run: python film_checked.py
+      - name: Degisiklikleri Kaydet
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add FilmDizi.m3u
+          git commit -m "Filmler guncellendi" || exit 0
+          git push
