@@ -15,7 +15,7 @@ jobs:
         with:
           python-version: '3.10'
       - name: Kutuphaneleri Yukle
-        run: pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4 cloudscraper
       - name: Filmleri Cek
         run: python film_cekici.py
       - name: Degisiklikleri Kaydet
