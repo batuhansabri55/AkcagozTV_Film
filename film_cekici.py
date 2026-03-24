@@ -1,43 +1,47 @@
 import requests
+from bs4 import BeautifulSoup
+import os
 
-def film_arsivi_olustur():
-    # Bu kaynaklar IPTV dünyasının en sağlam veri havuzlarıdır
-    kaynaklar = [
-        "https://api.themoviedb.org/3/trending/movie/day?api_key=50e2669788f8d6729a73887d1a580a6b&language=tr-TR",
-        "https://api.themoviedb.org/3/movie/popular?api_key=50e2669788f8d6729a73887d1a580a6b&language=tr-TR&page=1"
-    ]
-    
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-    liste = ["#EXTM3U\n#EXT-X-SESSION-DATA:ID='AkcagozTV'"]
-    film_sayisi = 0
+def film_cek():
+    url = "https://www.hdfilmcehennemi.nl/"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
 
-    print("Film arşivi taranıyor...")
+    try:
+        response = requests.get(url, headers=headers)
+        if response.status_code != 200:
+            print(f"Siteye erişilemedi: {response.status_code}")
+            return
 
-    for url in kaynaklar:
-        try:
-            res = requests.get(url, headers=headers, timeout=15)
-            if res.status_code == 200:
-                veriler = res.json().get('results', [])
-                for f in veriler:
-                    isim = f.get('title')
-                    yil = f.get('release_date', '2026').split('-')[0]
-                    afis = f"https://image.tmdb.org/t/p/w500{f.get('poster_path')}"
-                    puan = f.get('vote_average')
-                    
-                    # TiviMate'te filmi açacak link yapısı
-                    link = f"https://www.themoviedb.org/movie/{f.get('id')}"
-                    
-                    liste.append(f'#EXTINF:-1 tvg-logo="{afis}" group-title="🎬 Güncel Filmler (HD Cehennemi Arşivi)",{isim} ({yil}) - Puan: {puan}\n{link}')
-                    film_sayisi += 1
-        except:
-            continue
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Film kartlarını seçiyoruz
+        filmler = soup.find_all('div', class_='poster-container')
+        
+        m3u_icerik = "#EXTM3U\n"
+        
+        for film in filmler:
+            baslik_etiketi = film.find('h2') or film.find('img', alt=True)
+            link_etiketi = film.find('a')
+            
+            if baslik_etiketi and link_etiketi:
+                baslik = baslik_etiketi.get('alt') if baslik_etiketi.name == 'img' else baslik_etiketi.text.strip()
+                link = link_etiketi.get('href')
+                if not link.startswith('http'):
+                    link = f"https://www.hdfilmcehennemi.nl{link}"
+                
+                # M3U formatına ekle (Logonuz varsa tvg-logo ekleyebilirsiniz)
+                m3u_icerik += f'#EXTINF:-1 tvg-name="{baslik}" tvg-logo="", {baslik}\n{link}\n'
 
-    if film_sayisi > 0:
+        # Dosyaya kaydet
         with open("FilmDizi.m3u", "w", encoding="utf-8") as f:
-            f.write("\n".join(liste))
-        print(f"BAŞARILI! {film_sayisi} film listeye eklendi.")
-    else:
-        print("HATA: Kaynaklara bağlanılamadı.")
+            f.write(m3u_icerik)
+            
+        print("FilmDizi.m3u başarıyla güncellendi.")
+
+    except Exception as e:
+        print(f"Bir hata oluştu: {e}")
 
 if __name__ == "__main__":
-    film_arsivi_olustur()
+    film_cek()
