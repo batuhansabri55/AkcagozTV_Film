@@ -1,10 +1,8 @@
 name: Film Listesi Guncelle
-
 on:
   schedule:
     - cron: '0 */6 * * *'
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,27 +10,18 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
-
       - name: Python Kur
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-
       - name: Kutuphaneleri Yukle
-        run: pip install requests
-
+        run: pip install requests beautifulsoup4
       - name: Filmleri Cek
         run: python film_cekici.py
-
       - name: Degisiklikleri Kaydet
         run: |
           git config --local user.email "huseyinakcagoz55@gmail.com"
           git config --local user.name "Huseyin Akcagoz"
           git add FilmDizi.m3u
-          if [ -s FilmDizi.m3u ]; then
-            git commit -m "Film listesi guncellendi: $(date)" || echo "Degisiklik yok"
-            git push origin main
-          else
-            echo "HATA: FilmDizi.m3u dosyasi bos, yukleme yapilmiyor!"
-            exit 1
-          fi
+          git commit -m "Film listesi guncellendi: $(date)" || echo "Degisiklik yok"
+          git push origin main
