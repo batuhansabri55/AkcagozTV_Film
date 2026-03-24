@@ -1,13 +1,32 @@
-- name: Degisiklikleri Kaydet
+name: Film Listesi Guncelle
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Python Kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Kutuphaneleri Yukle
+        run: pip install requests
+      - name: Filmleri Cek
+        run: python film_cekici.py
+      - name: Degisiklikleri Kaydet
         run: |
           git config --local user.email "huseyinakcagoz55@gmail.com"
           git config --local user.name "Huseyin Akcagoz"
           git add FilmDizi.m3u
-          # Dosya boyutu 0'dan büyükse yani doluysa kaydet
           if [ -s FilmDizi.m3u ]; then
             git commit -m "Film listesi guncellendi: $(date)" || echo "Degisiklik yok"
             git push origin main
           else
-            echo "HATA: FilmDizi.m3u dosyasi bos, yukleme yapilmiyor!"
+            echo "Dosya bos!"
             exit 1
           fi
