@@ -1,54 +1,41 @@
 import requests
 
 def film_tara():
-    # Engellenmesi imkansiz, dogrudan API uzerinden veri cekiyoruz
-    api_url = "https://www.hdfilmcehennemi.nl/api/v1/movies?category=2026-filmleri&limit=50"
-    # Eger yukaridaki API calismazsa alternatif (Genel veri)
-    fallback_url = "https://www.hdfilmcehennemi.nl/kategori/2026-filmleri/page/1/"
-    
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/122.0.0.0 Safari/537.36",
-        "X-Requested-With": "XMLHttpRequest"
-    }
+    # Bot koruması olmayan, daha stabil bir veri kaynağı
+    # Bu sefer doğrudan film veritabanı API simülasyonu yapıyoruz
+    url = "https://yts.mx/api/v2/list_movies.json?sort_by=year&order_by=desc&limit=50"
     
     liste = ["#EXTM3U\n#EXT-X-SESSION-DATA:ID='AkcagozTV'"]
     
     try:
-        print("Veri motoruna baglaniliyor...")
-        # Ilk olarak standart sayfa istegi (Cookie almak icin)
-        session = requests.Session()
-        session.get("https://www.hdfilmcehennemi.nl/", headers=headers, timeout=10)
-        
-        # Simdi veriyi cek
-        res = session.get(fallback_url, headers=headers, timeout=15)
+        print("Film veritabanına bağlanılıyor...")
+        res = requests.get(url, timeout=20)
         
         if res.status_code == 200:
-            from bs4 import BeautifulSoup
-            soup = BeautifulSoup(res.text, "html.parser")
-            items = soup.select(".poster")
+            data = res.json()
+            movies = data.get('data', {}).get('movies', [])
             
-            for film in items:
-                a = film.select_one("a")
-                img = film.select_one("img")
-                if a and img:
-                    isim = img.get('alt', 'Film').strip()
-                    link = a['href']
-                    afis = img.get('data-src') or img.get('src') or ""
-                    if afis.startswith('//'): afis = "https:" + afis
-                    
+            for film in movies:
+                isim = film.get('title_long', 'Bilinmeyen Film')
+                link = film.get('url', '')
+                afis = film.get('large_cover_image', '')
+                yil = film.get('year', '')
+                
+                # Sadece güncel filmleri (2025-2026) listeye al
+                if yil >= 2025:
                     liste.append(f'#EXTINF:-1 tvg-logo="{afis}" group-title="🎬 01 Vizyon Filmleri",{isim}\n{link}')
             
             if len(liste) > 1:
                 with open("FilmDizi.m3u", "w", encoding="utf-8") as f:
                     f.write("\n".join(liste))
-                print(f"BINGO! {len(liste)-1} film dosyaya yazildi.")
+                print(f"BAŞARILI! {len(liste)-1} yeni vizyon filmi eklendi.")
             else:
-                print("Hata: Site icerigi hala bos donuyor.")
+                print("HATA: Kriterlere uygun film bulunamadı.")
         else:
-            print(f"Hata: Baglanti reddedildi. Kod: {res.status_code}")
+            print(f"HATA: Servis yanıt vermedi. Kod: {res.status_code}")
             
     except Exception as e:
-        print(f"Hata detayi: {e}")
+        print(f"Kritik Hata: {e}")
 
 if __name__ == "__main__":
     film_tara()
