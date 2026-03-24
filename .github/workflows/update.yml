@@ -15,7 +15,7 @@ jobs:
       - name: Kutuphaneleri Yukle
         run: pip install requests beautifulsoup4
       - name: Filmleri Cek
-        run: python film_checked.py
+        run: python film_cekici.py
       - name: Degisiklikleri Kaydet
         run: |
           git config --local user.email "action@github.com"
