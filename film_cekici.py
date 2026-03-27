@@ -1,5 +1,6 @@
 import requests
 import re
+import os
 
 # --- AYARLAR ---
 VOD_FILE = "FilmDizi.m3u"
@@ -21,7 +22,12 @@ def karakter_onari(metin):
     return metin
 
 def main():
-    print("🚀 Dizi & Film Avcısı 14.0 Başlatıldı...")
+    # --- ADIM 1: ESKİ DOSYAYI YERELDE SİL ---
+    if os.path.exists(VOD_FILE):
+        os.remove(VOD_FILE)
+        print(f"🗑️ Eski {VOD_FILE} yerelde silindi, temiz sayfa açılıyor...")
+
+    print("🚀 Film Avcısı Başlatıldı...")
     final_list = []
 
     for url in VOD_KAYNAKLAR:
@@ -35,22 +41,17 @@ def main():
                 for i in range(len(lines)):
                     line = lines[i].strip()
                     if line.startswith("#EXTINF:"):
+                        # Dizileri ayıkla (İstemiyordun ya usta)
+                        if any(x in line.upper() for x in ["S01", "S02", "BÖLÜM", "SEZON", "EPISODE"]):
+                            temp_inf = ""
+                            continue
                         temp_inf = karakter_onari(line)
                     
                     elif line.startswith("http") and temp_inf:
-                        m3u_url = line
-                        # --- DİZİ Mİ FİLM Mİ ANALİZİ ---
-                        # Eğer isimde S01, E01, Bölüm gibi ifadeler varsa DİZİ'dir
-                        is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon)', temp_inf, re.I)
-                        
-                        if is_series:
-                            # Dizileri 'DİZİLER' grubuna al ve sonuna /#/series/ ekle
-                            temp_inf = re.sub(r'group-title="(.*?)"', r'group-title="DİZİ | \1"', temp_inf)
-                            link = f"{m3u_url.split('#')[0].rstrip('/')}/#/series/"
-                        else:
-                            # Filmleri 'SİNEMA' grubuna al ve sonuna /#/movies/ ekle
-                            temp_inf = re.sub(r'group-title="(.*?)"', r'group-title="SİNEMA | \1"', temp_inf)
-                            link = f"{m3u_url.split('#')[0].rstrip('/')}/#/movies/"
+                        # Linkin sonuna #/movies/ ekle
+                        link = f"{line.split('#')[0].rstrip('/')}/#/movies/"
+                        # Grubu düzelt
+                        temp_inf = re.sub(r'group-title="(.*?)"', r'group-title="SİNEMA | \1"', temp_inf)
                         
                         final_list.append(f"{temp_inf}\n{link}")
                         temp_inf = ""
@@ -58,14 +59,15 @@ def main():
         except Exception as e:
             print(f"❌ Hata ({url}): {str(e)}")
 
+    # --- ADIM 2: DOSYAYI SIFIRDAN OLUŞTUR ---
+    # 'w' modu dosyayı açar açmaz içini boşaltır, sonra yenisini yazar.
     with open(VOD_FILE, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
-        # Tekrarları engelle
         unique_list = list(dict.fromkeys(final_list))
         for item in unique_list:
             f.write(item + "\n")
 
-    print(f"✅ İşlem Tamam! {len(unique_list)} içerik (Film ve Dizi) hazır.")
+    print(f"✅ İşlem Tamam! {len(unique_list)} yeni film yüklendi. Eski liste tarih oldu.")
 
 if __name__ == "__main__":
     main()
