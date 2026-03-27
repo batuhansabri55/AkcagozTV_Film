@@ -13,58 +13,60 @@ VOD_KAYNAKLAR = [
     "https://tinyurl.com/power-cinema"
 ]
 
-def turkcelestir(metin):
+def karakter_onari(metin):
+    """Bozuk karakterleri (Гј, вн vb.) Türkçeleştirir."""
     sozluk = {
         "Гј": "ü", "Гњ": "Ü", "Еџ": "ş", "Ећ": "Ş",
         "Д±": "ı", "Д°": "İ", "Г¶": "ö", "Г–": "Ö",
-        "Г§": "ç", "Г‡": "Ç", "Дџ": "ğ", "Д\x9e": "Ğ"
+        "Г§": "ç", "Г‡": "Ç", "Дџ": "ğ", "Д\x9e": "Ğ",
+        "вн": ""
     }
     for bozuk, duzgun in sozluk.items():
         metin = metin.replace(bozuk, duzgun)
     return metin
 
 def main():
-    print("🎬 VOD Avcısı 9.0 (Sihirli Link Modu) Başlatıldı...")
+    print("🎬 VOD Avcısı 10.0 (Kesin URL Ekleme) Başlatıldı...")
     toplam_icerik = []
 
     for url in VOD_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=45)
             if r.status_code == 200:
-                # Blokları yakala (Satır satır okuyalım)
-                text = r.text
-                lines = text.split('\n')
-                
+                # Satır satır parçalayarak linkleri yakalayalım
+                lines = r.text.splitlines()
                 current_inf = ""
+                
                 for line in lines:
                     line = line.strip()
                     if line.startswith("#EXTINF:"):
-                        current_inf = turkcelestir(line)
+                        # Karakterleri onar ve INF satırını sakla
+                        current_inf = karakter_onari(line)
                     elif line.startswith("http"):
                         # --- SENİN SİHİRLİ DOKUNUŞUN BURADA ---
-                        # Linkin sonuna bakıyoruz, eğer zaten yoksa ekliyoruz
-                        clean_link = line
-                        if not clean_link.endswith("#/movies/"):
-                            # Önce bir slash var mı kontrol et, sonra ekle
-                            if not clean_link.endswith("/"):
-                                clean_link += "/"
-                            clean_link += "#/movies/"
+                        # Linkin sonundaki boşlukları at, varsa slash ekle ve etiketi yapıştır
+                        link = line
+                        if not link.endswith("#/movies/"):
+                            link = link.rstrip('/') + "/#/movies/"
                         
-                        toplam_icerik.append(f"{current_inf}\n{clean_link}")
+                        # INF satırı ile linki birleştirip listeye ekle
+                        toplam_icerik.append(f"{current_inf}\n{link}")
         except: pass
 
+    # DOSYAYA YAZMA
     with open(VOD_FILE, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
         
-        # Benzersiz içerikler
+        # Tekrar edenleri sil
         benzersiz = list(dict.fromkeys(toplam_icerik))
         
         for madde in benzersiz:
-            # TiviMate'e bunun bir video olduğunu iyice vurgulayalım
-            madde = madde.replace('#EXTINF:-1', '#EXTINF:-1 type="video"')
+            # TiviMate'e video olduğunu iyice belirt (type="video")
+            if 'type="video"' not in madde:
+                madde = madde.replace('#EXTINF:-1', '#EXTINF:-1 type="video"')
             f.write(madde + "\n")
 
-    print(f"🚀 {len(benzersiz)} linkin sonuna #/movies/ eklendi ve kaydedildi!")
+    print(f"🚀 Toplam {len(benzersiz)} link sonuna '#/movies/' eklenerek kaydedildi!")
 
 if __name__ == "__main__":
     main()
