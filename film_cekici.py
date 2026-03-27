@@ -5,46 +5,55 @@ import datetime
 
 # --- AYARLAR ---
 VOD_FILE = "FilmDizi.m3u"
-HEADERS = {'User-Agent': 'Mozilla/5.0'}
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+}
 
-# IMAGE_E7AD98 VE IMAGE_E7B0DD GÖRÜNTÜLERİNDEKİ GERÇEK DOSYA YOLLARI
+# SENİN VERDİĞİN YENİ VE GÜÇLÜ VOD KAYNAKLARI
 VOD_KAYNAKLAR = [
-    # Ana Arşivler
-    "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/main/streams/best/all.m3u8",
-    "https://raw.githubusercontent.com/UzunMuhalefet/Legal-IPTV/main/lists/turkey.m3u8",
-    # image_e7ad98'de görülen tekil m3u8 dosyaları
-    "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/main/streams/baskatv-kick.m3u8",
-    "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/main/streams/bizimbergamatv.m3u8",
-    "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/main/streams/serhattv.m3u8",
-    "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/main/streams/teleon.m3u8"
+    "https://tinyurl.com/2ys5fe3h",
+    "https://tinyurl.com/2ao2rans",
+    "https://tinyurl.com/power-cinema"
 ]
 
 def main():
-    print("🎬 VOD Avcısı 4.0 Başlatıldı...")
+    print("🎬 VOD Avcısı 5.0 (Power Cinema) Başlatıldı...")
     toplam_vod = []
 
-    for url in VOD_KAYNAKLAR:
+    for index, url in enumerate(VOD_KAYNAKLAR, 1):
         try:
-            print(f"🔎 Arşiv taranıyor: {url}")
-            r = requests.get(url, headers=HEADERS, timeout=30)
+            print(f"🔎 Kaynak taranıyor ({index}/3): {url}")
+            # Redirect (yönlendirme) takibi için allow_redirects=True yapıyoruz
+            r = requests.get(url, headers=HEADERS, timeout=45, allow_redirects=True)
+            
             if r.status_code == 200:
-                # Regex'i en basit hale getirdik: #EXTINF ile başlayıp http ile biten her şeyi al
-                icerikler = re.findall(r"(#EXTINF:[^\n]+\n+http[^\s\n]+)", r.text)
+                # Regex: #EXTINF satırından başlar, linkin sonuna kadar her şeyi alır
+                # Özellikle tvg-logo (afiş) ve group-title (kategori) kısımlarını korur
+                icerikler = re.findall(r"(#EXTINF:[^\n]+\n+http[^\s\n]+)", r.text, re.IGNORECASE)
+                
                 if icerikler:
                     toplam_vod.extend(icerikler)
-                    print(f"✅ {len(icerikler)} içerik çekildi.")
-        except:
-            pass
+                    print(f"✅ {len(icerikler)} film/dizi çekildi.")
+                else:
+                    print("⚠️ İçerik formatı uymadı, ham metin kontrol ediliyor...")
+                    # Eğer format farklıysa daha esnek bir arama yap
+                    esnek_icerik = re.findall(r"#EXTINF:.*?\n+.*?http.*", r.text)
+                    toplam_vod.extend(esnek_icerik)
+        except Exception as e:
+            print(f"❌ Bağlantı hatası ({url}): {str(e)}")
 
     # DOSYAYA YAZMA
     with open(VOD_FILE, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
-        # Tekrar edenleri temizle (Duplicate)
-        benzersiz_vod = list(set(toplam_vod))
-        for icerik in benzersiz_vod:
-            f.write(icerik.strip() + "\n")
+        
+        # Tekrar eden linkleri temizle (duplicate engelleme)
+        benzersiz_list = list(dict.fromkeys(toplam_vod))
+        
+        for madde in benzersiz_list:
+            f.write(madde.strip() + "\n")
 
-    print(f"🚀 OPERASYON TAMAM! {len(benzersiz_vod)} Film/Dizi eklendi.")
+    zaman = datetime.datetime.now().strftime('%d/%m/%Y %H:%M')
+    print(f"🚀 OPERASYON TAMAM! Toplam {len(benzersiz_list)} Film/Dizi eklendi. ({zaman})")
 
 if __name__ == "__main__":
     main()
