@@ -1,47 +1,51 @@
 import requests
-from bs4 import BeautifulSoup
+import re
 import os
+import datetime
 
-def film_cek():
-    url = "https://www.hdfilmcehennemi.nl/"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    }
+# --- AYARLAR ---
+VOD_FILE = "FilmDizi.m3u"
+HEADERS = {'User-Agent': 'Mozilla/5.0'}
 
-    try:
-        response = requests.get(url, headers=headers)
-        if response.status_code != 200:
-            print(f"Siteye erişilemedi: {response.status_code}")
-            return
+# TARANACAK DEV FİLM ARŞİVLERİ
+VOD_KAYNAKLAR = [
+    "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/main/streams/movies.m3u8",
+    "https://raw.githubusercontent.com/UzunMuhalefet/Legal-IPTV/main/lists/movies.m3u8",
+    "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/main/streams/series.m3u8"
+]
 
-        soup = BeautifulSoup(response.text, 'html.parser')
+def main():
+    print("🎬 VOD Avcısı Başlatıldı...")
+    toplam_vod = []
+
+    for url in VOD_KAYNAKLAR:
+        try:
+            print(f"🔎 Film aranıyor: {url}")
+            r = requests.get(url, headers=HEADERS, timeout=30)
+            if r.status_code == 200:
+                # Film bloğunu yakala (Afiş, İsim ve Link)
+                # re.DOTALL ile satır atlamalarını da okur
+                icerikler = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
+                toplam_vod.extend(icerikler)
+                print(f"✅ {len(icerikler)} içerik bulundu.")
+        except:
+            print(f"❌ Kaynağa ulaşılamadı: {url}")
+
+    # DOSYAYA YAZMA
+    with open(VOD_FILE, 'w', encoding='utf-8') as f:
+        f.write("#EXTM3U\n")
         
-        # Film kartlarını seçiyoruz
-        filmler = soup.find_all('div', class_='poster-container')
-        
-        m3u_icerik = "#EXTM3U\n"
-        
-        for film in filmler:
-            baslik_etiketi = film.find('h2') or film.find('img', alt=True)
-            link_etiketi = film.find('a')
+        for icerik in toplam_vod:
+            # TiviMate'in film olarak tanıması için temizlik ve düzenleme
+            temiz_icerik = icerik.strip()
+            # Eğer içerikte grup yoksa "GENEL FİLMLER" yapalım
+            if 'group-title="' not in temiz_icerik:
+                temiz_icerik = temiz_icerik.replace('#EXTINF:', '#EXTINF:-1 group-title="YENİ FİLMLER",')
             
-            if baslik_etiketi and link_etiketi:
-                baslik = baslik_etiketi.get('alt') if baslik_etiketi.name == 'img' else baslik_etiketi.text.strip()
-                link = link_etiketi.get('href')
-                if not link.startswith('http'):
-                    link = f"https://www.hdfilmcehennemi.nl{link}"
-                
-                # M3U formatına ekle (Logonuz varsa tvg-logo ekleyebilirsiniz)
-                m3u_icerik += f'#EXTINF:-1 tvg-name="{baslik}" tvg-logo="", {baslik}\n{link}\n'
+            f.write(temiz_icerik + "\n")
 
-        # Dosyaya kaydet
-        with open("FilmDizi.m3u", "w", encoding="utf-8") as f:
-            f.write(m3u_icerik)
-            
-        print("FilmDizi.m3u başarıyla güncellendi.")
-
-    except Exception as e:
-        print(f"Bir hata oluştu: {e}")
+    zaman = datetime.datetime.now().strftime('%d/%m/%Y %H:%M')
+    print(f"🚀 BİTTİ! Toplam {len(toplam_vod)} Film/Dizi listenize eklendi. ({zaman})")
 
 if __name__ == "__main__":
-    film_cek()
+    main()
