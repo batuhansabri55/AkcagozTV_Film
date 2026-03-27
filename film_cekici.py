@@ -14,52 +14,52 @@ VOD_KAYNAKLAR = [
 ]
 
 def turkcelestir(metin):
-    """Bozuk karakterleri manuel olarak eşleştirir ve düzeltir."""
     sozluk = {
         "Гј": "ü", "Гњ": "Ü", "Еџ": "ş", "Ећ": "Ş",
         "Д±": "ı", "Д°": "İ", "Г¶": "ö", "Г–": "Ö",
-        "Г§": "ç", "Г‡": "Ç", "Дџ": "ğ", "Д\x9e": "Ğ",
-        "вн": "", "Гў": "â", "вЂ™": "'"
+        "Г§": "ç", "Г‡": "Ç", "Дџ": "ğ", "Д\x9e": "Ğ"
     }
     for bozuk, duzgun in sozluk.items():
         metin = metin.replace(bozuk, duzgun)
-    
-    # Kalan garip UTF-8 kaçışlarını temizlemeye çalış
-    try:
-        return metin.encode('latin-1').decode('utf-8')
-    except:
-        return metin
+    return metin
 
 def main():
-    print("🎬 VOD Avcısı 7.0 (Ultra Fix) Başlatıldı...")
-    toplam_vod = []
+    print("🎬 VOD & Canlı Ayrıştırıcı Başlatıldı...")
+    toplam_icerik = []
 
     for url in VOD_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=45)
             if r.status_code == 200:
-                # Sayfanın dil kodlamasını zorla doğrula
-                r.encoding = 'utf-8' 
-                text_content = r.text
-                
-                # Regex ile blokları çek
-                icerikler = re.findall(r"(#EXTINF:[^\n]+\n+http[^\s\n]+)", text_content, re.IGNORECASE)
-                toplam_vod.extend(icerikler)
-                print(f"✅ {len(icerikler)} içerik alındı.")
+                # Blokları yakala
+                bloklar = re.findall(r"(#EXTINF:[^\n]+\n+http[^\s\n]+)", r.text, re.IGNORECASE)
+                toplam_icerik.extend(bloklar)
         except: pass
 
-    # DOSYAYA YAZMA
     with open(VOD_FILE, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
         
-        # Benzersiz içerikler (Duplicate engelleme)
-        benzersiz = list(dict.fromkeys(toplam_vod))
+        benzersiz = list(dict.fromkeys(toplam_icerik))
         
         for madde in benzersiz:
-            temiz_madde = turkcelestir(madde.strip())
-            f.write(temiz_madde + "\n")
+            madde = turkcelestir(madde.strip())
+            
+            # --- KRİTİK AYIRMA MANTIĞI ---
+            # Eğer satırda zaten bir grup varsa onu 'SİNEMA - ' ile güncelle
+            # Yoksa direkt 'VOD FİLMLER' grubuna at
+            if 'group-title="' in madde:
+                # Mevcut grubu bul ve başına SİNEMA ekle (TiviMate ayırabilsin diye)
+                madde = re.sub(r'group-title="(.*?)"', r'group-title="SİNEMA | \1"', madde)
+            else:
+                madde = madde.replace('#EXTINF:', '#EXTINF:-1 group-title="SİNEMA ARŞİVİ",')
 
-    print(f"🚀 {len(benzersiz)} içerik Türkçeleştirilerek kaydedildi!")
+            # TiviMate'e "Bu bir videodur, kanal değildir" demesi için etiket ekle
+            if 'type="video"' not in madde:
+                madde = madde.replace('#EXTINF:-1', '#EXTINF:-1 type="video"')
+                
+            f.write(madde + "\n")
+
+    print(f"🚀 {len(benzersiz)} içerik 'SİNEMA' etiketleriyle ayrıştırıldı!")
 
 if __name__ == "__main__":
     main()
