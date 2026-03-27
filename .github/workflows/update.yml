@@ -1,27 +1,34 @@
 name: Film Listesi Guncelle
+
 on:
   schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+    # Her gün Türkiye saatiyle sabah 06:00'da otomatik çalışır
+    - cron: '0 3 * * *'
+  workflow_dispatch: # İstediğinde elle başlatabilmen için
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@v3
+      - name: Depoyu Klonla
+        uses: actions/checkout@v3
+
       - name: Python Kur
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.9'
+
       - name: Kutuphaneleri Yukle
-        run: pip install requests beautifulsoup4
+        run: |
+          pip install requests
+
       - name: Filmleri Cek
         run: python film_cekici.py
+
       - name: Degisiklikleri Kaydet
         run: |
-          git config --local user.email "huseyinakcagoz55@gmail.com"
-          git config --local user.name "Huseyin Akcagoz"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add FilmDizi.m3u
           git commit -m "Film listesi guncellendi: $(date)" || echo "Degisiklik yok"
-          git push origin main
+          git push
