@@ -22,8 +22,38 @@ def karakter_onari(metin):
         metin = metin.replace(bozuk, duzgun)
     return metin
 
+def grup_belirle(isim, orijinal_grup):
+    isim = isim.upper()
+    orijinal_grup = orijinal_grup.upper()
+    
+    # --- DİZİ GÜNLERİ VE KATEGORİLERİ ---
+    if any(x in orijinal_grup or x in isim for x in ["PAZARTESİ", "SALI", "ÇARŞAMBA", "PERŞEMBE", "CUMA", "CUMARTESİ", "PAZAR"]):
+        for gun in ["PAZARTESİ", "SALI", "ÇARŞAMBA", "PERŞEMBE", "CUMA", "CUMARTESİ", "PAZAR"]:
+            if gun in orijinal_grup or gun in isim: return f"DİZİ | {gun}"
+        return "DİZİ | GÜNCEL"
+
+    # --- FİLM KATEGORİLERİ ---
+    kategoriler = {
+        "KORKU": ["KORKU", "HORROR", "GERİLİM", "THRILLER"],
+        "MACERA": ["MACERA", "ADVENTURE", "AKSİYON", "ACTION"],
+        "KOMEDİ": ["KOMEDİ", "COMEDY"],
+        "BİLİM KURGU": ["BİLİM KURGU", "SCI-FI", "FANTASTİK"],
+        "ANİMASYON": ["ANİMASYON", "CARTOON", "ÇİZGİ FILM"],
+        "BELGESEL": ["BELGESEL", "DOCUMENTARY"],
+        "YERLİ": ["YERLİ", "TURKISH"]
+    }
+
+    for grup, anahtarlar in kategoriler.items():
+        if any(a in orijinal_grup or a in isim for a in anahtarlar):
+            return f"FİLM | {grup}"
+    
+    # Hiçbirine uymuyorsa dizi/film ayrımına göre genel gruba at
+    if any(x in isim for x in ["S01", "S02", "BÖLÜM", "SEZON"]):
+        return "DİZİ | ARŞİV"
+    return "FİLM | ARŞİV"
+
 def main():
-    print("🚀 Akıllı Gruplandırma Sistemi Başlatıldı...")
+    print("🚀 Akıllı Grup Eşleme v19.0 Başlatıldı...")
     final_list = []
     added_urls = set()
 
@@ -46,27 +76,22 @@ def main():
                         base_link = clean_line.split('#')[0].rstrip('/')
                         if base_link in added_urls: continue
                         
-                        # --- GRUP TESPİTİ VE AYIRMA ---
-                        # Orijinal g-title'ı çekelim
-                        match = re.search(r'group-title="(.*?)"', temp_inf)
-                        org_group = match.group(1).upper() if match else "GENEL"
+                        # Kanal ismini ve varsa orijinal grubu çek
+                        name_match = re.search(r', (.*)$', temp_inf)
+                        group_match = re.search(r'group-title="(.*?)"', temp_inf)
                         
-                        # Dizi mi Film mi?
-                        is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon)', temp_inf, re.I) or "/series/" in clean_line
+                        ch_name = name_match.group(1) if name_match else "İsimsiz"
+                        old_group = group_match.group(1) if group_match else ""
                         
-                        if is_series:
-                            # Dizileri günlerine veya türüne göre bırak, başına 'DİZİ |' ekle
-                            # Örn: DİZİ | PAZARTESİ, DİZİ | DRAM
-                            new_group = f"DİZİ | {org_group}"
-                            final_link = f"{base_link}/#/series/"
-                        else:
-                            # Filmleri türüne göre bırak, başına 'FİLM |' ekle
-                            # Örn: FİLM | KORKU, FİLM | MACERA
-                            new_group = f"FİLM | {org_group}"
-                            final_link = f"{base_link}/#/movies/"
+                        # --- YENİ GRUP ATAMASI ---
+                        new_group = grup_belirle(ch_name, old_group)
                         
-                        # Yeni grubu satıra işle
-                        if match:
+                        # Link sonu eklemeleri
+                        is_series = "DİZİ" in new_group
+                        final_link = f"{base_link}/#/series/" if is_series else f"{base_link}/#/movies/"
+                        
+                        # Satırı güncelle
+                        if group_match:
                             temp_inf = re.sub(r'group-title=".*?"', f'group-title="{new_group}"', temp_inf)
                         else:
                             temp_inf = temp_inf.replace("#EXTINF:-1", f'#EXTINF:-1 group-title="{new_group}"')
@@ -74,15 +99,11 @@ def main():
                         final_list.append(f"{temp_inf}\n{final_link}")
                         added_urls.add(base_link)
                         temp_inf = ""
-
-        except Exception as e:
-            print(f"❌ Hata: {str(e)}")
+        except: pass
 
     with open(VOD_FILE, 'w', encoding='utf-8') as f:
-        f.write("#EXTM3U\n")
-        f.write("\n".join(final_list))
-
-    print(f"✅ Tamamlandı! Gruplar jilet gibi ayrıldı.")
+        f.write("#EXTM3U\n" + "\n".join(final_list))
+    print("✅ İşlem bitti usta. Gruplar temizlendi.")
 
 if __name__ == "__main__":
     main()
