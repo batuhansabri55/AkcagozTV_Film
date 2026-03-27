@@ -6,9 +6,9 @@ VOD_FILE = "FilmDizi.m3u"
 HEADERS = {'User-Agent': 'Mozilla/5.0'}
 
 VOD_KAYNAKLAR = [
-    "https://tinyurl.com/FanatikplayFilm", # 17.000+ Film
-    "https://tinyurl.com/FanatikPlayDizi", # Diziler
-    "https://tinyurl.com/power-cinema"     # Yedek
+    "https://tinyurl.com/FanatikplayFilm",
+    "https://tinyurl.com/FanatikPlayDizi",
+    "https://tinyurl.com/power-cinema"
 ]
 
 def karakter_onari(metin):
@@ -23,7 +23,7 @@ def karakter_onari(metin):
     return metin
 
 def main():
-    print("🚀 Link Sonu Düzenleme İşlemi Başladı...")
+    print("🚀 Akıllı Gruplandırma Sistemi Başlatıldı...")
     final_list = []
     added_urls = set()
 
@@ -43,22 +43,33 @@ def main():
                         temp_inf = karakter_onari(clean_line)
                     
                     elif clean_line.startswith("http") and temp_inf:
-                        # Linkin saf halini al
                         base_link = clean_line.split('#')[0].rstrip('/')
-                        
                         if base_link in added_urls: continue
                         
-                        # --- DİZİ Mİ FİLM Mİ KONTROLÜ ---
-                        is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon|Episode)', temp_inf, re.I) or "/series/" in clean_line
+                        # --- GRUP TESPİTİ VE AYIRMA ---
+                        # Orijinal g-title'ı çekelim
+                        match = re.search(r'group-title="(.*?)"', temp_inf)
+                        org_group = match.group(1).upper() if match else "GENEL"
+                        
+                        # Dizi mi Film mi?
+                        is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon)', temp_inf, re.I) or "/series/" in clean_line
                         
                         if is_series:
-                            # Dizi Formatı: Linkin sonuna #/series/ ekle
-                            temp_inf = re.sub(r'group-title="(.*?)"', r'group-title="DİZİLER"', temp_inf)
+                            # Dizileri günlerine veya türüne göre bırak, başına 'DİZİ |' ekle
+                            # Örn: DİZİ | PAZARTESİ, DİZİ | DRAM
+                            new_group = f"DİZİ | {org_group}"
                             final_link = f"{base_link}/#/series/"
                         else:
-                            # Film Formatı: Linkin sonuna #/movies/ ekle
-                            temp_inf = re.sub(r'group-title="(.*?)"', r'group-title="SİNEMALAR"', temp_inf)
+                            # Filmleri türüne göre bırak, başına 'FİLM |' ekle
+                            # Örn: FİLM | KORKU, FİLM | MACERA
+                            new_group = f"FİLM | {org_group}"
                             final_link = f"{base_link}/#/movies/"
+                        
+                        # Yeni grubu satıra işle
+                        if match:
+                            temp_inf = re.sub(r'group-title=".*?"', f'group-title="{new_group}"', temp_inf)
+                        else:
+                            temp_inf = temp_inf.replace("#EXTINF:-1", f'#EXTINF:-1 group-title="{new_group}"')
                         
                         final_list.append(f"{temp_inf}\n{final_link}")
                         added_urls.add(base_link)
@@ -71,7 +82,7 @@ def main():
         f.write("#EXTM3U\n")
         f.write("\n".join(final_list))
 
-    print(f"✅ Tamamlandı! {len(final_list)} içerik linki güncellendi.")
+    print(f"✅ Tamamlandı! Gruplar jilet gibi ayrıldı.")
 
 if __name__ == "__main__":
     main()
