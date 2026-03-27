@@ -21,8 +21,11 @@ def karakter_onari(metin):
     return metin
 
 def main():
-    print("🚀 Dizi & Film Avcısı 14.0 Başlatıldı...")
-    final_list = []
+    print("🚀 Dizi & Film Avcısı 14.0 (Kategori Birleştirme) Başlatıldı...")
+    
+    # Kategorileri gruplamak için sözlük kullanıyoruz
+    # Yapı: { "SİNEMA | Korku": ["film1_bilgisi", "film2_bilgisi"], ... }
+    kategorize_veriler = {}
 
     for url in VOD_KAYNAKLAR:
         try:
@@ -39,33 +42,47 @@ def main():
                     
                     elif line.startswith("http") and temp_inf:
                         m3u_url = line
-                        # --- DİZİ Mİ FİLM Mİ ANALİZİ ---
-                        # Eğer isimde S01, E01, Bölüm gibi ifadeler varsa DİZİ'dir
+                        
+                        # --- ANALİZ ---
                         is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon)', temp_inf, re.I)
                         
+                        # Mevcut group-title'ı çekelim
+                        g_match = re.search(r'group-title="([^"]+)"', temp_inf)
+                        mevcut_g = g_match.group(1) if g_match else "Genel"
+                        
                         if is_series:
-                            # Dizileri 'DİZİLER' grubuna al ve sonuna /#/series/ ekle
-                            temp_inf = re.sub(r'group-title="(.*?)"', r'group-title="DİZİ | \1"', temp_inf)
+                            yeni_kategori = f"DİZİ | {mevcut_g}"
                             link = f"{m3u_url.split('#')[0].rstrip('/')}/#/series/"
                         else:
-                            # Filmleri 'SİNEMA' grubuna al ve sonuna /#/movies/ ekle
-                            temp_inf = re.sub(r'group-title="(.*?)"', r'group-title="SİNEMA | \1"', temp_inf)
+                            yeni_kategori = f"SİNEMA | {mevcut_g}"
                             link = f"{m3u_url.split('#')[0].rstrip('/')}/#/movies/"
                         
-                        final_list.append(f"{temp_inf}\n{link}")
+                        # Satırı yeni kategori ismiyle güncelle
+                        temp_inf = re.sub(r'group-title="([^"]+)"', f'group-title="{yeni_kategori}"', temp_inf)
+                        entry = f"{temp_inf}\n{link}"
+
+                        # Sözlüğe ekle (Kategoriye göre grupla)
+                        if yeni_kategori not in kategorize_veriler:
+                            kategorize_veriler[yeni_kategori] = set() # Tekrarı önlemek için 'set'
+                        
+                        kategorize_veriler[yeni_kategori].add(entry)
                         temp_inf = ""
 
         except Exception as e:
             print(f"❌ Hata ({url}): {str(e)}")
 
+    # --- DOSYAYA YAZMA ---
+    toplam_icerik = 0
     with open(VOD_FILE, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
-        # Tekrarları engelle
-        unique_list = list(dict.fromkeys(final_list))
-        for item in unique_list:
-            f.write(item + "\n")
+        
+        # Kategorileri alfabetik sıraya dizerek yazdırır (Opsiyonel)
+        for kategori in sorted(kategorize_veriler.keys()):
+            for item in kategorize_veriler[kategori]:
+                f.write(item + "\n")
+                toplam_icerik += 1
 
-    print(f"✅ İşlem Tamam! {len(unique_list)} içerik (Film ve Dizi) hazır.")
+    print(f"✅ İşlem Tamam! {toplam_icerik} içerik kategorilere göre birleştirildi.")
 
 if __name__ == "__main__":
     main()
