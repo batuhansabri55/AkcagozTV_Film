@@ -12,73 +12,61 @@ VOD_KAYNAKLAR = [
 ]
 
 def karakter_onari(metin):
-    """Grup isimlerindeki ve başlıklardaki tüm bozuklukları tamir eder."""
-    # En sık rastlanan bozuk kombinasyonlar (image_f4e6c0 baz alınmıştır)
     sozluk = {
         "Гј": "ü", "Гњ": "Ü", "Еџ": "ş", "Ећ": "Ş",
         "Д±": "ı", "Д°": "İ", "Г¶": "ö", "Г–": "Ö",
-        "Г§": "ç", "Г‡": "Ç", "Дџ": "ğ", "Д\x9e": "Ğ",
-        "вн": "", "вн©": "Ç", "вн–": "Ö", "вн‡": "İ",
-        "внї": "ü", "вн”": "ö", "вн№": "ş", "внљ": "Ş",
-        "внћ": "ğ", "внќ": "Ğ", "вн\x9f": "ş", "вн±": "ı"
+        "Г§": "ç", "Г‡": "Ç", "Дџ": "ğ", "Д\x9e": "Ğ"
     }
     for bozuk, duzgun in sozluk.items():
         metin = metin.replace(bozuk, duzgun)
-    
-    # Kalan garip sembolleri ve çift tırnak hatalarını temizle
-    metin = metin.replace('вн', '').replace('Гў', 'â')
     return metin
 
 def main():
-    print("🚀 VOD Avcısı 13.0 (Karakter Fix) Başlatıldı...")
+    print("🚀 Dizi & Film Avcısı 14.0 Başlatıldı...")
     final_list = []
 
     for url in VOD_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=60)
             if r.status_code == 200:
-                # İçeriği en güvenli şekilde utf-8 olarak oku
                 raw_text = r.content.decode('utf-8', errors='ignore')
                 lines = raw_text.splitlines()
                 
                 temp_inf = ""
-                for line in lines:
-                    clean_line = line.strip()
-                    if not clean_line: continue
+                for i in range(len(lines)):
+                    line = lines[i].strip()
+                    if line.startswith("#EXTINF:"):
+                        temp_inf = karakter_onari(line)
                     
-                    if clean_line.startswith("#EXTINF:"):
-                        # Önce tüm satırı onar
-                        inf = karakter_onari(clean_line)
-                        # Grup ismini düzenle ve 'SİNEMA |' ekle
-                        if 'group-title="' in inf:
-                            inf = re.sub(r'group-title="(.*?)"', r'group-title="SİNEMA | \1"', inf)
-                            # Grup isminin içindeki bozuklukları tekrar temizle (garanti olsun)
-                            inf = karakter_onari(inf)
+                    elif line.startswith("http") and temp_inf:
+                        m3u_url = line
+                        # --- DİZİ Mİ FİLM Mİ ANALİZİ ---
+                        # Eğer isimde S01, E01, Bölüm gibi ifadeler varsa DİZİ'dir
+                        is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon)', temp_inf, re.I)
+                        
+                        if is_series:
+                            # Dizileri 'DİZİLER' grubuna al ve sonuna /#/series/ ekle
+                            temp_inf = re.sub(r'group-title="(.*?)"', r'group-title="DİZİ | \1"', temp_inf)
+                            link = f"{m3u_url.split('#')[0].rstrip('/')}/#/series/"
                         else:
-                            inf = inf.replace("#EXTINF:-1", '#EXTINF:-1 group-title="SİNEMA ARŞİVİ"')
+                            # Filmleri 'SİNEMA' grubuna al ve sonuna /#/movies/ ekle
+                            temp_inf = re.sub(r'group-title="(.*?)"', r'group-title="SİNEMA | \1"', temp_inf)
+                            link = f"{m3u_url.split('#')[0].rstrip('/')}/#/movies/"
                         
-                        # TiviMate için video tipini zorla
-                        if 'type="video"' not in inf:
-                            inf = inf.replace("#EXTINF:", '#EXTINF:-1 type="video"')
-                        temp_inf = inf
-                    
-                    elif clean_line.startswith("http"):
-                        # Linkin sonuna senin meşhur ekini yapıştır
-                        base_link = clean_line.split('#')[0].rstrip('/')
-                        forced_link = f"{base_link}/#/movies/"
-                        
-                        if temp_inf:
-                            final_list.append(f"{temp_inf}\n{forced_link}")
+                        final_list.append(f"{temp_inf}\n{link}")
+                        temp_inf = ""
+
         except Exception as e:
-            print(f"❌ Hata: {str(e)}")
+            print(f"❌ Hata ({url}): {str(e)}")
 
     with open(VOD_FILE, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
-        # Benzersiz içerikler
-        for item in list(dict.fromkeys(final_list)):
+        # Tekrarları engelle
+        unique_list = list(dict.fromkeys(final_list))
+        for item in unique_list:
             f.write(item + "\n")
 
-    print(f"✅ İşlem Tamam! {len(final_list)} içerik onarıldı.")
+    print(f"✅ İşlem Tamam! {len(unique_list)} içerik (Film ve Dizi) hazır.")
 
 if __name__ == "__main__":
     main()
