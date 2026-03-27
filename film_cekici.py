@@ -24,42 +24,47 @@ def turkcelestir(metin):
     return metin
 
 def main():
-    print("🎬 VOD & Canlı Ayrıştırıcı Başlatıldı...")
+    print("🎬 VOD Avcısı 9.0 (Sihirli Link Modu) Başlatıldı...")
     toplam_icerik = []
 
     for url in VOD_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=45)
             if r.status_code == 200:
-                # Blokları yakala
-                bloklar = re.findall(r"(#EXTINF:[^\n]+\n+http[^\s\n]+)", r.text, re.IGNORECASE)
-                toplam_icerik.extend(bloklar)
+                # Blokları yakala (Satır satır okuyalım)
+                text = r.text
+                lines = text.split('\n')
+                
+                current_inf = ""
+                for line in lines:
+                    line = line.strip()
+                    if line.startswith("#EXTINF:"):
+                        current_inf = turkcelestir(line)
+                    elif line.startswith("http"):
+                        # --- SENİN SİHİRLİ DOKUNUŞUN BURADA ---
+                        # Linkin sonuna bakıyoruz, eğer zaten yoksa ekliyoruz
+                        clean_link = line
+                        if not clean_link.endswith("#/movies/"):
+                            # Önce bir slash var mı kontrol et, sonra ekle
+                            if not clean_link.endswith("/"):
+                                clean_link += "/"
+                            clean_link += "#/movies/"
+                        
+                        toplam_icerik.append(f"{current_inf}\n{clean_link}")
         except: pass
 
     with open(VOD_FILE, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
         
+        # Benzersiz içerikler
         benzersiz = list(dict.fromkeys(toplam_icerik))
         
         for madde in benzersiz:
-            madde = turkcelestir(madde.strip())
-            
-            # --- KRİTİK AYIRMA MANTIĞI ---
-            # Eğer satırda zaten bir grup varsa onu 'SİNEMA - ' ile güncelle
-            # Yoksa direkt 'VOD FİLMLER' grubuna at
-            if 'group-title="' in madde:
-                # Mevcut grubu bul ve başına SİNEMA ekle (TiviMate ayırabilsin diye)
-                madde = re.sub(r'group-title="(.*?)"', r'group-title="SİNEMA | \1"', madde)
-            else:
-                madde = madde.replace('#EXTINF:', '#EXTINF:-1 group-title="SİNEMA ARŞİVİ",')
-
-            # TiviMate'e "Bu bir videodur, kanal değildir" demesi için etiket ekle
-            if 'type="video"' not in madde:
-                madde = madde.replace('#EXTINF:-1', '#EXTINF:-1 type="video"')
-                
+            # TiviMate'e bunun bir video olduğunu iyice vurgulayalım
+            madde = madde.replace('#EXTINF:-1', '#EXTINF:-1 type="video"')
             f.write(madde + "\n")
 
-    print(f"🚀 {len(benzersiz)} içerik 'SİNEMA' etiketleriyle ayrıştırıldı!")
+    print(f"🚀 {len(benzersiz)} linkin sonuna #/movies/ eklendi ve kaydedildi!")
 
 if __name__ == "__main__":
     main()
