@@ -31,23 +31,21 @@ def m3u_tara(url):
             if line.startswith("#EXTINF:"):
                 temp_inf = karakter_onari(line)
             elif line.startswith("http") and temp_inf:
-                # DİZİ TESPİTİ
-                is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon|\d\.\s*Bölüm)', temp_inf, re.I)
-                g_match = re.search(r'group-title="([^"]+)"', temp_inf)
-                mevcut_g = g_match.group(1) if g_match else "Genel"
+                # --- DİZİ TESPİTİ ---
+                is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon|\d\.\s*Bölüm|Part|Cilt)', temp_inf, re.I)
                 
-                # Benzersiz bir ID oluşturuyoruz (TiviMate takibi için önemli)
-                safe_name = re.sub(r'\W+', '', temp_inf.split(',')[-1])[:10]
-                
+                # TiviMate'in özel 'Series' sekmesi için grup adını ve etiketini zorluyoruz
                 if is_series:
-                    # DİZİ AYARI: tvg-type="series" ve linke #.mkv zorunlu
-                    temp_inf = re.sub(r'#EXTINF:(-1|0)', f'#EXTINF:-1 tvg-id="{safe_name}" tvg-type="series"', temp_inf)
-                    temp_inf = re.sub(r'group-title="([^"]+)"', f'group-title="DİZİLER | {mevcut_g}"', temp_inf)
+                    # 1. tvg-type="series" (Standart)
+                    # 2. X-TIVIMATE-VOD-TYPE="series" (TiviMate Özel)
+                    # 3. group-title içinde "Series" kelimesi (Zorunlu)
+                    temp_inf = re.sub(r'#EXTINF:(-1|0)', '#EXTINF:-1 tvg-type="series" X-TIVIMATE-VOD-TYPE="series"', temp_inf)
+                    temp_inf = re.sub(r'group-title="([^"]+)"', 'group-title="DİZİLER (Series)"', temp_inf)
                     line = f"{line}#.mkv"
                 else:
-                    # FİLM AYARI: tvg-type="movie" ve linke #.mp4 zorunlu
-                    temp_inf = re.sub(r'#EXTINF:(-1|0)', f'#EXTINF:-1 tvg-id="{safe_name}" tvg-type="movie"', temp_inf)
-                    temp_inf = re.sub(r'group-title="([^"]+)"', f'group-title="FİLMLER | {mevcut_g}"', temp_inf)
+                    # FİLMLER İÇİN:
+                    temp_inf = re.sub(r'#EXTINF:(-1|0)', '#EXTINF:-1 tvg-type="movie" X-TIVIMATE-VOD-TYPE="movie"', temp_inf)
+                    temp_inf = re.sub(r'group-title="([^"]+)"', 'group-title="FİLMLER (Movies)"', temp_inf)
                     line = f"{line}#.mp4"
                 
                 veriler.append(f"{temp_inf}\n{line}")
@@ -55,7 +53,6 @@ def m3u_tara(url):
     except: pass
     return veriler
 
-# web_tara fonksiyonunu da benzer tvg-type eklemesiyle güncelle
 def web_tara(site_ad, url):
     filmler = []
     try:
@@ -64,7 +61,8 @@ def web_tara(site_ad, url):
         for link, isim in matches:
             full_url = f"{url}{link}" if not link.startswith("http") else link
             temiz_isim = karakter_onari(isim)
-            entry = f'#EXTINF:-1 tvg-type="movie" group-title="FİLMLER | {site_ad.upper()}",{temiz_isim}\n{full_url}#.mp4'
+            # Webden gelenleri film olarak işaretle
+            entry = f'#EXTINF:-1 tvg-type="movie" X-TIVIMATE-VOD-TYPE="movie" group-title="FİLMLER (Movies) | {site_ad.upper()}",{temiz_isim}\n{full_url}#.mp4'
             filmler.append(entry)
     except: pass
     return filmler
@@ -78,10 +76,11 @@ def main():
             output.extend(m3u_tara(kaynak["url"]))
 
     with open(VOD_FILE, "w", encoding="utf-8") as f:
+        # TiviMate header'ı
         f.write("#EXTM3U\n")
         for entry in output:
             f.write(entry + "\n")
-    print("✅ TiviMate Kategorize İşlemi Bitti.")
+    print("✅ TiviMate Dizi/Film Ayrımı Tamamlandı.")
 
 if __name__ == "__main__":
     main()
