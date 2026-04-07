@@ -21,15 +21,15 @@ def m3u_tara(url):
 
                 if is_series:
                     # TiviMate'i 'Series' sekmesine sokan 3'lü kombo:
-                    # tvg-type + X-TIVIMATE-VOD-TYPE + S01 E01 formatı
+                    # tvg-type="series" + S01 E01 formatı + Benzersiz ID
                     if not re.search(r'S\d{1,2}|E\d{1,2}', clean_name, re.I):
                         clean_name = f"{clean_name} S01 E01"
                     
-                    new_inf = f'#EXTINF:-1 tvg-type="series" X-TIVIMATE-VOD-TYPE="series" group-title="SERIES",' + clean_name
+                    # KRİTİK: tvg-id kısmına 'series' ibaresini çakıyoruz
+                    new_inf = f'#EXTINF:-1 tvg-id="series_id" tvg-type="series" group-title="SERIES",' + clean_name
                     new_line = f"{line}#.mkv"
                 else:
-                    # FİLMLER İÇİN:
-                    new_inf = f'#EXTINF:-1 tvg-type="movie" X-TIVIMATE-VOD-TYPE="movie" group-title="MOVIES",' + clean_name
+                    new_inf = f'#EXTINF:-1 tvg-id="movie_id" tvg-type="movie" group-title="MOVIES",' + clean_name
                     new_line = f"{line}#.mp4"
 
                 veriler.append(f"{new_inf}\n{new_line}")
@@ -44,11 +44,11 @@ def main():
         output.extend(m3u_tara(k))
 
     with open(VOD_FILE, "w", encoding="utf-8") as f:
-        # TiviMate'i VOD/Series moduna geçiren en üst satır
+        # TiviMate'e listenin VOD/Series olduğunu söyleyen ÖZEL HEADER
         f.write('#EXTM3U x-tvg-url="" x-tivimate-vod="1"\n')
         for entry in output:
             f.write(entry + "\n")
-    print("✅ TiviMate kütüphane tetikleyicileri eklendi.")
+    print("✅ TiviMate kütüphane modu aktif edildi.")
 
 if __name__ == "__main__":
     main()
