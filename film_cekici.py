@@ -15,22 +15,22 @@ def m3u_tara(url):
             if line.startswith("#EXTINF:"):
                 temp_inf = line
             elif line.startswith("http") and temp_inf:
-                # 1. DİZİ TESPİTİ (Sezon/Bölüm kontrolü)
+                # 1. DİZİ TESPİTİ
                 is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon|\d\.\s*Bölüm)', temp_inf, re.I)
                 clean_name = temp_inf.split(',')[-1].strip()
 
                 if is_series:
-                    # TiviMate'in "Diziler" sekmesine girmesi için 3'lü anahtar:
-                    # 'tvg-type="series"' + 'X-TIVIMATE-VOD-TYPE="series"' + isimde 'S01 E01'
+                    # TiviMate'in "Diziler" sekmesine girmesi için KRİTİK ÜÇLÜ:
+                    # tvg-type + X-TIVIMATE-VOD-TYPE + İsimde 'S01 E01'
                     if not re.search(r'S\d{1,2}|E\d{1,2}', clean_name, re.I):
                         clean_name = f"{clean_name} S01 E01"
                     
-                    new_inf = f'#EXTINF:-1 tvg-id="series_id" tvg-type="series" X-TIVIMATE-VOD-TYPE="series" group-title="SERIES",' + clean_name
-                    # Linkin sonuna sanal mkv (Dizi formatı tetikler)
+                    # BURASI ÖNEMLİ: tvg-id="series" ve vcodec="h264" ekliyoruz (Xtream taklidi)
+                    new_inf = f'#EXTINF:-1 tvg-id="series" tvg-type="series" X-TIVIMATE-VOD-TYPE="series" vcodec="h264" group-title="SERIES (Dizi)",' + clean_name
                     new_line = f"{line}#.mkv"
                 else:
                     # FİLMLER İÇİN:
-                    new_inf = f'#EXTINF:-1 tvg-id="movie_id" tvg-type="movie" X-TIVIMATE-VOD-TYPE="movie" group-title="MOVIES",' + clean_name
+                    new_inf = f'#EXTINF:-1 tvg-id="movie" tvg-type="movie" X-TIVIMATE-VOD-TYPE="movie" vcodec="h264" group-title="MOVIES (Film)",' + clean_name
                     new_line = f"{line}#.mp4"
 
                 veriler.append(f"{new_inf}\n{new_line}")
@@ -39,18 +39,17 @@ def m3u_tara(url):
     return veriler
 
 def main():
-    # Mevcut kaynakların
     kaynaklar = ["https://tinyurl.com/FanatikplayFilm", "https://tinyurl.com/power-cinema"]
     output = []
     for k in kaynaklar:
         output.extend(m3u_tara(k))
 
     with open(VOD_FILE, "w", encoding="utf-8") as f:
-        # TiviMate'in kütüphane modunu (VOD/Series) aktif eden en üst satır
-        f.write('#EXTM3U x-tvg-url="" x-tivimate-vod="1"\n')
+        # TiviMate'i kütüphane moduna (VOD/Series) sokan %100 ETKİLİ HEADER
+        f.write('#EXTM3U x-tvg-url="" x-tivimate-vod="1" x-tivimate-series="1"\n')
         for entry in output:
             f.write(entry + "\n")
-    print("✅ TiviMate kütüphane zorlama modu aktif edildi.")
+    print("✅ TiviMate kütüphane modu (Series/Movies) aktif edildi.")
 
 if __name__ == "__main__":
     main()
