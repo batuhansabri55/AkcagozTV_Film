@@ -29,13 +29,12 @@ def web_tara(site_ad, url):
     filmler = []
     try:
         r = requests.get(url, headers=HEADERS, timeout=15)
-        # TiviMate VOD için 'movie' etiketi ekliyoruz
         matches = re.findall(r'<a href="(/film/[^"]+)" title="([^"]+)">', r.text)
         for link, isim in matches:
             full_url = f"{url}{link}" if not link.startswith("http") else link
             temiz_isim = karakter_onari(isim)
-            # Kategori isminde 'SİNEMA' geçmesi TiviMate için önemli
-            entry = f'#EXTINF:-1 group-title="SİNEMA | {site_ad.upper()}",{temiz_isim}\n{full_url}'
+            # Webden gelenler genellikle film olduğu için direkt film etiketi ekliyoruz
+            entry = f'#EXTINF:-1 tvg-type="movie" group-title="SİNEMA | {site_ad.upper()}",{temiz_isim}\n{full_url}#.mp4'
             filmler.append(entry)
     except: pass
     return filmler
@@ -51,20 +50,26 @@ def m3u_tara(url):
             if line.startswith("#EXTINF:"):
                 temp_inf = karakter_onari(line)
             elif line.startswith("http") and temp_inf:
-                # TiviMate için Dizi/Film ayrımı tespiti
+                # Dizi tespiti (Sezon, Bölüm veya S01E01 gibi ifadeler)
                 is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon|\d\.\s*Bölüm)', temp_inf, re.I)
+                
                 g_match = re.search(r'group-title="([^"]+)"', temp_inf)
                 mevcut_g = g_match.group(1) if g_match else "Genel"
                 
-                # ÖNEMLİ: Kategori ismini TiviMate'in ayırması için başına net etiket koyuyoruz
-                prefix = "DİZİ" if is_series else "SİNEMA"
-                
-                # Linkin sonuna sanal uzantı ekleyerek TiviMate'i VOD moduna zorluyoruz
                 stream_link = line
-                if not any(stream_link.endswith(ext) for ext in [".mp4", ".mkv", ".m3u8"]):
-                    stream_link = f"{stream_link}#.mp4"
+                if is_series:
+                    # DİZİ ETİKETİ: tvg-type="series" ekliyoruz
+                    temp_inf = re.sub(r'#EXTINF:(-1|0)', '#EXTINF:-1 tvg-type="series"', temp_inf)
+                    temp_inf = re.sub(r'group-title="([^"]+)"', f'group-title="DİZİ | {mevcut_g}"', temp_inf)
+                    if not any(stream_link.endswith(ext) for ext in [".mp4", ".mkv", ".m3u8"]):
+                        stream_link = f"{stream_link}#.mkv"
+                else:
+                    # FİLM ETİKETİ: tvg-type="movie" ekliyoruz
+                    temp_inf = re.sub(r'#EXTINF:(-1|0)', '#EXTINF:-1 tvg-type="movie"', temp_inf)
+                    temp_inf = re.sub(r'group-title="([^"]+)"', f'group-title="SİNEMA | {mevcut_g}"', temp_inf)
+                    if not any(stream_link.endswith(ext) for ext in [".mp4", ".mkv", ".m3u8"]):
+                        stream_link = f"{stream_link}#.mp4"
                 
-                temp_inf = re.sub(r'group-title="([^"]+)"', f'group-title="{prefix} | {mevcut_g}"', temp_inf)
                 veriler.append(f"{temp_inf}\n{stream_link}")
                 temp_inf = ""
     except: pass
@@ -81,14 +86,13 @@ def main():
         else:
             output.extend(m3u_tara(kaynak["url"]))
 
-    # Sonuçları Kaydet
     with open(VOD_FILE, "w", encoding="utf-8") as f:
-        # TiviMate'e bu listenin VOD içerdiğini fısıldıyoruz
+        # TiviMate'in listeyi VOD olarak tanıması için header'a x-tvg-url ekliyoruz
         f.write("#EXTM3U x-tvg-url=\"\"\n")
         for entry in output:
             f.write(entry + "\n")
 
-    print(f"✅ Bitti! {len(output)} içerik TiviMate için optimize edildi.")
+    print(f"✅ Bitti! {len(output)} içerik kategorize edildi.")
 
 if __name__ == "__main__":
     main()
