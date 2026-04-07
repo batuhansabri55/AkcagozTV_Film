@@ -8,7 +8,6 @@ HEADERS = {
     'Referer': 'https://www.google.com/'
 }
 
-# parsers.js'deki en popüler kaynaklar
 KAYNAKLAR = [
     {"ad": "Filmmodu", "url": "https://www.filmmodu.org", "tip": "web"},
     {"ad": "Filmmakinesi", "url": "https://www.filmmakinesi.net", "tip": "web"},
@@ -17,7 +16,6 @@ KAYNAKLAR = [
 ]
 
 def karakter_onari(metin):
-    """Parsers.js'deki bozuk karakter temizleme mantığı"""
     sozluk = {
         "Гј": "ü", "Гњ": "Ü", "Еџ": "ş", "Ећ": "Ş", "Д±": "ı", "Д°": "İ",
         "Г¶": "ö", "Г–": "Ö", "Г§": "ç", "Г‡": "Ç", "Дџ": "ğ", "Д\x9e": "Ğ",
@@ -28,23 +26,21 @@ def karakter_onari(metin):
     return metin
 
 def web_tara(site_ad, url):
-    """parsers.js içindeki regex mantığıyla siteleri tarar"""
     filmler = []
     try:
         r = requests.get(url, headers=HEADERS, timeout=15)
-        # Sitedeki film linklerini yakala (parsers.js regex'i gibi)
+        # TiviMate VOD için 'movie' etiketi ekliyoruz
         matches = re.findall(r'<a href="(/film/[^"]+)" title="([^"]+)">', r.text)
-        
         for link, isim in matches:
             full_url = f"{url}{link}" if not link.startswith("http") else link
             temiz_isim = karakter_onari(isim)
+            # Kategori isminde 'SİNEMA' geçmesi TiviMate için önemli
             entry = f'#EXTINF:-1 group-title="SİNEMA | {site_ad.upper()}",{temiz_isim}\n{full_url}'
             filmler.append(entry)
     except: pass
     return filmler
 
 def m3u_tara(url):
-    """Mevcut m3u linklerini kategorize eder"""
     veriler = []
     try:
         r = requests.get(url, headers=HEADERS, timeout=30)
@@ -55,20 +51,27 @@ def m3u_tara(url):
             if line.startswith("#EXTINF:"):
                 temp_inf = karakter_onari(line)
             elif line.startswith("http") and temp_inf:
-                # Dizi/Film ayrımı
-                is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon)', temp_inf, re.I)
+                # TiviMate için Dizi/Film ayrımı tespiti
+                is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon|\d\.\s*Bölüm)', temp_inf, re.I)
                 g_match = re.search(r'group-title="([^"]+)"', temp_inf)
                 mevcut_g = g_match.group(1) if g_match else "Genel"
+                
+                # ÖNEMLİ: Kategori ismini TiviMate'in ayırması için başına net etiket koyuyoruz
                 prefix = "DİZİ" if is_series else "SİNEMA"
                 
+                # Linkin sonuna sanal uzantı ekleyerek TiviMate'i VOD moduna zorluyoruz
+                stream_link = line
+                if not any(stream_link.endswith(ext) for ext in [".mp4", ".mkv", ".m3u8"]):
+                    stream_link = f"{stream_link}#.mp4"
+                
                 temp_inf = re.sub(r'group-title="([^"]+)"', f'group-title="{prefix} | {mevcut_g}"', temp_inf)
-                veriler.append(f"{temp_inf}\n{line}")
+                veriler.append(f"{temp_inf}\n{stream_link}")
                 temp_inf = ""
     except: pass
     return veriler
 
 def main():
-    print("🚀 AkçagözTV VOD Avcısı Başlatıldı...")
+    print("🚀 AkçagözTV VOD & Dizi Ayırıcı Başlatıldı...")
     output = []
 
     for kaynak in KAYNAKLAR:
@@ -80,11 +83,12 @@ def main():
 
     # Sonuçları Kaydet
     with open(VOD_FILE, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
+        # TiviMate'e bu listenin VOD içerdiğini fısıldıyoruz
+        f.write("#EXTM3U x-tvg-url=\"\"\n")
         for entry in output:
             f.write(entry + "\n")
 
-    print(f"✅ Bitti! {len(output)} film/dizi listelendi.")
+    print(f"✅ Bitti! {len(output)} içerik TiviMate için optimize edildi.")
 
 if __name__ == "__main__":
     main()
