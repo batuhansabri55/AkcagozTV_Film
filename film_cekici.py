@@ -15,18 +15,21 @@ def m3u_tara(url):
             if line.startswith("#EXTINF:"):
                 temp_inf = line
             elif line.startswith("http") and temp_inf:
-                # DİZİ TESPİTİ
+                # 1. DİZİ TESPİTİ (S01, Sezon, Bölüm kelimeleri)
                 is_series = re.search(r'(S\d{1,2}|E\d{1,2}|Bölüm|Sezon|\d\.\s*Bölüm)', temp_inf, re.I)
                 clean_name = temp_inf.split(',')[-1].strip()
 
                 if is_series:
-                    # KRİTİK: TiviMate'e bu kanalın bir "Dizi" (TV Show) olduğunu zorla öğretiyoruz
-                    # 'type="series"' ve 'group-id' ekliyoruz
-                    new_inf = f'#EXTINF:-1 tvg-id="dizi" tvg-type="series" group-title="SERIES",' + clean_name
-                    # Linkin sonuna sanal mkv (oynatıcıyı dizi moduna sokar)
+                    # TiviMate'in dizi kütüphanesine girmesi için 'tvg-type' ve 'S01 E01' şart
+                    if not re.search(r'S\d{1,2}|E\d{1,2}', clean_name, re.I):
+                        clean_name = f"{clean_name} S01 E01"
+                    
+                    # 'Series' etiketi TiviMate'i 'Diziler' sekmesine yönlendirir
+                    new_inf = f'#EXTINF:-1 tvg-type="series" group-title="SERIES",' + clean_name
                     new_line = f"{line}#.mkv"
                 else:
-                    new_inf = f'#EXTINF:-1 tvg-id="film" tvg-type="movie" group-title="MOVIES",' + clean_name
+                    # Filmler için standart etiket
+                    new_inf = f'#EXTINF:-1 tvg-type="movie" group-title="MOVIES",' + clean_name
                     new_line = f"{line}#.mp4"
 
                 veriler.append(f"{new_inf}\n{new_line}")
@@ -41,11 +44,11 @@ def main():
         output.extend(m3u_tara(k))
 
     with open(VOD_FILE, "w", encoding="utf-8") as f:
-        # EN ÖNEMLİ SATIR: TiviMate'e listenin tipini M3U olarak bırakmasını söylüyoruz
-        f.write("#EXTM3U\n")
+        # --- BURASI KRİTİK: TiviMate'i VOD/SERIES moduna sokan başlık ---
+        f.write('#EXTM3U x-tvg-url="" x-tivimate-vod="1"\n')
         for entry in output:
             f.write(entry + "\n")
-    print("✅ TiviMate için grup başlıkları 'SERIES' ve 'MOVIES' olarak güncellendi.")
+    print("✅ TiviMate kütüphane modu aktif edildi.")
 
 if __name__ == "__main__":
     main()
