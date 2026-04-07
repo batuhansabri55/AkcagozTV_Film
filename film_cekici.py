@@ -1,6 +1,7 @@
 import requests
 import re
 
+# --- AYARLAR ---
 VOD_FILE = "FilmDizi.m3u"
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -35,16 +36,16 @@ def m3u_tara(url):
                 clean_name = temp_inf.split(',')[-1].strip()
 
                 if is_series:
-                    # TiviMate'i kandırıyoruz: Eğer isimde S/E yoksa 'S01 E01' ekliyoruz
+                    # TiviMate'in dizi kütüphanesi için S01E01 yapısı şarttır
                     if not re.search(r'S\d{1,2}|E\d{1,2}', clean_name, re.I):
                         clean_name = f"{clean_name} S01 E01"
                     
-                    # TiviMate'in Series sekmesine girmesi için GİZLİ ETİKETLER
-                    new_inf = f'#EXTINF:-1 tvg-type="series" group-title="SERIES",' + clean_name
+                    # tvg-type="series" ve Kategori isminde 'Series' veya 'TV Shows' geçmeli
+                    new_inf = f'#EXTINF:-1 tvg-type="series" group-title="SERIES (Dizi)",' + clean_name
                     new_line = f"{line}#.mkv"
                 else:
                     # FİLMLER İÇİN:
-                    new_inf = f'#EXTINF:-1 tvg-type="movie" group-title="MOVIES",' + clean_name
+                    new_inf = f'#EXTINF:-1 tvg-type="movie" group-title="MOVIES (Film)",' + clean_name
                     new_line = f"{line}#.mp4"
 
                 veriler.append(f"{new_inf}\n{new_line}")
@@ -60,7 +61,7 @@ def web_tara(site_ad, url):
         for link, isim in matches:
             full_url = f"{url}{link}" if not link.startswith("http") else link
             temiz_isim = karakter_onari(isim)
-            # Webden gelenleri direkt film (Movie) bölümüne at
+            # Webden gelenleri film (Movie) bölümüne at
             entry = f'#EXTINF:-1 tvg-type="movie" group-title="MOVIES | {site_ad.upper()}",{temiz_isim}\n{full_url}#.mp4'
             filmler.append(entry)
     except: pass
@@ -75,8 +76,8 @@ def main():
             output.extend(m3u_tara(kaynak["url"]))
 
     with open(VOD_FILE, "w", encoding="utf-8") as f:
-        # TiviMate VOD başlığı
-        f.write("#EXTM3U\n")
+        # TiviMate'e bu listenin bir VOD listesi olduğunu X-TIVIMATE-VOD ile bildiriyoruz
+        f.write('#EXTM3U x-tvg-url=""\n')
         for entry in output:
             f.write(entry + "\n")
     print("✅ TiviMate Zorlayıcı Format Hazır!")
