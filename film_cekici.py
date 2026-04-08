@@ -14,26 +14,18 @@ class AkcagozFilmCekici:
         self.icerik_listesi = []
 
     def filmmakinesi_tara(self):
-        """Parser.js'deki filmmakinesi mantığına göre ana sayfayı tarar"""
         print("🔎 Film Makinesi taranıyor...")
         url = "https://www.filmmakinesi.pw"
         try:
             r = requests.get(url, headers=HEADERS, timeout=15)
-            # Film kartlarındaki Link, Başlık ve Poster bilgilerini regex ile söküyoruz
+            # Parser.js mantığı: Poster, Link ve Başlık avı
             pattern = r'<div class="poster">.*?<a href="(.*?)" title="(.*?)">.*?<img src="(.*?)"'
             matches = re.findall(pattern, r.text, re.S)
             for link, baslik, poster in matches:
-                self.icerik_listesi.append({
-                    "ad": baslik,
-                    "url": link,
-                    "logo": poster,
-                    "grup": "FİLM MAKİNESİ"
-                })
-        except Exception as e:
-            print(f"❌ Film Makinesi hatası: {e}")
+                self.icerik_listesi.append({"ad": baslik, "url": link, "logo": poster, "grup": "FİLM MAKİNESİ"})
+        except: pass
 
     def filmmodu_tara(self):
-        """Parser.js'deki filmmodu mantığına göre tarar"""
         print("🔎 FilmModu taranıyor...")
         url = "https://www.filmmodu.org"
         try:
@@ -41,34 +33,51 @@ class AkcagozFilmCekici:
             pattern = r'<div class="movie-post">.*?<a href="(.*?)".*?title="(.*?)".*?<img src="(.*?)"'
             matches = re.findall(pattern, r.text, re.S)
             for link, baslik, poster in matches:
-                if not link.startswith('http'): link = url + link
-                self.icerik_listesi.append({
-                    "ad": baslik,
-                    "url": link,
-                    "logo": poster,
-                    "grup": "FİLM MODU"
-                })
-        except Exception as e:
-            print(f"❌ FilmModu hatası: {e}")
+                l = link if link.startswith('http') else url + link
+                self.icerik_listesi.append({"ad": baslik, "url": l, "logo": poster, "grup": "FİLM MODU"})
+        except: pass
+
+    def fullhdfilm_tara(self):
+        print("🔎 FullHDFilmIzlesene (Power) taranıyor...")
+        url = "https://www.fullhdfilmizlesene.pw"
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=15)
+            # Sitedeki film bloklarını yakalayan güncel pattern
+            pattern = r'<div class="poster">.*?<a href="(.*?)" title="(.*?)">.*?<img.*?src="(.*?)"'
+            matches = re.findall(pattern, r.text, re.S)
+            for link, baslik, poster in matches:
+                self.icerik_listesi.append({"ad": baslik, "url": link, "logo": poster, "grup": "FULL HD FİLM"})
+        except: pass
+
+    def 720pizle_tara(self):
+        print("🔎 720pIzle taranıyor...")
+        url = "https://720pizle.pw"
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=15)
+            pattern = r'<div class="movie-data">.*?<a href="(.*?)" title="(.*?)">.*?<img src="(.*?)"'
+            matches = re.findall(pattern, r.text, re.S)
+            for link, baslik, poster in matches:
+                self.icerik_listesi.append({"ad": baslik, "url": link, "logo": poster, "grup": "720P İZLE"})
+        except: pass
 
     def dosyaya_yaz(self):
-        print(f"💾 {len(self.icerik_listesi)} içerik dosyaya yazılıyor...")
+        print(f"💾 {len(self.icerik_listesi)} içerik M3U'ya yazılıyor...")
         with open(CIKIS_DOSYASI, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for item in self.icerik_listesi:
+                # TiviMate v5.2 için en temiz format
                 f.write(f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["grup"]}",{item["ad"]}\n')
                 f.write(f'{item["url"]}\n\n')
-        print(f"✅ {CIKIS_DOSYASI} başarıyla güncellendi.")
+        print(f"✅ {CIKIS_DOSYASI} depoya yüklendi!")
 
 if __name__ == "__main__":
     bot = AkcagozFilmCekici()
-    
-    # Parser mantığındaki siteleri tara
     bot.filmmakinesi_tara()
     bot.filmmodu_tara()
+    bot.fullhdfilm_tara()
+    bot.720pizle_tara()
     
-    # Sonucu depoya kaydet
     if bot.icerik_listesi:
         bot.dosyaya_yaz()
     else:
-        print("⚠️ Hiç içerik bulunamadı, tarayıcı patternlerini kontrol et!")
+        print("⚠️ Hata: Hiçbir siteden veri çekilemedi. Patternleri kontrol et!")
