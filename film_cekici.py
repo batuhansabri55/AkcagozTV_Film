@@ -2,51 +2,73 @@ import requests
 import re
 import os
 
-# AYARLAR
+# --- AYARLAR ---
 CIKIS_DOSYASI = "FilmDizi.m3u"
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+    "Referer": "https://www.google.com/"
+}
 
-# Parser.js mantığını Python'a uyarlayan "Video Avcıları"
-class FilmParser:
-    @staticmethod
-    def filmmakinesi_cek():
-        # Film Makinesi ana sayfasından son eklenenleri toplar
-        base_url = "https://www.filmmakinesi.pw"
+class AkcagozFilmCekici:
+    def __init__(self):
+        self.icerik_listesi = []
+
+    def filmmakinesi_tara(self):
+        """Parser.js'deki filmmakinesi mantığına göre ana sayfayı tarar"""
+        print("🔎 Film Makinesi taranıyor...")
+        url = "https://www.filmmakinesi.pw"
         try:
-            res = requests.get(base_url, headers={"User-Agent": USER_AGENT}, timeout=10)
-            # Regex ile film adlarını, linklerini ve afişlerini söküyoruz (Parser.js mantığı)
-            filmler = re.findall(r'<div class="poster">.*?<a href="(.*?)" title="(.*?)">.*?<img src="(.*?)"', res.text, re.S)
-            return [{"ad": f[1], "url": f[0], "logo": f[2], "grup": "FİLM MAKİNESİ"} for f in filmler]
-        except: return []
+            r = requests.get(url, headers=HEADERS, timeout=15)
+            # Film kartlarındaki Link, Başlık ve Poster bilgilerini regex ile söküyoruz
+            pattern = r'<div class="poster">.*?<a href="(.*?)" title="(.*?)">.*?<img src="(.*?)"'
+            matches = re.findall(pattern, r.text, re.S)
+            for link, baslik, poster in matches:
+                self.icerik_listesi.append({
+                    "ad": baslik,
+                    "url": link,
+                    "logo": poster,
+                    "grup": "FİLM MAKİNESİ"
+                })
+        except Exception as e:
+            print(f"❌ Film Makinesi hatası: {e}")
 
-    @staticmethod
-    def filmmodu_cek():
-        base_url = "https://www.filmmodu.org"
+    def filmmodu_tara(self):
+        """Parser.js'deki filmmodu mantığına göre tarar"""
+        print("🔎 FilmModu taranıyor...")
+        url = "https://www.filmmodu.org"
         try:
-            res = requests.get(base_url, headers={"User-Agent": USER_AGENT}, timeout=10)
-            filmler = re.findall(r'<div class="movie-post">.*?<a href="(.*?)".*?title="(.*?)".*?<img src="(.*?)"', res.text, re.S)
-            return [{"ad": f[1], "url": f[0], "logo": f[2], "grup": "FİLM MODU"} for f in filmler]
-        except: return []
+            r = requests.get(url, headers=HEADERS, timeout=15)
+            pattern = r'<div class="movie-post">.*?<a href="(.*?)".*?title="(.*?)".*?<img src="(.*?)"'
+            matches = re.findall(pattern, r.text, re.S)
+            for link, baslik, poster in matches:
+                if not link.startswith('http'): link = url + link
+                self.icerik_listesi.append({
+                    "ad": baslik,
+                    "url": link,
+                    "logo": poster,
+                    "grup": "FİLM MODU"
+                })
+        except Exception as e:
+            print(f"❌ FilmModu hatası: {e}")
 
-def liste_olustur():
-    print("🚀 17.000+ İçerik İçin Tarama Başlatıldı...")
-    m3u_icerik = "#EXTM3U\n"
-    
-    parser = FilmParser()
-    tum_icerikler = []
-    
-    # Parser.js içindeki siteleri tek tek dönüyoruz
-    tum_icerikler.extend(parser.filmmakinesi_cek())
-    tum_icerikler.extend(parser.filmmodu_cek())
-
-    for item in tum_icerikler:
-        # Linki senin sistemine göre temiz dizeye çevirir
-        m3u_icerik += f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["grup"]}",{item["ad"]}\n{item["url"]}\n'
-
-    with open(CIKIS_DOSYASI, "w", encoding="utf-8") as f:
-        f.write(m3u_icerik)
-    
-    print(f"✅ İşlem Tamam! {len(tum_icerikler)} içerik {CIKIS_DOSYASI} dosyasına yüklendi.")
+    def dosyaya_yaz(self):
+        print(f"💾 {len(self.icerik_listesi)} içerik dosyaya yazılıyor...")
+        with open(CIKIS_DOSYASI, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for item in self.icerik_listesi:
+                f.write(f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["grup"]}",{item["ad"]}\n')
+                f.write(f'{item["url"]}\n\n')
+        print(f"✅ {CIKIS_DOSYASI} başarıyla güncellendi.")
 
 if __name__ == "__main__":
-    liste_olustur()
+    bot = AkcagozFilmCekici()
+    
+    # Parser mantığındaki siteleri tara
+    bot.filmmakinesi_tara()
+    bot.filmmodu_tara()
+    
+    # Sonucu depoya kaydet
+    if bot.icerik_listesi:
+        bot.dosyaya_yaz()
+    else:
+        print("⚠️ Hiç içerik bulunamadı, tarayıcı patternlerini kontrol et!")
