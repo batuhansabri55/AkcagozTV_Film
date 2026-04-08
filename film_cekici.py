@@ -1,28 +1,30 @@
 import requests
 
 def power_cinema_ekle():
-    source_url = "https://www.power.cinema" # Buradaki URL'yi tam linkiyle değiştir usta
-    
-    try:
-        # Mevcut tr.m3u dosyasını oku (Filmlerini ve kategorilerini korumak için)
-        with open("tr.m3u", "r", encoding="utf-8") as f:
-            mevcut_icerik = f.read()
-    except FileNotFoundError:
-        mevcut_icerik = "#EXTM3U\n"
+    # Artık çalışan gerçek linkimiz
+    GERCEK_LINK = "https://tinyurl.com/power-cinema"
+    dosya_adi = "tr.m3u"
 
     try:
-        # Sadece Power Cinema verisini çek
-        r = requests.get(source_url, timeout=10)
-        if r.status_code == 200:
-            yeni_veri = r.text
+        # 1. Power Cinema'dan güncel filmleri çek
+        print("Filmler çekiliyor...")
+        r = requests.get(GERCEK_LINK, timeout=15)
+        r.raise_for_status() # Bağlantı hatası varsa burada durur, dosyayı bozmaz
+        
+        yeni_filmler = r.text
+
+        # 2. Dosyayı 'a' (append) yani EKLEME modunda açıyoruz.
+        # Bu mod dosyanın başındaki mevcut kategorileri SİLMEZ, sadece sonuna yazar.
+        with open(dosya_adi, "a", encoding="utf-8") as f:
+            # Önce bir alt satıra geç ki eski filmlerle birbirine girmesin
+            f.write("\n\n# --- POWER CINEMA YENI EKLENENLER ---\n")
+            f.write(yeni_filmler)
             
-            # Eğer Power Cinema zaten dosyanın içindeyse tekrar ekleme yapma (Çorbaya dönmesin)
-            if source_url not in mevcut_icerik:
-                with open("tr.m3u", "a", encoding="utf-8") as f:
-                    f.write("\n" + yeni_veri)
-                print("Power Cinema verisi filmlerin altına eklendi.")
+        print("İşlem başarılı! Mevcut film kategorilerin korundu, yeniler sona eklendi.")
+
     except Exception as e:
-        print(f"Hata oluştu ama mevcut dosyana dokunulmadı: {e}")
+        # Bir hata olursa (internet koparsa vs.) mevcut dosyana hiç dokunmaz
+        print(f"Hata oluştu ama mevcut listen güvende: {e}")
 
 if __name__ == "__main__":
     power_cinema_ekle()
