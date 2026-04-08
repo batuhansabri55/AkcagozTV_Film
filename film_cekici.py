@@ -1,26 +1,39 @@
-def movies_etiketi_ekle():
+import requests
+import re
+
+def film_makinesi_cek():
     dosya_adi = "FilmDizi.m3u"
-    
-    with open(dosya_adi, "r", encoding="utf-8") as f:
-        satirlar = f.readlines()
+    site_url = "https://www.filmmakinesi.net/"
+    headers = {'User-Agent': 'Mozilla/5.0'}
 
-    yeni_satirlar = []
-    for satir in satirlar:
-        link = satir.strip()
-        # Eğer satır bir linkse ve sonunda henüz MOVIES yoksa ekle
-        if link.startswith("http") and "#/MOVIES/" not in link:
-            # Linkin sonu / ile bitmiyorsa ekle, sonra etiketi yapıştır
-            if not link.endswith("/"):
-                link += "/"
-            yeni_satirlar.append(link + "#/MOVIES/\n")
-        else:
-            yeni_satirlar.append(satir)
+    try:
+        # 1. Sitenin ana sayfasını indir
+        print("Film Makinesi taranıyor...")
+        r = requests.get(site_url, headers=headers, timeout=15)
+        
+        # 2. Film linklerini ve isimlerini ayıkla (Regex ile)
+        # Sitedeki <a href="..." title="..."> yapısını yakalıyoruz
+        filmler = re.findall(r'class="movie-title"><a href="(https://www.filmmakinesi.net/[^"]+)" title="([^"]+)"', r.text)
 
-    # Dosyayı tamamen güncellenmiş haliyle tekrar yaz
-    with open(dosya_adi, "w", encoding="utf-8") as f:
-        f.writelines(yeni_satirlar)
-    
-    print("Tüm listeye #/MOVIES/ etiketi çakıldı usta!")
+        if not filmler:
+            print("Film bulunamadı, site yapısı değişmiş olabilir.")
+            return
+
+        with open(dosya_adi, "a", encoding="utf-8") as f:
+            f.write("\n\n# --- SEYİRTÜRK: FİLM MAKİNESİ GÜNCEL --- \n")
+            
+            for link, isim in filmler[:20]: # Son 20 filmi al
+                # TiviMate için jilet gibi format
+                temiz_link = link if link.endswith("/") else link + "/"
+                final_url = f"{temiz_link}#/MOVIES/"
+                
+                f.write(f'#EXTINF:-1 group-title="SEYİRTÜRK FİLMLER", {isim}\n')
+                f.write(f'{final_url}\n')
+
+        print(f"{len(filmler[:20])} adet yeni film listenin sonuna eklendi usta!")
+
+    except Exception as e:
+        print(f"Hata: {e}")
 
 if __name__ == "__main__":
-    movies_etiketi_ekle()
+    film_makinesi_cek()
