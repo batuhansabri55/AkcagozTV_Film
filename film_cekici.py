@@ -1,37 +1,42 @@
 import requests
 
-def sadece_power_ve_movies():
+def guncelle():
     dosya = "FilmDizi.m3u"
     
     # 1. Power Cinema'yı al
-    power = requests.get("https://tinyurl.com/power-cinema").text
+    try:
+        power = requests.get("https://tinyurl.com/power-cinema", timeout=10).text
+    except:
+        power = ""
 
-    # 2. Mevcut dosyadaki linkleri temizle (Fazlalıkları sil, tek format yap)
+    # 2. Dosyayı oku ve her linkin sonunu sadece #/movies/ yap
     with open(dosya, "r", encoding="utf-8") as f:
         satirlar = f.readlines()
 
-    yeni_liste = []
+    temiz_liste = []
     for s in satirlar:
-        if s.startswith("http"):
-            link = s.split("#")[0].strip().rstrip("/")
-            yeni_liste.append(f"{link}/#/MOVIES/\n")
+        satir = s.strip()
+        if satir.startswith("http"):
+            # Linkin sonundaki her şeyi temizle, sadece küçük harf ekle
+            link = satir.split("#")[0].rstrip("/")
+            temiz_liste.append(f"{link}/#/movies/\n")
         else:
-            yeni_liste.append(s)
+            temiz_liste.append(s if s.endswith("\n") else s + "\n")
 
     # 3. Power Cinema'yı da aynı formatta sona ekle
-    power_temiz = ""
-    for satir in power.splitlines():
-        if satir.startswith("http"):
-            l = satir.split("#")[0].strip().rstrip("/")
-            power_temiz += f"{l}/#/MOVIES/\n"
+    power_ekle = "\n# --- POWER CINEMA ---\n"
+    for p_satir in power.splitlines():
+        ps = p_satir.strip()
+        if ps.startswith("http"):
+            p_link = ps.split("#")[0].rstrip("/")
+            power_ekle += f"{p_link}/#/movies/\n"
         else:
-            power_temiz += satir + "\n"
+            power_ekle += ps + "\n"
 
-    # 4. Dosyayı jilet gibi yaz
+    # 4. Dosyayı kaydet
     with open(dosya, "w", encoding="utf-8") as f:
-        f.writelines(yeni_liste)
-        f.write("\n# --- POWER CINEMA ---\n")
-        f.write(power_temiz)
+        f.writelines(temiz_liste)
+        f.write(power_ekle)
 
 if __name__ == "__main__":
-    sadece_power_ve_movies()
+    guncelle()
