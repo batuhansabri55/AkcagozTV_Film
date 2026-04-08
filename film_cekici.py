@@ -11,8 +11,7 @@ HEADERS = {
 
 class AkcagozFilmBotu:
     def __init__(self):
-        self.liste = []
-        # Senin verdiğin güncel kaynaklar
+        self.kategorize_liste = {}  # Kategorilere göre sözlük yapısı
         self.kaynaklar = [
             {"ad": "Power Cinema", "url": "https://tinyurl.com/power-cinema", "grup": "POWER SİNEMA"},
             {"ad": "Film Arşiv 1", "url": "https://tinyurl.com/2bhf2qox", "grup": "FİLM ARŞİV"},
@@ -20,43 +19,43 @@ class AkcagozFilmBotu:
         ]
 
     def veri_topla(self):
-        print("🚀 TiviMate VOD (Boşluksuz) İçerikler Toplanıyor...")
+        print("🚀 TiviMate VOD Kategorizasyon Başlatıldı...")
         for kaynak in self.kaynaklar:
             try:
                 print(f"🔎 Tarama: {kaynak['ad']}")
                 r = requests.get(kaynak['url'], headers=HEADERS, timeout=25, allow_redirects=True)
-                
-                # M3U içindeki isim ve URL yapısını yakala
                 bulunanlar = re.findall(r'#EXTINF:.*?,(.*?)\n(http.*)', r.text)
                 
+                if kaynak['grup'] not in self.kategorize_liste:
+                    self.kategorize_liste[kaynak['grup']] = []
+
                 for ad, url in bulunanlar:
-                    # ham_url.strip() ile baştaki ve sondaki tüm gizli boşlukları siliyoruz
-                    ham_url = url.strip()
-                    # Arada kesinlikle boşluk bırakmadan birleştiriyoruz
-                    vod_url = f"{ham_url}{VOD_TAG}"
+                    # Linkin sonundaki boşlukları strip() ile siliyoruz, sonra takıyı ekliyoruz
+                    vod_url = f"{url.strip()}{VOD_TAG}"
                     
-                    self.liste.append({
+                    self.kategorize_liste[kaynak['grup']].append({
                         "ad": ad.strip(),
                         "url": vod_url,
-                        "logo": "https://via.placeholder.com/300x450?text=" + ad.strip().replace(" ", "+"),
-                        "grup": kaynak['grup']
+                        "logo": "https://via.placeholder.com/300x450?text=" + ad.strip().replace(" ", "+")
                     })
             except Exception as e:
                 print(f"❌ {kaynak['ad']} hatası: {e}")
 
     def m3u_kaydet(self):
-        if not self.liste:
-            print("🛑 Veri çekilemedi, liste boş!")
+        if not self.kategorize_liste:
+            print("🛑 Veri bulunamadı!")
             return
 
         with open(CIKIS_DOSYASI, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
-            for item in self.liste:
-                # TiviMate VOD kütüphanesi için jilet gibi format
-                f.write(f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["grup"]}",{item["ad"]}\n')
-                f.write(f'{item["url"]}\n\n')
+            # Her grubu kendi içinde yazdırarak TiviMate'in kategorileri tanımasını sağlıyoruz
+            for grup_adi, filmler in self.kategorize_liste.items():
+                print(f"📦 {grup_adi} grubu yazılıyor ({len(filmler)} içerik)...")
+                for film in filmler:
+                    f.write(f'#EXTINF:-1 tvg-logo="{film["logo"]}" group-title="{grup_adi}",{film["ad"]}\n')
+                    f.write(f'{film["url"]}\n\n')
         
-        print(f"✅ Bitti! {len(self.liste)} içerik boşluksuz şekilde {CIKIS_DOSYASI} dosyasına yazıldı.")
+        print(f"✅ İşlem bitti. {CIKIS_DOSYASI} jilet gibi hazır.")
 
 if __name__ == "__main__":
     bot = AkcagozFilmBotu()
