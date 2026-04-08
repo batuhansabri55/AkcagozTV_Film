@@ -1,83 +1,70 @@
 import requests
 import re
-import os
 
 # --- AYARLAR ---
 CIKIS_DOSYASI = "FilmDizi.m3u"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
-    "Referer": "https://www.google.com/"
 }
 
-class AkcagozFilmCekici:
+class AkcagozFilmBotu:
     def __init__(self):
-        self.icerik_listesi = []
+        self.liste = []
+        self.kaynaklar = [
+            {"ad": "Power Cinema", "url": "https://tinyurl.com/power-cinema", "grup": "POWER SİNEMA"},
+            {"ad": "Film Kaynak 1", "url": "https://tinyurl.com/2bhf2qox", "grup": "FİLM ARŞİV"},
+            {"ad": "Film Kaynak 2", "url": "https://tinyurl.com/2ao2rans", "grup": "DİZİ ARŞİV"}
+        ]
 
-    def filmmakinesi_tara(self):
-        print("🔎 Film Makinesi taranıyor...")
-        url = "https://www.filmmakinesi.pw"
-        try:
-            r = requests.get(url, headers=HEADERS, timeout=15)
-            # Parser.js mantığı: Poster, Link ve Başlık avı
-            pattern = r'<div class="poster">.*?<a href="(.*?)" title="(.*?)">.*?<img src="(.*?)"'
-            matches = re.findall(pattern, r.text, re.S)
-            for link, baslik, poster in matches:
-                self.icerik_listesi.append({"ad": baslik, "url": link, "logo": poster, "grup": "FİLM MAKİNESİ"})
-        except: pass
+    def veri_topla(self):
+        print("🚀 Film ve Dizi içerikleri çekiliyor...")
+        for kaynak in self.kaynaklar:
+            try:
+                print(f"🔎 Tarama: {kaynak['ad']}")
+                r = requests.get(kaynak['url'], headers=HEADERS, timeout=20, allow_redirects=True)
+                
+                # Sitedeki film/dizi linklerini ve isimlerini yakalayan genel parser
+                # Sn. Latte'nin yapısına ve Power Cinema patternine uygundur
+                bulunanlar = re.findall(r'#EXTINF:.*?,(.*?)\n(http.*)', r.text)
+                
+                if bulunanlar:
+                    for ad, url in bulunanlar:
+                        self.liste.append({
+                            "ad": ad.strip(),
+                            "url": url.strip(),
+                            "logo": "https://via.placeholder.com/300x450?text=" + ad.replace(" ", "+"),
+                            "grup": kaynak['grup']
+                        })
+                else:
+                    # Eğer doğrudan link ise veya farklı bir yapıdaysa yedek tarama
+                    print(f"⚠️ {kaynak['ad']} için özel tarama yapılıyor...")
+                    # HTML içinden link sökme mantığı
+                    links = re.findall(r'href="(.*?)"', r.text)
+                    for l in links:
+                        if ".m3u8" in l or ".mp4" in l:
+                            self.liste.append({
+                                "ad": kaynak['ad'],
+                                "url": l,
+                                "logo": "",
+                                "grup": kaynak['grup']
+                            })
+            except Exception as e:
+                print(f"❌ {kaynak['ad']} hatası: {e}")
 
-    def filmmodu_tara(self):
-        print("🔎 FilmModu taranıyor...")
-        url = "https://www.filmmodu.org"
-        try:
-            r = requests.get(url, headers=HEADERS, timeout=15)
-            pattern = r'<div class="movie-post">.*?<a href="(.*?)".*?title="(.*?)".*?<img src="(.*?)"'
-            matches = re.findall(pattern, r.text, re.S)
-            for link, baslik, poster in matches:
-                l = link if link.startswith('http') else url + link
-                self.icerik_listesi.append({"ad": baslik, "url": l, "logo": poster, "grup": "FİLM MODU"})
-        except: pass
+    def m3u_kaydet(self):
+        if not self.liste:
+            print("🛑 Hiç içerik çekilemedi, liste oluşturulmadı!")
+            return
 
-    def fullhdfilm_tara(self):
-        print("🔎 FullHDFilmIzlesene (Power) taranıyor...")
-        url = "https://www.fullhdfilmizlesene.pw"
-        try:
-            r = requests.get(url, headers=HEADERS, timeout=15)
-            # Sitedeki film bloklarını yakalayan güncel pattern
-            pattern = r'<div class="poster">.*?<a href="(.*?)" title="(.*?)">.*?<img.*?src="(.*?)"'
-            matches = re.findall(pattern, r.text, re.S)
-            for link, baslik, poster in matches:
-                self.icerik_listesi.append({"ad": baslik, "url": link, "logo": poster, "grup": "FULL HD FİLM"})
-        except: pass
-
-    def 720pizle_tara(self):
-        print("🔎 720pIzle taranıyor...")
-        url = "https://720pizle.pw"
-        try:
-            r = requests.get(url, headers=HEADERS, timeout=15)
-            pattern = r'<div class="movie-data">.*?<a href="(.*?)" title="(.*?)">.*?<img src="(.*?)"'
-            matches = re.findall(pattern, r.text, re.S)
-            for link, baslik, poster in matches:
-                self.icerik_listesi.append({"ad": baslik, "url": link, "logo": poster, "grup": "720P İZLE"})
-        except: pass
-
-    def dosyaya_yaz(self):
-        print(f"💾 {len(self.icerik_listesi)} içerik M3U'ya yazılıyor...")
+        print(f"💾 {len(self.liste)} içerik dosyaya yazılıyor...")
         with open(CIKIS_DOSYASI, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
-            for item in self.icerik_listesi:
-                # TiviMate v5.2 için en temiz format
+            for item in self.liste:
                 f.write(f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["grup"]}",{item["ad"]}\n')
                 f.write(f'{item["url"]}\n\n')
-        print(f"✅ {CIKIS_DOSYASI} depoya yüklendi!")
+        print(f"✅ {CIKIS_DOSYASI} hazır usta!")
 
 if __name__ == "__main__":
-    bot = AkcagozFilmCekici()
-    bot.filmmakinesi_tara()
-    bot.filmmodu_tara()
-    bot.fullhdfilm_tara()
-    bot.720pizle_tara()
-    
-    if bot.icerik_listesi:
-        bot.dosyaya_yaz()
-    else:
-        print("⚠️ Hata: Hiçbir siteden veri çekilemedi. Patternleri kontrol et!")
+    bot = AkcagozFilmBotu()
+    bot.veri_topla()
+    bot.m3u_kaydet()
