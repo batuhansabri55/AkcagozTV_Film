@@ -2,9 +2,9 @@ import requests
 import re
 
 # --- AYARLAR ---
-# TiviMate'in içeriği Film/Dizi sekmesine alması için /movies/ takısı şarttır
-WORKER_BASE_URL = "https://atv-switch.huseyinakcagoz.workers.dev/movies/"
 CIKIS_DOSYASI = "FilmDizi.m3u"
+# TiviMate VOD tetikleyici takısı (URL sonuna eklenir)
+TIVIMATE_VOD_TAG = "#/movies/"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
 }
@@ -20,19 +20,22 @@ class AkcagozFilmBotu:
         ]
 
     def veri_topla(self):
-        print("🚀 TiviMate VOD uyumlu içerikler toplanıyor...")
+        print("🚀 TiviMate VOD (Movies) uyumlu içerikler toplanıyor...")
         for kaynak in self.kaynaklar:
             try:
-                print(f"🔎 Tarama: {kaynak['ad']}")
+                print(f"🔎 Tarama Başladı: {kaynak['ad']}")
+                # allow_redirects=True sayesinde tinyurl'lerin arkasındaki asıl listeye ulaşıyoruz
                 r = requests.get(kaynak['url'], headers=HEADERS, timeout=25, allow_redirects=True)
                 
-                # M3U içindeki isim ve URL yapısını yakalıyoruz
+                # M3U formatındaki isim ve ham URL yapısını yakala
                 bulunanlar = re.findall(r'#EXTINF:.*?,(.*?)\n(http.*)', r.text)
                 
                 for ad, url in bulunanlar:
                     ham_url = url.strip()
-                    # KRİTİK: TiviMate VOD bölümü için link yapısını düzenliyoruz
-                    vod_url = f"{WORKER_BASE_URL}{ham_url}"
+                    
+                    # KRİTİK DÜZENLEME: URL sonuna TiviMate'in VOD olarak tanıması için takı ekleniyor
+                    # Örn: https://vidmoly.com/vs/tt123 #/movies/
+                    vod_url = f"{ham_url} {TIVIMATE_VOD_TAG}"
                     
                     self.liste.append({
                         "ad": ad.strip(),
@@ -41,20 +44,21 @@ class AkcagozFilmBotu:
                         "grup": kaynak['grup']
                     })
             except Exception as e:
-                print(f"❌ {kaynak['ad']} hatası: {e}")
+                print(f"❌ {kaynak['ad']} kaynağında hata: {e}")
 
     def m3u_kaydet(self):
         if not self.liste:
-            print("🛑 Veri çekilemedi, patternleri kontrol et!")
+            print("🛑 Hiç içerik bulunamadı, liste boş!")
             return
 
         with open(CIKIS_DOSYASI, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for item in self.liste:
-                # TiviMate v5.2 için grup ve logo bilgilerini basıyoruz
+                # TiviMate v5.2 için grup-title ve logo basılıyor
                 f.write(f'#EXTINF:-1 tvg-logo="{item["logo"]}" group-title="{item["grup"]}",{item["ad"]}\n')
                 f.write(f'{item["url"]}\n\n')
-        print(f"✅ {len(self.liste)} içerik {CIKIS_DOSYASI} dosyasına jilet gibi dizildi.")
+        
+        print(f"✅ İşlem Tamam! {len(self.liste)} adet içerik VOD formatında {CIKIS_DOSYASI} dosyasına yazıldı.")
 
 if __name__ == "__main__":
     bot = AkcagozFilmBotu()
