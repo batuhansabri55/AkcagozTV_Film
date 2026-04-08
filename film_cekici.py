@@ -18,21 +18,23 @@ class AkcagozFilmBotu:
         ]
 
     def tur_ayikla(self, ad):
-        # Parantez içindeki yapıyı parçalar: (Tür1-Tür2--Oyuncular)
-        # Sadece en baştaki ana türü (Aksiyon, Komedi vb.) alır.
-        match = re.search(r'\(([^0-9\-|\)]+)', ad)
+        # Parantez içindeki (Aksiyon-Macera...) yapısını yakalar
+        match = re.search(r'\((.*?)\)', ad)
         if match:
-            tur = match.group(1).strip().upper()
-            if len(tur) > 1: # Tek karakterlik hataları ele
+            icerik = match.group(1).strip()
+            # Tire veya artı işaretine kadar olan ilk kelimeyi (Tür) al
+            tur = re.split(r'[-+]', icerik)[0].strip().upper()
+            # Eğer yıl denk gelirse (2024 gibi) onu geç, türü bulmaya çalış
+            if not tur.isdigit():
                 return tur
-        return "DİĞER"
+        return "GENEL"
 
     def veri_topla(self):
-        print("🚀 17.000 içerik türlerine göre ayrılıyor...")
+        print("🚀 17.000+ İçerik Türlerine Göre Ayrılıyor...")
         for url in self.kaynaklar:
             try:
                 r = requests.get(url, headers=HEADERS, timeout=30, allow_redirects=True)
-                # Regex ile isim ve URL ayıklama
+                # İsim ve URL ayıklama (Boşluksuz URL yakalama)
                 bulunanlar = re.findall(r'#EXTINF:.*?,(.*?)\n(http[^\s]+)', r.text)
                 
                 for ad_ham, url_ham in bulunanlar:
@@ -40,7 +42,7 @@ class AkcagozFilmBotu:
                     # URL sonundaki boşluğu sil ve VOD takısını yapıştır
                     vod_url = f"{url_ham.strip()}{VOD_TAG}"
                     
-                    # Türü (Aksiyon, Macera, Komedi vb.) ayıkla
+                    # Türü (AKSİYON, KOMEDİ vb.) ayıkla
                     tur = self.tur_ayikla(ad)
                     
                     if tur not in self.kategorize_liste:
@@ -56,19 +58,18 @@ class AkcagozFilmBotu:
 
     def m3u_kaydet(self):
         if not self.kategorize_liste:
-            print("🛑 Liste boş, kayıt yapılmadı!")
+            print("🛑 Veri bulunamadı!")
             return
 
         with open(CIKIS_DOSYASI, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
-            # Türleri (AKSİYON, KOMEDİ vb.) alfabetik sırayla bloklar halinde yaz
+            # Kategorileri alfabetik bloklar halinde yaz (TiviMate Menüsü İçin)
             for tur in sorted(self.kategorize_liste.keys()):
-                print(f"📦 {tur} kategorisi yazılıyor ({len(self.kategorize_liste[tur])} film)...")
                 for film in self.kategorize_liste[tur]:
                     f.write(f'#EXTINF:-1 tvg-logo="{film["logo"]}" group-title="{tur}",{film["ad"]}\n')
                     f.write(f'{film["url"]}\n\n')
         
-        print(f"✅ İşlem bitti! {len(self.kategorize_liste)} farklı kategori oluşturuldu.")
+        print(f"✅ İşlem bitti! TiviMate için {len(self.kategorize_liste)} kategori oluşturuldu.")
 
 if __name__ == "__main__":
     bot = AkcagozFilmBotu()
