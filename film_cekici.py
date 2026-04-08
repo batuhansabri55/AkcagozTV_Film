@@ -2,7 +2,7 @@ import requests
 import re
 
 CIKIS_DOSYASI = "FilmDizi.m3u"
-VOD_TAG = "#/movies/" # Boşluksuz bitişik
+VOD_TAG = "#/movies/" 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 def film_cek():
@@ -18,11 +18,11 @@ def film_cek():
         for url in kaynaklar:
             try:
                 r = requests.get(url, headers=HEADERS, timeout=15)
-                # Satır satır tara: Hem etiketi (group-title dahil) hem URL'yi al
+                # Resimde gördüğün tüm o uzun etiket satırını ve altındaki URL'yi beraber yakalar
                 bloklar = re.findall(r'(#EXTINF:.*?)\n(http.*)', r.text)
                 
                 for etiket, link in bloklar:
-                    # Linkin sonundaki boşluğu sil ve VOD takısını yapıştır
+                    # Mevcut kategoriye (group-title) dokunma, sadece linkin sonundaki boşluğu sil
                     temiz_link = f"{link.strip()}{VOD_TAG}"
                     
                     f.write(f"{etiket.strip()}\n")
