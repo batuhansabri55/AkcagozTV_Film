@@ -3,59 +3,62 @@ import re
 
 # --- AYARLAR ---
 CIKIS_DOSYASI = "FilmDizi.m3u"
-# Boşluksuz bitişik VOD takısı
-VOD_TAG = "#/movies/"
+VOD_TAG = "#/movies/" # Boşluksuz VOD takısı
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
 }
 
 class AkcagozFilmBotu:
     def __init__(self):
-        self.kategorize_liste = {}  # Kategorilere göre sözlük yapısı
+        self.kategorize_liste = {}
         self.kaynaklar = [
-            {"ad": "Power Cinema", "url": "https://tinyurl.com/power-cinema", "grup": "POWER SİNEMA"},
-            {"ad": "Film Arşiv 1", "url": "https://tinyurl.com/2bhf2qox", "grup": "FİLM ARŞİV"},
-            {"ad": "Film Arşiv 2", "url": "https://tinyurl.com/2ao2rans", "grup": "DİZİ ARŞİV"}
+            {"url": "https://tinyurl.com/power-cinema"},
+            {"url": "https://tinyurl.com/2bhf2qox"},
+            {"url": "https://tinyurl.com/2ao2rans"}
         ]
 
     def veri_topla(self):
-        print("🚀 TiviMate VOD Kategorizasyon Başlatıldı...")
+        print("🚀 TiviMate Türlere Göre Gruplandırma Başlatıldı...")
         for kaynak in self.kaynaklar:
             try:
-                print(f"🔎 Tarama: {kaynak['ad']}")
                 r = requests.get(kaynak['url'], headers=HEADERS, timeout=25, allow_redirects=True)
                 bulunanlar = re.findall(r'#EXTINF:.*?,(.*?)\n(http.*)', r.text)
                 
-                if kaynak['grup'] not in self.kategorize_liste:
-                    self.kategorize_liste[kaynak['grup']] = []
-
-                for ad, url in bulunanlar:
-                    # Linkin sonundaki boşlukları strip() ile siliyoruz, sonra takıyı ekliyoruz
-                    vod_url = f"{url.strip()}{VOD_TAG}"
+                for ad_ham, url_ham in bulunanlar:
+                    ad = ad_ham.strip()
+                    # Linkin sonundaki boşluğu siliyor ve VOD takısını yapıştırıyoruz
+                    vod_url = f"{url_ham.strip()}{VOD_TAG}"
                     
-                    self.kategorize_liste[kaynak['grup']].append({
-                        "ad": ad.strip(),
+                    # Türü ayıkla: Parantez içindeki ilk kelimeyi (Komedi, Macera vb.) alır
+                    tur_match = re.search(r'\((.*?)[-)]', ad)
+                    tur = tur_match.group(1).split('-')[0].strip().upper() if tur_match else "DİĞER"
+                    
+                    if tur not in self.kategorize_liste:
+                        self.kategorize_liste[tur] = []
+
+                    self.kategorize_liste[tur].append({
+                        "ad": ad,
                         "url": vod_url,
-                        "logo": "https://via.placeholder.com/300x450?text=" + ad.strip().replace(" ", "+")
+                        "logo": "https://via.placeholder.com/300x450?text=" + ad.replace(" ", "+")
                     })
             except Exception as e:
-                print(f"❌ {kaynak['ad']} hatası: {e}")
+                print(f"❌ Hata: {e}")
 
     def m3u_kaydet(self):
         if not self.kategorize_liste:
-            print("🛑 Veri bulunamadı!")
+            print("🛑 Liste boş, kayıt yapılmadı!")
             return
 
         with open(CIKIS_DOSYASI, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
-            # Her grubu kendi içinde yazdırarak TiviMate'in kategorileri tanımasını sağlıyoruz
-            for grup_adi, filmler in self.kategorize_liste.items():
-                print(f"📦 {grup_adi} grubu yazılıyor ({len(filmler)} içerik)...")
+            # Kategorileri (KOMEDİ, MACERA vb.) tek tek bloklar halinde yazıyoruz
+            for tur, filmler in sorted(self.kategorize_liste.items()):
+                print(f"📦 {tur} kategorisi yazılıyor ({len(filmler)} film)...")
                 for film in filmler:
-                    f.write(f'#EXTINF:-1 tvg-logo="{film["logo"]}" group-title="{grup_adi}",{film["ad"]}\n')
+                    f.write(f'#EXTINF:-1 tvg-logo="{film["logo"]}" group-title="{tur}",{film["ad"]}\n')
                     f.write(f'{film["url"]}\n\n')
         
-        print(f"✅ İşlem bitti. {CIKIS_DOSYASI} jilet gibi hazır.")
+        print(f"✅ Bitti! {CIKIS_DOSYASI} artık tam kategorili.")
 
 if __name__ == "__main__":
     bot = AkcagozFilmBotu()
