@@ -1,30 +1,51 @@
 import requests
 
-def power_cinema_ekle():
-    # Artık çalışan gerçek linkimiz
-    GERCEK_LINK = "https://tinyurl.com/power-cinema"
-    dosya_adi = "tr.m3u"
+def film_listesini_guncelle():
+    # 1. AYARLAR
+    dosya_adi = "FilmDizi.m3u"
+    worker_url = "https://atv-switch.huseyinakcagoz.workers.dev" # Senin görseldeki worker adresin
+    
+    # SeyirTur listesindeki en popüler film kaynakları
+    kaynaklar = [
+        {"ad": "POWER CINEMA", "url": "https://tinyurl.com/power-cinema"},
+        # Buraya o görseldeki diğer m3u kaynaklarını ekleyebilirsin
+    ]
 
     try:
-        # 1. Power Cinema'dan güncel filmleri çek
-        print("Filmler çekiliyor...")
-        r = requests.get(GERCEK_LINK, timeout=15)
-        r.raise_for_status() # Bağlantı hatası varsa burada durur, dosyayı bozmaz
-        
-        yeni_filmler = r.text
-
-        # 2. Dosyayı 'a' (append) yani EKLEME modunda açıyoruz.
-        # Bu mod dosyanın başındaki mevcut kategorileri SİLMEZ, sadece sonuna yazar.
+        # Mevcut dosyanı korumak için önce temiz bir başlangıç (isteğe bağlı) 
+        # veya 'a' ile sona ekleme yapıyoruz.
         with open(dosya_adi, "a", encoding="utf-8") as f:
-            # Önce bir alt satıra geç ki eski filmlerle birbirine girmesin
-            f.write("\n\n# --- POWER CINEMA YENI EKLENENLER ---\n")
-            f.write(yeni_filmler)
             
-        print("İşlem başarılı! Mevcut film kategorilerin korundu, yeniler sona eklendi.")
+            for kaynak in kaynaklar:
+                print(f"{kaynak['ad']} çekiliyor...")
+                try:
+                    r = requests.get(kaynak['url'], timeout=15)
+                    if r.status_code == 200:
+                        f.write(f"\n\n# --- {kaynak['ad']} --- \n")
+                        f.write(r.text)
+                except:
+                    print(f"{kaynak['ad']} alınamadı, atlanıyor.")
+
+            # 2. ÖZEL SEYİRTUR SİTELERİ İÇİN ŞABLON EKLEME
+            # Bu kısım o görseldeki 'TÜMÜ' dediğin siteleri TiviMate'e ekler
+            f.write("\n\n# --- SEYIRTUR FILM SITELERI --- \n")
+            
+            siteler = [
+                {"isim": "Film Makinesi", "slug": "filmmakinesi"},
+                {"isim": "Film Modu", "slug": "filmmodu"},
+                {"isim": "720p İzle", "slug": "izle720p"},
+                {"isim": "Dizibox", "slug": "dizibox"}
+            ]
+            
+            for site in siteler:
+                # Bu linkler tıklandığında senin Worker'ına gider ve o 2438 satırlık kod çalışır
+                f.write(f'#EXTINF:-1 group-title="SEYIRTUR", {site["isim"]}\n')
+                f.write(f'{worker_url}/{site["slug"]}\n')
+
+        print(f"İşlem tamam! {dosya_adi} güncellendi.")
 
     except Exception as e:
-        # Bir hata olursa (internet koparsa vs.) mevcut dosyana hiç dokunmaz
-        print(f"Hata oluştu ama mevcut listen güvende: {e}")
+        print(f"Hata: {e}")
 
 if __name__ == "__main__":
-    power_cinema_ekle()
+    film_listesini_guncelle()
