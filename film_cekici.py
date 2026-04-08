@@ -1,34 +1,28 @@
 import requests
-import re
 
-CIKIS_DOSYASI = "FilmDizi.m3u"
-VOD_TAG = "#/movies/" 
-HEADERS = {"User-Agent": "Mozilla/5.0"}
-
-def film_cek():
-    kaynaklar = [
-        "https://tinyurl.com/power-cinema",
-        "https://tinyurl.com/2bhf2qox",
-        "https://tinyurl.com/2ao2rans"
-    ]
+def power_cinema_ekle():
+    source_url = "https://www.power.cinema" # Buradaki URL'yi tam linkiyle değiştir usta
     
-    with open(CIKIS_DOSYASI, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        
-        for url in kaynaklar:
-            try:
-                r = requests.get(url, headers=HEADERS, timeout=15)
-                # Resimde gördüğün tüm o uzun etiket satırını ve altındaki URL'yi beraber yakalar
-                bloklar = re.findall(r'(#EXTINF:.*?)\n(http.*)', r.text)
-                
-                for etiket, link in bloklar:
-                    # Mevcut kategoriye (group-title) dokunma, sadece linkin sonundaki boşluğu sil
-                    temiz_link = f"{link.strip()}{VOD_TAG}"
-                    
-                    f.write(f"{etiket.strip()}\n")
-                    f.write(f"{temiz_link}\n\n")
-            except:
-                continue
+    try:
+        # Mevcut tr.m3u dosyasını oku (Filmlerini ve kategorilerini korumak için)
+        with open("tr.m3u", "r", encoding="utf-8") as f:
+            mevcut_icerik = f.read()
+    except FileNotFoundError:
+        mevcut_icerik = "#EXTM3U\n"
+
+    try:
+        # Sadece Power Cinema verisini çek
+        r = requests.get(source_url, timeout=10)
+        if r.status_code == 200:
+            yeni_veri = r.text
+            
+            # Eğer Power Cinema zaten dosyanın içindeyse tekrar ekleme yapma (Çorbaya dönmesin)
+            if source_url not in mevcut_icerik:
+                with open("tr.m3u", "a", encoding="utf-8") as f:
+                    f.write("\n" + yeni_veri)
+                print("Power Cinema verisi filmlerin altına eklendi.")
+    except Exception as e:
+        print(f"Hata oluştu ama mevcut dosyana dokunulmadı: {e}")
 
 if __name__ == "__main__":
-    film_cek()
+    power_cinema_ekle()
