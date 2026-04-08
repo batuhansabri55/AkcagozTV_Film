@@ -3,7 +3,7 @@ import re
 
 # --- AYARLAR ---
 CIKIS_DOSYASI = "FilmDizi.m3u"
-VOD_TAG = "#/movies/" # Kesinlikle boşluksuz
+VOD_TAG = "#/movies/"  # URL sonuna sıfır boşlukla yapışır
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
 }
@@ -17,33 +17,29 @@ class AkcagozFilmBotu:
             "https://tinyurl.com/2ao2rans"
         ]
 
-    def tur_ayikla(self, ad):
-        # Parantez içindeki (Aksiyon-Macera...) yapısını yakalar
-        match = re.search(r'\((.*?)\)', ad)
+    def tur_bul(self, ad):
+        # Parantez içindeki ilk kelimeyi (Aksiyon, Komedi vb.) yakalar
+        match = re.search(r'\((.*?)[-+)]', ad)
         if match:
-            icerik = match.group(1).strip()
-            # Tire veya artı işaretine kadar olan ilk kelimeyi (Tür) al
-            tur = re.split(r'[-+]', icerik)[0].strip().upper()
-            # Eğer yıl denk gelirse (2024 gibi) onu geç, türü bulmaya çalış
-            if not tur.isdigit():
+            tur = match.group(1).strip().upper()
+            # Eğer yıl gelirse (2024 gibi), sonrakine bakmak yerine 'GENEL'den kurtarır
+            if not (tur.isdigit() and len(tur) == 4):
                 return tur
-        return "GENEL"
+        return "DİĞER"
 
     def veri_topla(self):
-        print("🚀 17.000+ İçerik Türlerine Göre Ayrılıyor...")
         for url in self.kaynaklar:
             try:
                 r = requests.get(url, headers=HEADERS, timeout=30, allow_redirects=True)
-                # İsim ve URL ayıklama (Boşluksuz URL yakalama)
                 bulunanlar = re.findall(r'#EXTINF:.*?,(.*?)\n(http[^\s]+)', r.text)
                 
                 for ad_ham, url_ham in bulunanlar:
                     ad = ad_ham.strip()
-                    # URL sonundaki boşluğu sil ve VOD takısını yapıştır
+                    # URL sonundaki boşluğu silip #/movies/ ekliyoruz
                     vod_url = f"{url_ham.strip()}{VOD_TAG}"
                     
-                    # Türü (AKSİYON, KOMEDİ vb.) ayıkla
-                    tur = self.tur_ayikla(ad)
+                    # Türü (KOMEDİ, MACERA vb.) ayıklıyoruz
+                    tur = self.tur_bul(ad)
                     
                     if tur not in self.kategorize_liste:
                         self.kategorize_liste[tur] = []
@@ -53,23 +49,19 @@ class AkcagozFilmBotu:
                         "url": vod_url,
                         "logo": "https://via.placeholder.com/300x450?text=" + ad.replace(" ", "+")
                     })
-            except Exception as e:
-                print(f"❌ Kaynak hatası: {e}")
+            except: pass
 
     def m3u_kaydet(self):
-        if not self.kategorize_liste:
-            print("🛑 Veri bulunamadı!")
-            return
+        if not self.kategorize_liste: return
 
         with open(CIKIS_DOSYASI, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
-            # Kategorileri alfabetik bloklar halinde yaz (TiviMate Menüsü İçin)
+            # Kategorileri TiviMate'in anlaması için bloklar halinde yazıyoruz
             for tur in sorted(self.kategorize_liste.keys()):
                 for film in self.kategorize_liste[tur]:
+                    # group-title="{tur}" kısmı klasörleri oluşturur
                     f.write(f'#EXTINF:-1 tvg-logo="{film["logo"]}" group-title="{tur}",{film["ad"]}\n')
                     f.write(f'{film["url"]}\n\n')
-        
-        print(f"✅ İşlem bitti! TiviMate için {len(self.kategorize_liste)} kategori oluşturuldu.")
 
 if __name__ == "__main__":
     bot = AkcagozFilmBotu()
