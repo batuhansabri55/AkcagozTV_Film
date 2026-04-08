@@ -1,39 +1,37 @@
 import requests
-import re
 
-def film_makinesi_cek():
-    dosya_adi = "FilmDizi.m3u"
-    site_url = "https://www.filmmakinesi.net/"
-    headers = {'User-Agent': 'Mozilla/5.0'}
+def sadece_power_ve_movies():
+    dosya = "FilmDizi.m3u"
+    
+    # 1. Power Cinema'yı al
+    power = requests.get("https://tinyurl.com/power-cinema").text
 
-    try:
-        # 1. Sitenin ana sayfasını indir
-        print("Film Makinesi taranıyor...")
-        r = requests.get(site_url, headers=headers, timeout=15)
-        
-        # 2. Film linklerini ve isimlerini ayıkla (Regex ile)
-        # Sitedeki <a href="..." title="..."> yapısını yakalıyoruz
-        filmler = re.findall(r'class="movie-title"><a href="(https://www.filmmakinesi.net/[^"]+)" title="([^"]+)"', r.text)
+    # 2. Mevcut dosyadaki linkleri temizle (Fazlalıkları sil, tek format yap)
+    with open(dosya, "r", encoding="utf-8") as f:
+        satirlar = f.readlines()
 
-        if not filmler:
-            print("Film bulunamadı, site yapısı değişmiş olabilir.")
-            return
+    yeni_liste = []
+    for s in satirlar:
+        if s.startswith("http"):
+            link = s.split("#")[0].strip().rstrip("/")
+            yeni_liste.append(f"{link}/#/MOVIES/\n")
+        else:
+            yeni_liste.append(s)
 
-        with open(dosya_adi, "a", encoding="utf-8") as f:
-            f.write("\n\n# --- SEYİRTÜRK: FİLM MAKİNESİ GÜNCEL --- \n")
-            
-            for link, isim in filmler[:20]: # Son 20 filmi al
-                # TiviMate için jilet gibi format
-                temiz_link = link if link.endswith("/") else link + "/"
-                final_url = f"{temiz_link}#/MOVIES/"
-                
-                f.write(f'#EXTINF:-1 group-title="SEYİRTÜRK FİLMLER", {isim}\n')
-                f.write(f'{final_url}\n')
+    # 3. Power Cinema'yı da aynı formatta sona ekle
+    power_temiz = ""
+    for satir in power.splitlines():
+        if satir.startswith("http"):
+            l = satir.split("#")[0].strip().rstrip("/")
+            power_temiz += f"{l}/#/MOVIES/\n"
+        else:
+            power_temiz += satir + "\n"
 
-        print(f"{len(filmler[:20])} adet yeni film listenin sonuna eklendi usta!")
-
-    except Exception as e:
-        print(f"Hata: {e}")
+    # 4. Dosyayı jilet gibi yaz
+    with open(dosya, "w", encoding="utf-8") as f:
+        f.writelines(yeni_liste)
+        f.write("\n# --- POWER CINEMA ---\n")
+        f.write(power_temiz)
 
 if __name__ == "__main__":
-    film_makinesi_cek()
+    sadece_power_ve_movies()
