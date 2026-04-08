@@ -1,7 +1,1 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="TV 8 FHD", TV 8 FHD
-https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?app=tv8_web
-#EXTINF:-1 tvg-name="ATV FHD", ATV FHD
-https://www.atv.com.tr/canli-yayin
-#EXTINF:-1 tvg-name="Dizilla Test", Dizilla Test
-https://dizilla.com/yabanci-dizi-izle
