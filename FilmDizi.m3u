@@ -2268,3 +2268,886 @@ http://99499ef3.com:8080/leventadiguzel/eGPBngS/120789
 http://99499ef3.com:8080/leventadiguzel/eGPBngS/114810
 #EXTINF:-1 tvg-id="" tvg-name="TIVIBU SPOR " tvg-logo="https://upload.wikimedia.org/wikipedia/tr/d/db/TivibuSporLogo1.PNG" group-title="TR | ",TIVIBU SPOR 
 http://99499ef3.com:8080/leventadiguzel/eGPBngS/114868
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="TRT 1 " group-title="ULUSAL",TRT 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196699&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="ATV " group-title="ULUSAL",ATV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196698&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SHOW TV " group-title="ULUSAL",SHOW TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196697&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL D " group-title="ULUSAL",KANAL D 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196696&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="STAR TV " group-title="ULUSAL",STAR TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196695&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NOW TV " group-title="ULUSAL",NOW TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196694&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 8 " group-title="ULUSAL",TV 8 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196693&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 8.5 " group-title="ULUSAL",TV 8.5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196692&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEYAZ TV " group-title="ULUSAL",BEYAZ TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196675&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL 7 " group-title="ULUSAL",KANAL 7 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196690&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TEVE 2 " group-title="ULUSAL",TEVE 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196689&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT 2 " group-title="ULUSAL",TRT 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196688&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT  " group-title="ULUSAL",TRT  
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197438&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A2 " group-title="ULUSAL",A2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196687&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="360 " group-title="ULUSAL",360 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196686&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SHOW MAX " group-title="ULUSAL",SHOW MAX 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196700&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="☰☰☰☰ ULUSAL ┃┃ ☰☰☰☰" group-title="ULUSAL",☰☰☰☰ ULUSAL ┃┃ ☰☰☰☰
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196684&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT 1 " group-title="ULUSAL",TRT 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196683&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="ATV " group-title="ULUSAL",ATV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196682&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SHOW TV " group-title="ULUSAL",SHOW TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196681&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL D " group-title="ULUSAL",KANAL D 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196680&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="STAR TV " group-title="ULUSAL",STAR TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196679&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NOW TV " group-title="ULUSAL",NOW TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196678&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 8 " group-title="ULUSAL",TV 8 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196677&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 8.5 " group-title="ULUSAL",TV 8.5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196676&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEYAZ TV " group-title="ULUSAL",BEYAZ TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196691&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL 7 " group-title="ULUSAL",KANAL 7 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196674&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TEVE 2 " group-title="ULUSAL",TEVE 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196673&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT 2 " group-title="ULUSAL",TRT 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196672&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A2 " group-title="ULUSAL",A2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196671&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="360 " group-title="ULUSAL",360 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196670&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SHOW MAX " group-title="ULUSAL",SHOW MAX 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196669&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="☰☰☰☰ ULUSAL ┃┃ ☰☰☰☰" group-title="ULUSAL",☰☰☰☰ ULUSAL ┃┃ ☰☰☰☰
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196716&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT 1 " group-title="ULUSAL",TRT 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196715&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="ATV " group-title="ULUSAL",ATV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196714&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SHOW TV " group-title="ULUSAL",SHOW TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196713&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL D " group-title="ULUSAL",KANAL D 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196712&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="STAR TV " group-title="ULUSAL",STAR TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196711&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NOW TV " group-title="ULUSAL",NOW TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196710&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 8 " group-title="ULUSAL",TV 8 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196709&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 8.5 " group-title="ULUSAL",TV 8.5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196708&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEYAZ TV " group-title="ULUSAL",BEYAZ TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196707&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL 7 " group-title="ULUSAL",KANAL 7 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196706&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TEVE 2 " group-title="ULUSAL",TEVE 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196705&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT 2 " group-title="ULUSAL",TRT 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196704&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A2 " group-title="ULUSAL",A2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196703&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="360 " group-title="ULUSAL",360 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196702&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SHOW MAX " group-title="ULUSAL",SHOW MAX 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196701&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="☰☰☰☰ KANALLAR ┃SD┃ ☰☰☰☰" group-title="ULUSAL",☰☰☰☰ KANALLAR ┃SD┃ ☰☰☰☰
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196667&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="ATV AVRUPA" group-title="ULUSAL",ATV AVRUPA
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196666&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SHOW TURK" group-title="ULUSAL",SHOW TURK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196664&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EURO D" group-title="ULUSAL",EURO D
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196663&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 8 INT" group-title="ULUSAL",TV 8 INT
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196662&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL 7 AVRUPA" group-title="ULUSAL",KANAL 7 AVRUPA
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196661&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL FIRAT" group-title="ULUSAL",KANAL FIRAT
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196660&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV1" group-title="ULUSAL",TV1
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196659&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BRT 1 " group-title="ULUSAL",BRT 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196657&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BRT 2 " group-title="ULUSAL",BRT 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196656&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="AKIT TV" group-title="YEREL",AKIT TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197233&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="AKILLI TV" group-title="YEREL",AKILLI TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197231&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BENGÜ TÜRK" group-title="YEREL",BENGÜ TÜRK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197227&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="CEM TV" group-title="YEREL",CEM TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197223&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EKOTURK TV" group-title="YEREL",EKOTURK TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197215&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL 68" group-title="YEREL",KANAL 68
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197200&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL AVRUPA" group-title="YEREL",KANAL AVRUPA
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197199&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL B" group-title="YEREL",KANAL B
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197198&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KRT TV" group-title="YEREL",KRT TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197195&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KÖY TV" group-title="YEREL",KÖY TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197193&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KON TV" group-title="YEREL",KON TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197191&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="RUMELI TV" group-title="YEREL",RUMELI TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197188&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="MAVI KARADENIZ" group-title="YEREL",MAVI KARADENIZ
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197183&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="MELTEM TV" group-title="YEREL",MELTEM TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197182&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="PAMUKKALE TV" group-title="YEREL",PAMUKKALE TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197179&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="ULUSAL KANAL" group-title="YEREL",ULUSAL KANAL
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197178&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SAT7 TURK" group-title="YEREL",SAT7 TURK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197177&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="MC EU" group-title="YEREL",MC EU
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197176&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TGRT EU" group-title="YEREL",TGRT EU
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197175&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KAYSERI TV" group-title="YEREL",KAYSERI TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197173&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 1 KAYSERI" group-title="YEREL",TV 1 KAYSERI
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197171&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="VAV TV" group-title="YEREL",VAV TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197167&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="VIZYON 58" group-title="YEREL",VIZYON 58
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197166&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="YOL TV" group-title="YEREL",YOL TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197164&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="YILDIZ EN" group-title="YEREL",YILDIZ EN
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197163&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="UZAY HABER" group-title="YEREL",UZAY HABER
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197161&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 5" group-title="YEREL",TV 5
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197160&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HABER TÜRK " group-title="HABER",HABER TÜRK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197264&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TGRT HABER " group-title="HABER",TGRT HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197263&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT HABER " group-title="HABER",TRT HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197262&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT WORLD " group-title="HABER",TRT WORLD 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197261&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="CNN TÜRK " group-title="HABER",CNN TÜRK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197260&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A HABER " group-title="HABER",A HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197259&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="ULKE TV " group-title="HABER",ULKE TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197258&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV NET " group-title="HABER",TV NET 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197257&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NTV " group-title="HABER",NTV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197266&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="FLASH HABER " group-title="HABER",FLASH HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197265&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HABER GLOBAL " group-title="HABER",HABER GLOBAL 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197268&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BLOOMBERG " group-title="HABER",BLOOMBERG 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197269&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="24 HABER " group-title="HABER",24 HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197270&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A NEWS " group-title="HABER",A NEWS 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197271&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A PARA " group-title="HABER",A PARA 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197272&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 100 " group-title="HABER",TV 100 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197273&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT TÜRK " group-title="HABER",TRT TÜRK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197240&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HALK TV " group-title="HABER",HALK TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197274&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TELE 1 " group-title="HABER",TELE 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197275&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KRT " group-title="HABER",KRT 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197276&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SÖZCÜ TV " group-title="HABER",SÖZCÜ TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=540949&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="☰☰☰☰ HABER ┃┃ ☰☰☰☰" group-title="HABER",☰☰☰☰ HABER ┃┃ ☰☰☰☰
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197256&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HABER TÜRK " group-title="HABER",HABER TÜRK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197251&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TGRT HABER " group-title="HABER",TGRT HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197255&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT HABER " group-title="HABER",TRT HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197249&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT WORLD " group-title="HABER",TRT WORLD 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197254&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="CNN TÜRK " group-title="HABER",CNN TÜRK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197253&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A HABER " group-title="HABER",A HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197252&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="ULKE TV " group-title="HABER",ULKE TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197250&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV NET " group-title="HABER",TV NET 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197248&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NTV " group-title="HABER",NTV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197247&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="FLASH HABER " group-title="HABER",FLASH HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197246&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HABER GLOBAL " group-title="HABER",HABER GLOBAL 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197244&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BLOOMBERG " group-title="HABER",BLOOMBERG 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197243&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="24 HABER " group-title="HABER",24 HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197241&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EKOL TV " group-title="HABER",EKOL TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1257377&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A NEWS " group-title="HABER",A NEWS 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197239&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A PARA " group-title="HABER",A PARA 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197238&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 100 " group-title="HABER",TV 100 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197237&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT TÜRK " group-title="HABER",TRT TÜRK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197236&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HALK TV " group-title="HABER",HALK TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197235&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TELE 1 " group-title="HABER",TELE 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197277&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KRT " group-title="HABER",KRT 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197278&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="☰☰☰☰ HABER ┃┃ ☰☰☰☰" group-title="HABER",☰☰☰☰ HABER ┃┃ ☰☰☰☰
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197242&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HABER TÜRK " group-title="HABER",HABER TÜRK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197283&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TGRT HABER " group-title="HABER",TGRT HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197284&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT HABER " group-title="HABER",TRT HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197285&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT WORLD " group-title="HABER",TRT WORLD 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197286&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="CNN TÜRK " group-title="HABER",CNN TÜRK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197287&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A HABER " group-title="HABER",A HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197288&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="ULKE TV " group-title="HABER",ULKE TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197289&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV NET " group-title="HABER",TV NET 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197290&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NTV " group-title="HABER",NTV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197291&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="FLASH HABER " group-title="HABER",FLASH HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197292&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HABER GLOBAL " group-title="HABER",HABER GLOBAL 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197294&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BLOOMBERG " group-title="HABER",BLOOMBERG 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197295&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="24 HABER " group-title="HABER",24 HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197296&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A NEWS " group-title="HABER",A NEWS 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197297&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A PARA " group-title="HABER",A PARA 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197298&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV 100 " group-title="HABER",TV 100 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197299&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HALK TV " group-title="HABER",HALK TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197301&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TELE 1 " group-title="HABER",TELE 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197302&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KRT " group-title="HABER",KRT 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197303&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT TÜRK " group-title="HABER",TRT TÜRK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197300&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="POWER TÜRK " group-title="MÜZIK",POWER TÜRK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197364&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="POWER TV " group-title="MÜZIK",POWER TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197362&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KRAL POP " group-title="MÜZIK",KRAL POP 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197361&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KRAL TV " group-title="MÜZIK",KRAL TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197360&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NR1 " group-title="MÜZIK",NR1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197359&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NR1 TÜRK " group-title="MÜZIK",NR1 TÜRK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197358&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DREAM TURK" group-title="MÜZIK",DREAM TURK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724290&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TMB " group-title="MÜZIK",TMB 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197344&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT MUZIK " group-title="MÜZIK",TRT MUZIK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197363&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="VATAN TV " group-title="MÜZIK",VATAN TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197349&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU TURKCE POP" group-title="MÜZIK",TIVIBU TURKCE POP
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724311&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU TURKCE SLOW" group-title="MÜZIK",TIVIBU TURKCE SLOW
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724310&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU TURK HALK MUZIK" group-title="MÜZIK",TIVIBU TURK HALK MUZIK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724309&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU TURK SANAT MUZIK" group-title="MÜZIK",TIVIBU TURK SANAT MUZIK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724308&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU TAS PLAK" group-title="MÜZIK",TIVIBU TAS PLAK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724307&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU DİNİ MUSİKİ" group-title="MÜZIK",TIVIBU DİNİ MUSİKİ
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724306&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU ARABESK" group-title="MÜZIK",TIVIBU ARABESK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724305&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU 90 LAR" group-title="MÜZIK",TIVIBU 90 LAR
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724304&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU YABANCI POP" group-title="MÜZIK",TIVIBU YABANCI POP
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724303&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU YABANCI ROCK" group-title="MÜZIK",TIVIBU YABANCI ROCK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724302&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU YABANCI SLOW" group-title="MÜZIK",TIVIBU YABANCI SLOW
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724301&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU FİLM MÜZİKLERİ" group-title="MÜZIK",TIVIBU FİLM MÜZİKLERİ
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724300&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU OLDIES" group-title="MÜZIK",TIVIBU OLDIES
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724299&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU BLUES" group-title="MÜZIK",TIVIBU BLUES
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724298&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU JAZZ" group-title="MÜZIK",TIVIBU JAZZ
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724297&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU KLASİK MÜZİK" group-title="MÜZIK",TIVIBU KLASİK MÜZİK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724296&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU RETRO" group-title="MÜZIK",TIVIBU RETRO
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724295&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU AKUSTİK" group-title="MÜZIK",TIVIBU AKUSTİK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724294&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU LOUNGE" group-title="MÜZIK",TIVIBU LOUNGE
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724293&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU MUTLU" group-title="MÜZIK",TIVIBU MUTLU
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724292&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU ÇALIŞIRKEN" group-title="MÜZIK",TIVIBU ÇALIŞIRKEN
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=724291&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NICK JR " group-title="COCUK",NICK JR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197419&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BABY TV " group-title="COCUK",BABY TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197418&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT COCUK " group-title="COCUK",TRT COCUK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197417&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="COCUKSMART " group-title="COCUK",COCUKSMART 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197391&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DISNEY JR " group-title="COCUK",DISNEY JR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197416&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="MINIKA GO" group-title="COCUK",MINIKA GO
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197415&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="MINIKA COCUK" group-title="COCUK",MINIKA COCUK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197414&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NICKELODEON " group-title="COCUK",NICKELODEON 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197412&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="CARTOON NETWORK" group-title="COCUK",CARTOON NETWORK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197411&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="CBEEBIES " group-title="COCUK",CBEEBIES 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197366&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DA VINCI KIDS " group-title="COCUK",DA VINCI KIDS 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197390&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT EBA TV ILKOKUL " group-title="COCUK",TRT EBA TV ILKOKUL 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197369&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT EBA TV ORTAOKUL " group-title="COCUK",TRT EBA TV ORTAOKUL 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197368&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT EBA TV LISE " group-title="COCUK",TRT EBA TV LISE 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197367&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BARBIE TV " group-title="COCUK",BARBIE TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197408&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="PEPPA PIG " group-title="COCUK",PEPPA PIG 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197407&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KUZUCUK " group-title="COCUK",KUZUCUK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197405&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KARE " group-title="COCUK",KARE 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197404&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="RAFADAN TAYFA " group-title="COCUK",RAFADAN TAYFA 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197403&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KRAL SAKIR " group-title="COCUK",KRAL SAKIR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197401&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="PIJAMASKELILER " group-title="COCUK",PIJAMASKELILER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197400&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="MASA ILE KOCA AYI " group-title="COCUK",MASA ILE KOCA AYI 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197399&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BARBIE " group-title="COCUK",BARBIE 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197398&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KUKULI " group-title="COCUK",KUKULI 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197397&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NILOYA " group-title="COCUK",NILOYA 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197396&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="PEPPE " group-title="COCUK",PEPPE 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197395&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SIRINLER " group-title="COCUK",SIRINLER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197394&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="CINE COCUK " group-title="COCUK",CINE COCUK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197392&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KONUSAN TOM " group-title="COCUK",KONUSAN TOM 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197386&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DORU " group-title="COCUK",DORU 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197385&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="CAILLOU " group-title="COCUK",CAILLOU 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197382&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SERIES 1 " group-title="BEIN PLATFORM",BEIN SERIES 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471673&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SERIES 2 " group-title="BEIN PLATFORM",BEIN SERIES 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471674&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SERIES 3 " group-title="BEIN PLATFORM",BEIN SERIES 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471675&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SERIES 4 " group-title="BEIN PLATFORM",BEIN SERIES 4 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471676&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MOVIES PREMIERE " group-title="BEIN PLATFORM",BEIN MOVIES PREMIERE 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471678&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MOVIES PREMIERE 2 " group-title="BEIN PLATFORM",BEIN MOVIES PREMIERE 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471679&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MOVIES ACTION " group-title="BEIN PLATFORM",BEIN MOVIES ACTION 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471677&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MOVIES STARS " group-title="BEIN PLATFORM",BEIN MOVIES STARS 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471680&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MOVIES TURK " group-title="BEIN PLATFORM",BEIN MOVIES TURK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471681&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN BOX OFFICE 1" group-title="BEIN PLATFORM",BEIN BOX OFFICE 1
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471698&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN BOX OFFICE 2" group-title="BEIN PLATFORM",BEIN BOX OFFICE 2
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471699&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN BOX OFFICE 3" group-title="BEIN PLATFORM",BEIN BOX OFFICE 3
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471700&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DIZISMART MAX" group-title="SINEMA PLATFORM",DIZISMART MAX
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471682&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DIZISMART PREMIUM" group-title="SINEMA PLATFORM",DIZISMART PREMIUM
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471683&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="MOVIESMART CLASSIC" group-title="SINEMA PLATFORM",MOVIESMART CLASSIC
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471684&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="MOVIESMART TÜRK" group-title="SINEMA PLATFORM",MOVIESMART TÜRK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471685&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TVSINEMA TV" group-title="SINEMA PLATFORM",SINEMA TVSINEMA TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471688&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 2" group-title="SINEMA PLATFORM",SINEMA TV 2
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471689&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 1001" group-title="SINEMA PLATFORM",SINEMA TV 1001
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471686&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 1002" group-title="SINEMA PLATFORM",SINEMA TV 1002
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471687&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AKSIYON" group-title="SINEMA PLATFORM",SINEMA TV AKSIYON
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471692&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AKSIYON 2" group-title="SINEMA PLATFORM",SINEMA TV AKSIYON 2
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471693&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AILE" group-title="SINEMA PLATFORM",SINEMA TV AILE
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471690&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AILE 2" group-title="SINEMA PLATFORM",SINEMA TV AILE 2
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471691&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV YERLI" group-title="SINEMA PLATFORM",SINEMA TV YERLI
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471695&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV YERLI 2" group-title="SINEMA PLATFORM",SINEMA TV YERLI 2
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471696&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV KOMEDI" group-title="SINEMA PLATFORM",SINEMA TV KOMEDI
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471694&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="CINE 6" group-title="SINEMA PLATFORM",CINE 6
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471697&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EPIC DRAMA" group-title="SINEMA PLATFORM",EPIC DRAMA
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471701&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="FX" group-title="SINEMA PLATFORM",FX
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471702&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVI 6" group-title="SINEMA PLATFORM",TIVI 6
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471703&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVI TÜRK" group-title="SINEMA PLATFORM",TIVI TÜRK
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471704&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN BOX OFFICE 1 " group-title="SINEMA YABANCI",BEIN BOX OFFICE 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197154&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN BOX OFFICE 2 " group-title="SINEMA YABANCI",BEIN BOX OFFICE 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197153&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN BOX OFFICE 3 " group-title="SINEMA YABANCI",BEIN BOX OFFICE 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197152&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MOVIES PREMIERE 1 " group-title="SINEMA YABANCI",BEIN MOVIES PREMIERE 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197143&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MOVIES PREMIERE 2 " group-title="SINEMA YABANCI",BEIN MOVIES PREMIERE 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197142&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MOVIES STARS " group-title="SINEMA YABANCI",BEIN MOVIES STARS 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197149&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MOVIES TURK " group-title="SINEMA YABANCI",BEIN MOVIES TURK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197155&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SERIES 1 " group-title="SINEMA YABANCI",BEIN SERIES 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197146&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SERIES 2 " group-title="SINEMA YABANCI",BEIN SERIES 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197148&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SERIES 3 " group-title="SINEMA YABANCI",BEIN SERIES 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197151&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SERIES 4 " group-title="SINEMA YABANCI",BEIN SERIES 4 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197150&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="FX " group-title="SINEMA YABANCI",FX 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197158&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DIZISMART PREMIUM " group-title="SINEMA YABANCI",DIZISMART PREMIUM 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197141&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DIZISMART MAX " group-title="SINEMA YABANCI",DIZISMART MAX 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197140&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="MOVIESMART CLASSIC " group-title="SINEMA YABANCI",MOVIESMART CLASSIC 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197139&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="MOVIESMART TURK " group-title="SINEMA YABANCI",MOVIESMART TURK 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197136&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EPIC DRAMA " group-title="SINEMA YABANCI",EPIC DRAMA 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197138&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="FILMBOX " group-title="SINEMA YABANCI",FILMBOX 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197128&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 1 " group-title="SINEMA YABANCI",SINEMA TV 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197130&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 2 " group-title="SINEMA YABANCI",SINEMA TV 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197129&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 1001 " group-title="SINEMA YABANCI",SINEMA TV 1001 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197121&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 1002 " group-title="SINEMA YABANCI",SINEMA TV 1002 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197120&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AKSIYON 1 " group-title="SINEMA YABANCI",SINEMA TV AKSIYON 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197134&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AKSIYON 2 " group-title="SINEMA YABANCI",SINEMA TV AKSIYON 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197133&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV KOMEDI 1 " group-title="SINEMA YABANCI",SINEMA TV KOMEDI 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197126&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV KOMEDI 2 " group-title="SINEMA YABANCI",SINEMA TV KOMEDI 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197125&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AILE 1 " group-title="SINEMA YABANCI",SINEMA TV AILE 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197131&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AILE 2 " group-title="SINEMA YABANCI",SINEMA TV AILE 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197132&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV YERLI 1 " group-title="SINEMA YABANCI",SINEMA TV YERLI 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197123&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV YERLI 2 " group-title="SINEMA YABANCI",SINEMA TV YERLI 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197122&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS HABER " group-title="BEIN SPORTS HEVC",BEIN SPORTS HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988864&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS HABER F" group-title="BEIN SPORTS HEVC",BEIN SPORTS HABER
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988865&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS HABER " group-title="BEIN SPORTS HEVC",BEIN SPORTS HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988866&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1 " group-title="BEIN SPORTS HEVC",BEIN SPORTS 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988849&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1 F" group-title="BEIN SPORTS HEVC",BEIN SPORTS 1 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988850&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1  HEVC" group-title="BEIN SPORTS HEVC",BEIN SPORTS 1  HEVC
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988851&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1 " group-title="BEIN SPORTS HEVC",BEIN SPORTS 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988852&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1" group-title="BEIN SPORTS HEVC",BEIN SPORTS 1
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988853&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 2 F" group-title="BEIN SPORTS HEVC",BEIN SPORTS 2 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988854&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 2 " group-title="BEIN SPORTS HEVC",BEIN SPORTS 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988855&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 3 F" group-title="BEIN SPORTS HEVC",BEIN SPORTS 3 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988856&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 3 " group-title="BEIN SPORTS HEVC",BEIN SPORTS 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988857&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 4 F" group-title="BEIN SPORTS HEVC",BEIN SPORTS 4 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988858&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 4 " group-title="BEIN SPORTS HEVC",BEIN SPORTS 4 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988859&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 5 F" group-title="BEIN SPORTS HEVC",BEIN SPORTS 5 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988860&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 5 " group-title="BEIN SPORTS HEVC",BEIN SPORTS 5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988861&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS MAX 1 " group-title="BEIN SPORTS HEVC",BEIN SPORTS MAX 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988862&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS MAX 2 " group-title="BEIN SPORTS HEVC",BEIN SPORTS MAX 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988863&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1 " group-title="BEIN SPORTS F",BEIN SPORTS 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988867&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1 F" group-title="BEIN SPORTS F",BEIN SPORTS 1 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988874&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1 " group-title="BEIN SPORTS F",BEIN SPORTS 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988881&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 2 " group-title="BEIN SPORTS F",BEIN SPORTS 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988868&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 2 F" group-title="BEIN SPORTS F",BEIN SPORTS 2 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988875&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 2 " group-title="BEIN SPORTS F",BEIN SPORTS 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988882&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 3 " group-title="BEIN SPORTS F",BEIN SPORTS 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988869&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 3 F" group-title="BEIN SPORTS F",BEIN SPORTS 3 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988876&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 3 " group-title="BEIN SPORTS F",BEIN SPORTS 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988883&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 4 " group-title="BEIN SPORTS F",BEIN SPORTS 4 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988870&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 4 F" group-title="BEIN SPORTS F",BEIN SPORTS 4 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988877&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 4 " group-title="BEIN SPORTS F",BEIN SPORTS 4 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988884&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 5 " group-title="BEIN SPORTS F",BEIN SPORTS 5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988871&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 5 F" group-title="BEIN SPORTS F",BEIN SPORTS 5 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988878&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 5 " group-title="BEIN SPORTS F",BEIN SPORTS 5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988885&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS MAX 1 " group-title="BEIN SPORTS F",BEIN SPORTS MAX 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988872&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS MAX 1 F" group-title="BEIN SPORTS F",BEIN SPORTS MAX 1 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988879&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS MAX 2 " group-title="BEIN SPORTS F",BEIN SPORTS MAX 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988873&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS MAX 2 F" group-title="BEIN SPORTS F",BEIN SPORTS MAX 2 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988880&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1 HEVC (MAÇ ZAMANI)" group-title="BEIN SPORTS F",BEIN SPORTS 1 HEVC (MAÇ ZAMANI)
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988886&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS HABER " group-title="BEIN SPORTS",BEIN SPORTS HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=756&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1 " group-title="BEIN SPORTS",BEIN SPORTS 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=755&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 2 " group-title="BEIN SPORTS",BEIN SPORTS 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=754&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 3 " group-title="BEIN SPORTS",BEIN SPORTS 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=753&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 4 " group-title="BEIN SPORTS",BEIN SPORTS 4 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=752&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 5 " group-title="BEIN SPORTS",BEIN SPORTS 5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=493699&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="☰☰☰☰ PAKET BEIN SPORTS  ☰☰☰☰" group-title="BEIN SPORTS",☰☰☰☰ PAKET BEIN SPORTS  ☰☰☰☰
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=751&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS HABER " group-title="BEIN SPORTS",BEIN SPORTS HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=206320&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1 " group-title="BEIN SPORTS",BEIN SPORTS 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=750&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 2 " group-title="BEIN SPORTS",BEIN SPORTS 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=749&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 3 " group-title="BEIN SPORTS",BEIN SPORTS 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=748&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 4 " group-title="BEIN SPORTS",BEIN SPORTS 4 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=747&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 5 " group-title="BEIN SPORTS",BEIN SPORTS 5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=214064&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS MAX 1 " group-title="BEIN SPORTS",BEIN SPORTS MAX 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=206321&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS MAX 2 " group-title="BEIN SPORTS",BEIN SPORTS MAX 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=206322&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="☰☰☰☰ PAKET BEIN SPORTS  ☰☰☰☰" group-title="BEIN SPORTS",☰☰☰☰ PAKET BEIN SPORTS  ☰☰☰☰
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=746&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS HABER " group-title="BEIN SPORTS",BEIN SPORTS HABER 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=745&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 1 " group-title="BEIN SPORTS",BEIN SPORTS 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=744&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 2 " group-title="BEIN SPORTS",BEIN SPORTS 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=743&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 3 " group-title="BEIN SPORTS",BEIN SPORTS 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=742&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 4 " group-title="BEIN SPORTS",BEIN SPORTS 4 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=741&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 5 " group-title="BEIN SPORTS",BEIN SPORTS 5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=214065&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS MAX 1 " group-title="BEIN SPORTS",BEIN SPORTS MAX 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=740&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS MAX 2 " group-title="BEIN SPORTS",BEIN SPORTS MAX 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=739&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 5" group-title="BEIN SPORTS",BEIN SPORTS 5
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=214066&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN CONNECT 1 " group-title="BEIN SPORTS",BEIN CONNECT 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=793282&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN CONNECT 2 " group-title="BEIN SPORTS",BEIN CONNECT 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=793283&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN CONNECT 3 " group-title="BEIN SPORTS",BEIN CONNECT 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=793284&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN CONNECT 4 " group-title="BEIN SPORTS",BEIN CONNECT 4 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=793285&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN CONNECT 5 " group-title="BEIN SPORTS",BEIN CONNECT 5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=793286&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN CONNECT 6 " group-title="BEIN SPORTS",BEIN CONNECT 6 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=793287&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EXXEN SPORTS 1 " group-title="EXXEN SPORTS",EXXEN SPORTS 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15340&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EXXEN SPORTS 1 " group-title="EXXEN SPORTS",EXXEN SPORTS 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15521&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EXXEN SPORTS 1" group-title="EXXEN SPORTS",EXXEN SPORTS 1
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15522&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EXXEN SPORTS 2 " group-title="EXXEN SPORTS",EXXEN SPORTS 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15341&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EXXEN SPORTS 3 " group-title="EXXEN SPORTS",EXXEN SPORTS 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15342&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EXXEN SPORTS 4 F" group-title="EXXEN SPORTS",EXXEN SPORTS 4 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15515&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EXXEN SPORTS 5 F" group-title="EXXEN SPORTS",EXXEN SPORTS 5 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15516&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EXXEN SPORTS 6 F" group-title="EXXEN SPORTS",EXXEN SPORTS 6 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15517&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EXXEN SPORTS 7 F" group-title="EXXEN SPORTS",EXXEN SPORTS 7 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15518&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EXXEN SPORTS 8 F" group-title="EXXEN SPORTS",EXXEN SPORTS 8 F
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15519&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT 1 " group-title="S SPORTS",S SPORT 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=712&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT 2 " group-title="S SPORTS",S SPORT 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=711&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SPOR SMART 1 " group-title="S SPORTS",SPOR SMART 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=713&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SPOR SMART 2 " group-title="S SPORTS",SPOR SMART 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18631&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 1 " group-title="S SPORTS",EUROSPORT 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=708&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 2 " group-title="S SPORTS",EUROSPORT 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=707&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NBA TV " group-title="S SPORTS",NBA TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18632&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="FIGHTBOX " group-title="S SPORTS",FIGHTBOX 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18635&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="☰☰☰☰ PAKET S SPORTS  ☰☰☰☰" group-title="S SPORTS",☰☰☰☰ PAKET S SPORTS  ☰☰☰☰
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18629&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT 1 " group-title="S SPORTS",S SPORT 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=703&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT 2 " group-title="S SPORTS",S SPORT 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18638&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SPOR SMART 1 " group-title="S SPORTS",SPOR SMART 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=704&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SPOR SMART 2 " group-title="S SPORTS",SPOR SMART 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18640&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 1 " group-title="S SPORTS",EUROSPORT 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=700&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 2 " group-title="S SPORTS",EUROSPORT 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=699&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NBA TV " group-title="S SPORTS",NBA TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=698&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="☰☰☰☰ PAKET S SPORTS+ F ☰☰☰☰" group-title="S SPORTS",☰☰☰☰ PAKET S SPORTS+ F ☰☰☰☰
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18630&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT+ 1  (MATCH TIME)" group-title="S SPORTS",S SPORT+ 1  (MATCH TIME)
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15562&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT+ 2  (MATCH TIME)" group-title="S SPORTS",S SPORT+ 2  (MATCH TIME)
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15561&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT+ 3  (MATCH TIME)" group-title="S SPORTS",S SPORT+ 3  (MATCH TIME)
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15560&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT+ 4  (MATCH TIME)" group-title="S SPORTS",S SPORT+ 4  (MATCH TIME)
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15559&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT+ 5  (MATCH TIME)" group-title="S SPORTS",S SPORT+ 5  (MATCH TIME)
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15558&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT+ 6  (MATCH TIME)" group-title="S SPORTS",S SPORT+ 6  (MATCH TIME)
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15557&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HT SPOR " group-title="SPOR",HT SPOR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1245942&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR " group-title="SPOR",TRT SPOR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=709&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR YILDIZ " group-title="SPOR",TRT SPOR YILDIZ 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18644&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT 3 SPOR " group-title="SPOR",TRT 3 SPOR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=615829&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A SPOR " group-title="SPOR",A SPOR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=710&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TAY TV " group-title="SPOR",TAY TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18646&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TJK TV " group-title="SPOR",TJK TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18648&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="☰☰☰☰ PAKET SPOR  ☰☰☰☰ " group-title="SPOR",☰☰☰☰ PAKET SPOR  ☰☰☰☰ 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=705&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HT SPOR " group-title="SPOR",HT SPOR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1245940&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR " group-title="SPOR",TRT SPOR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=701&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR YILDIZ " group-title="SPOR",TRT SPOR YILDIZ 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18645&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A SPOR " group-title="SPOR",A SPOR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=702&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="☰☰☰☰ PAKET SPOR  ☰☰☰☰" group-title="SPOR",☰☰☰☰ PAKET SPOR  ☰☰☰☰
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=615825&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HT SPOR " group-title="SPOR",HT SPOR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1245941&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR " group-title="SPOR",TRT SPOR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=615826&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR YILDIZ " group-title="SPOR",TRT SPOR YILDIZ 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=615827&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="A SPOR " group-title="SPOR",A SPOR 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=615828&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="FENERBACHE TV " group-title="SPOR",FENERBACHE TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=695&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="GALATASARAY TV " group-title="SPOR",GALATASARAY TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=696&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TAY TV " group-title="SPOR",TAY TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=18647&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SPORTS TV" group-title="SPOR",SPORTS TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=694&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU SPOR 1 " group-title="TIVIBU SPOR",TIVIBU SPOR 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=722&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU SPOR 2 " group-title="TIVIBU SPOR",TIVIBU SPOR 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=721&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU SPOR 3 " group-title="TIVIBU SPOR",TIVIBU SPOR 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=720&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU SPOR 4 " group-title="TIVIBU SPOR",TIVIBU SPOR 4 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=15569&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TABII SPOR 1 " group-title="TABII SPOR",TABII SPOR 1 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=879139&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TABII SPOR 2 " group-title="TABII SPOR",TABII SPOR 2 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=879140&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TABII SPOR 3 " group-title="TABII SPOR",TABII SPOR 3 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=879141&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TABII SPOR 4 " group-title="TABII SPOR",TABII SPOR 4 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=879142&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TABII SPOR 5 " group-title="TABII SPOR",TABII SPOR 5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=879143&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TABII SPOR 6 " group-title="TABII SPOR",TABII SPOR 6 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=879144&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT BELGESEL " group-title="BELGESEL",TRT BELGESEL 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197441&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NAT GEO " group-title="BELGESEL",NAT GEO 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197433&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="NAT GEO WILD " group-title="BELGESEL",NAT GEO WILD 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197432&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY CHANNEL " group-title="BELGESEL",DISCOVERY CHANNEL 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197427&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY SCIENCE " group-title="BELGESEL",DISCOVERY SCIENCE 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197435&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="ID " group-title="BELGESEL",ID 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197430&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="HISTORY CHANNEL " group-title="BELGESEL",HISTORY CHANNEL 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197436&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="2ITCHEN " group-title="BELGESEL",2ITCHEN 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197440&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="VIASAT HISTORY " group-title="BELGESEL",VIASAT HISTORY 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197420&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="VIASAT EXPLORE " group-title="BELGESEL",VIASAT EXPLORE 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197442&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DMAX " group-title="BELGESEL",DMAX 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197428&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TLC " group-title="BELGESEL",TLC 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197429&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="LOVE NATURE " group-title="BELGESEL",LOVE NATURE 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197434&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN GURME " group-title="BELGESEL",BEIN GURME 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197426&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BEIN IZ " group-title="BELGESEL",BEIN IZ 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197425&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TGRT BELGESEL " group-title="BELGESEL",TGRT BELGESEL 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197424&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TRT AVAZ " group-title="BELGESEL",TRT AVAZ 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197422&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="YABAN TV " group-title="BELGESEL",YABAN TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197439&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="BBC EARTH " group-title="BELGESEL",BBC EARTH 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197431&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="CHASSE AND PECHE " group-title="BELGESEL",CHASSE AND PECHE 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197445&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="ANIMAUX " group-title="BELGESEL",ANIMAUX 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197443&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="INSIGHT TV " group-title="BELGESEL",INSIGHT TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197448&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TARIH TV " group-title="BELGESEL",TARIH TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197450&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="SEMERKAND TV " group-title="DINI",SEMERKAND TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=210473&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DIYANET TV " group-title="DINI",DIYANET TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=210472&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="LALEGUL TV" group-title="DINI",LALEGUL TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=210470&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="REHBER TV" group-title="DINI",REHBER TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=210469&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name=" MEDINE TV" group-title="DINI", MEDINE TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=801067&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KUDUS TV" group-title="DINI",KUDUS TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=210468&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KANAL 42 KONYA SD" group-title="DINI",KANAL 42 KONYA SD
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=210467&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="KABE TV" group-title="DINI",KABE TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=210466&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="DOST TV" group-title="DINI",DOST TV
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=210465&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="VAV TV " group-title="DINI",VAV TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=210464&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="MELTEM TV " group-title="DINI",MELTEM TV 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=210463&extension=ts
+#EXTINF:-1 tvg-id="" tvg-name="TV5 " group-title="DINI",TV5 
+http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=210462&extension=ts
