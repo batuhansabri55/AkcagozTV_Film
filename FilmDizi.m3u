@@ -3489,3 +3489,233 @@ http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=210464&exte
 http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=210463&extension=ts&play_token=H63cTrLCxx
 #EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/tv5.png" group-title=" DINI", TV5
 http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=210462&extension=ts&play_token=KSZIvDyc2v
+#EXTINF:-1 group-title="-",ALIKHBARIA TV
+http://176.65.153.12:6001/play/a04t/index.m3u8
+#EXTINF:-1 group-title="-",EDESSA TV
+http://176.65.153.12:6001/play/a04r/index.m3u8
+#EXTINF:-1 group-title="-",EUROSTAR
+http://176.65.153.12:6001/play/a04q/index.m3u8
+#EXTINF:-1 group-title="-",FLASH TV
+http://176.65.153.12:6001/play/a04k/index.m3u8
+#EXTINF:-1 group-title="-",KANAL 7 AVRUPA 
+http://176.65.153.12:6001/play/a04n/index.m3u8
+#EXTINF:-1 group-title="-",KOZA TV 
+http://176.65.153.12:6001/play/a04m/index.m3u8
+#EXTINF:-1 group-title="-",NEO
+http://176.65.153.12:6001/play/a04s/index.m3u8
+#EXTINF:-1 group-title="-",SERCEM TV
+http://176.65.153.12:6001/play/a04p/index.m3u8
+#EXTINF:-1 group-title="-",SZCTVYEDEK
+http://176.65.153.12:6001/play/a04u/index.m3u8
+#EXTINF:-1 group-title="-",TRT BELGESEL 
+http://176.65.153.12:6001/play/a04h/index.m3u8
+#EXTINF:-1 group-title="-",TRT COCUK 
+http://176.65.153.12:6001/play/a04e/index.m3u8
+#EXTINF:-1 group-title="-",TRT DIYANET COCUK
+http://176.65.153.12:6001/play/a04j/index.m3u8
+#EXTINF:-1 group-title="-",TRT GENC
+http://176.65.153.12:6001/play/a04i/index.m3u8
+#EXTINF:-1 group-title="-",TRT SPOR 
+http://176.65.153.12:6001/play/a04g/index.m3u8
+#EXTINF:-1 group-title="-",TRT1 
+http://176.65.153.12:6001/play/a04f/index.m3u8
+#EXTINF:-1 group-title="-",ULKE TV 
+http://176.65.153.12:6001/play/a04l/index.m3u8
+#EXTINF:-1 group-title="-",ZAROK TV
+http://176.65.153.12:6001/play/a04o/index.m3u8
+#EXTINF:-1 group-title="-",TRT 3-SPOR
+http://176.65.153.35:6001/play/a025/index.m3u8
+#EXTINF:-1 group-title="-",TRT AVAZ 
+http://176.65.153.35:6001/play/a027/index.m3u8
+#EXTINF:-1 group-title="-",TRT BELGESEL 
+http://176.65.153.35:6001/play/a021/index.m3u8
+#EXTINF:-1 group-title="-",TRT COCUK 
+http://176.65.153.35:6001/play/a01y/index.m3u8
+#EXTINF:-1 group-title="-",TRT DIYANET COCUK
+http://176.65.153.35:6001/play/a024/index.m3u8
+#EXTINF:-1 group-title="-",TRT GENC 
+http://176.65.153.35:6001/play/a023/index.m3u8
+#EXTINF:-1 group-title="-",TRT HABER 
+http://176.65.153.35:6001/play/a026/index.m3u8
+#EXTINF:-1 group-title="-",TRT SPOR 
+http://176.65.153.35:6001/play/a020/index.m3u8
+#EXTINF:-1 group-title="-",TRT SPOR YILDIZ
+http://176.65.153.35:6001/play/a01x/index.m3u8
+#EXTINF:-1 group-title="-",TRT1 
+http://176.65.153.35:6001/play/a01z/index.m3u8
+#EXTINF:-1 group-title="-",TRT2 
+http://176.65.153.35:6001/play/a028/index.m3u8
+#EXTINF:-1 group-title="-",EUROSTAR
+http://176.65.153.91:6001/play/a00e/index.m3u8
+#EXTINF:-1 group-title="-",FLASH HABER 
+http://176.65.153.91:6001/play/a008/index.m3u8
+#EXTINF:-1 group-title="-",KANAL 7 AVRUPA 
+http://176.65.153.91:6001/play/a00b/index.m3u8
+#EXTINF:-1 group-title="-",KOZA TV 
+http://176.65.153.91:6001/play/a00a/index.m3u8
+#EXTINF:-1 group-title="-",NEO
+http://176.65.153.91:6001/play/a00g/index.m3u8
+#EXTINF:-1 group-title="-",SERCEM TV
+http://176.65.153.91:6001/play/a00d/index.m3u8
+#EXTINF:-1 group-title="-",SZC
+http://176.65.153.91:6001/play/a00i/index.m3u8
+#EXTINF:-1 group-title="-",TRT BELGESEL 
+http://176.65.153.91:6001/play/a004/index.m3u8
+#EXTINF:-1 group-title="-",TRT COCUK 
+http://176.65.153.91:6001/play/a001/index.m3u8
+#EXTINF:-1 group-title="-",TRT DIYANET COCUK
+http://176.65.153.91:6001/play/a006/index.m3u8
+#EXTINF:-1 group-title="-",TRT GENC
+http://176.65.153.91:6001/play/a005/index.m3u8
+#EXTINF:-1 group-title="-",TRT SPOR 
+http://176.65.153.91:6001/play/a003/index.m3u8
+#EXTINF:-1 group-title="-",TRT1 
+http://176.65.153.91:6001/play/a002/index.m3u8
+#EXTINF:-1 group-title="-",ULKE TV 
+http://176.65.153.91:6001/play/a009/index.m3u8
+#EXTINF:-1 group-title="-",ZAROK TV
+http://176.65.153.91:6001/play/a00c/index.m3u8
+#EXTINF:-1 group-title="-",24 
+http://176.65.153.12:6002/play/a069/index.m3u8
+#EXTINF:-1 group-title="-",360 
+http://176.65.153.12:6002/play/a06a/index.m3u8
+#EXTINF:-1 group-title="-",BLOOMBERGHT 
+http://176.65.153.12:6002/play/a05o/index.m3u8
+#EXTINF:-1 group-title="-",CARTOON NETWORK
+http://176.65.153.12:6002/play/a05x/index.m3u8
+#EXTINF:-1 group-title="-",CNBC-E
+http://176.65.153.12:6002/play/a060/index.m3u8
+#EXTINF:-1 group-title="-",DREAM TÜRK
+http://176.65.153.12:6002/play/a05u/index.m3u8
+#EXTINF:-1 group-title="-",HABERTURK 
+http://176.65.153.12:6002/play/a05n/index.m3u8
+#EXTINF:-1 group-title="-",HT SPOR 
+http://176.65.153.12:6002/play/a05p/index.m3u8
+#EXTINF:-1 group-title="-",KANAL 1 
+http://176.65.153.12:6002/play/a05r/index.m3u8
+#EXTINF:-1 group-title="-",KANAL D 
+http://176.65.153.12:6002/play/a05s/index.m3u8
+#EXTINF:-1 group-title="-",LİDER HABER 
+http://176.65.153.12:6002/play/a05y/index.m3u8
+#EXTINF:-1 group-title="-",NHK WORLD-JPN
+http://176.65.153.12:6002/play/a05w/index.m3u8
+#EXTINF:-1 group-title="-",NOW
+http://176.65.153.12:6002/play/a05l/index.m3u8
+#EXTINF:-1 group-title="-",SHOW 
+http://176.65.153.12:6002/play/a05m/index.m3u8
+#EXTINF:-1 group-title="-",SHOW MAX 
+http://176.65.153.12:6002/play/a05q/index.m3u8
+#EXTINF:-1 group-title="-",T.A.Y TV
+http://176.65.153.12:6002/play/a05v/index.m3u8
+#EXTINF:-1 group-title="-",TRT 1
+http://176.65.153.12:6002/play/a062/index.m3u8
+#EXTINF:-1 group-title="-",TRT 3-SPOR
+http://176.65.153.12:6002/play/a065/index.m3u8
+#EXTINF:-1 group-title="-",TRT AVAZ 
+http://176.65.153.12:6002/play/a064/index.m3u8
+#EXTINF:-1 group-title="-",TRT HABER 
+http://176.65.153.12:6002/play/a063/index.m3u8
+#EXTINF:-1 group-title="-",TRT MUZIK
+http://176.65.153.12:6002/play/a067/index.m3u8
+#EXTINF:-1 group-title="-",TRT SPOR YILDIZ
+http://176.65.153.12:6002/play/a068/index.m3u8
+#EXTINF:-1 group-title="-",TRT2 
+http://176.65.153.12:6002/play/a066/index.m3u8
+#EXTINF:-1 group-title="-",TV 4 
+http://176.65.153.12:6002/play/a06b/index.m3u8
+#EXTINF:-1 group-title="-",TV2 
+http://176.65.153.12:6002/play/a05t/index.m3u8
+#EXTINF:-1 group-title="-",Unknown
+http://176.65.153.12:6002/play/a061/index.m3u8
+#EXTINF:-1 group-title="-",YENİ KOCAELİ TV
+http://176.65.153.12:6002/play/a05z/index.m3u8
+#EXTINF:-1 group-title="-",TV8 5 
+http://176.65.153.66:6003/play/a00x/index.m3u8
+#EXTINF:-1 group-title="-",TV8 
+http://176.65.153.66:6003/play/a00w/index.m3u8
+#EXTINF:-1 group-title="-",beIN SPORTS HABER
+http://176.65.153.66:6003/play/a00y/index.m3u8
+#EXTINF:-1 group-title="-",24 
+http://176.65.153.7:6004/play/a02u/index.m3u8
+#EXTINF:-1 group-title="-",360 
+http://176.65.153.7:6004/play/a02v/index.m3u8
+#EXTINF:-1 group-title="-",A HABER
+http://176.65.153.7:6004/play/a039/index.m3u8
+#EXTINF:-1 group-title="-",A PARA
+http://176.65.153.7:6004/play/a03b/index.m3u8
+#EXTINF:-1 group-title="-",A SPOR
+http://176.65.153.7:6004/play/a03a/index.m3u8
+#EXTINF:-1 group-title="-",A2
+http://176.65.153.7:6004/play/a03c/index.m3u8
+#EXTINF:-1 group-title="-",ALIKHBARIA TV
+http://176.65.153.7:6004/play/a02m/index.m3u8
+#EXTINF:-1 group-title="-",ATV
+http://176.65.153.7:6004/play/a038/index.m3u8
+#EXTINF:-1 group-title="-",BLOOMBERGHT 
+http://176.65.153.7:6004/play/a03i/index.m3u8
+#EXTINF:-1 group-title="-",EDESSA TV
+http://176.65.153.7:6004/play/a02k/index.m3u8
+#EXTINF:-1 group-title="-",EUROSTAR
+http://176.65.153.7:6004/play/a02j/index.m3u8
+#EXTINF:-1 group-title="-",FLASH HABER 
+http://176.65.153.7:6004/play/a02d/index.m3u8
+#EXTINF:-1 group-title="-",GZT
+http://176.65.153.7:6004/play/a02p/index.m3u8
+#EXTINF:-1 group-title="-",HABERTURKYEDEK
+http://176.65.153.7:6004/play/a03h/index.m3u8
+#EXTINF:-1 group-title="-",HABERTURK RADYO
+http://176.65.153.7:6004/play/a03m/index.m3u8
+#EXTINF:-1 group-title="-",HABİTAT TV 
+http://176.65.153.7:6004/play/a024/index.m3u8
+#EXTINF:-1 group-title="-",HALK TV 
+http://176.65.153.7:6004/play/a02q/index.m3u8
+#EXTINF:-1 group-title="-",HT SPOR 
+http://176.65.153.7:6004/play/a03j/index.m3u8
+#EXTINF:-1 group-title="-",HT SPOR RADYO
+http://176.65.153.7:6004/play/a03n/index.m3u8
+#EXTINF:-1 group-title="-",KANAL 1 
+http://176.65.153.7:6004/play/a03l/index.m3u8
+#EXTINF:-1 group-title="-",KANAL 7 AVRUPA 
+http://176.65.153.7:6004/play/a02g/index.m3u8
+#EXTINF:-1 group-title="-",KOZA TV 
+http://176.65.153.7:6004/play/a02f/index.m3u8
+#EXTINF:-1 group-title="-",NEO
+http://176.65.153.7:6004/play/a02l/index.m3u8
+#EXTINF:-1 group-title="-",SERCEM TV
+http://176.65.153.7:6004/play/a02i/index.m3u8
+#EXTINF:-1 group-title="-",SHOW 
+http://176.65.153.7:6004/play/a03g/index.m3u8
+#EXTINF:-1 group-title="-",SHOW MAX 
+http://176.65.153.7:6004/play/a03k/index.m3u8
+#EXTINF:-1 group-title="-",SZCTVYEDEK
+http://176.65.153.7:6004/play/a02n/index.m3u8
+#EXTINF:-1 group-title="-",SİNEMA 2
+http://176.65.153.7:6004/play/a026/index.m3u8
+#EXTINF:-1 group-title="-",SİNEMA AKSİYON
+http://176.65.153.7:6004/play/a023/index.m3u8
+#EXTINF:-1 group-title="-",SİNEMA TV
+http://176.65.153.7:6004/play/a025/index.m3u8
+#EXTINF:-1 group-title="-",TV 100 
+http://176.65.153.7:6004/play/a02t/index.m3u8
+#EXTINF:-1 group-title="-",TV 4 
+http://176.65.153.7:6004/play/a02w/index.m3u8
+#EXTINF:-1 group-title="-",TV 5
+http://176.65.153.7:6004/play/a02s/index.m3u8
+#EXTINF:-1 group-title="-",TVNET 
+http://176.65.153.7:6004/play/a02o/index.m3u8
+#EXTINF:-1 group-title="-",Turkmeneli 
+http://176.65.153.7:6004/play/a03o/index.m3u8
+#EXTINF:-1 group-title="-",TİVİBU SPOR 
+http://176.65.153.7:6004/play/a02a/index.m3u8
+#EXTINF:-1 group-title="-",ULKE TV 
+http://176.65.153.7:6004/play/a02e/index.m3u8
+#EXTINF:-1 group-title="-",VAV TV
+http://176.65.153.7:6004/play/a03d/index.m3u8
+#EXTINF:-1 group-title="-",YILDIZ EN
+http://176.65.153.7:6004/play/a02r/index.m3u8
+#EXTINF:-1 group-title="-",ZAROK TV
+http://176.65.153.7:6004/play/a02h/index.m3u8
+#EXTINF:-1 group-title="-",minikaCOCUK
+http://176.65.153.7:6004/play/a03e/index.m3u8
+#EXTINF:-1 group-title="-",minikaGO
+http://176.65.153.7:6004/play/a03f/index.m3u8
