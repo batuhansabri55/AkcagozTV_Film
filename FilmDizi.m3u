@@ -541,146 +541,6 @@ https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/m
 https://host.onlineradyotv.net:8081/cine5tv/index.m3u8
 #EXTINF:0,SINEMA TV 8
 https://host.onlineradyotv.net:8081/sdmtv/tracks-v1a1/mono.m3u8
-#EXTINF:0,SINEMA KOMEDI
-https://proud-river-e20b.pantonum1.workers.dev/sinemakomedi.m3u8
-#EXTINF:0,SINEMA AKSIYON 1
-https://proud-river-e20b.pantonum1.workers.dev/sinemaaksiyon.m3u8
-#EXTINF:0,SINEMA AKSIYON 2
-https://proud-river-e20b.pantonum1.workers.dev/sinemaaksiyon2.m3u8
-#EXTINF:0,SINEMA YERLI
-https://proud-river-e20b.pantonum1.workers.dev/sinemayerli.m3u8
-#EXTINF:0,SINEMA AILE
-https://proud-river-e20b.pantonum1.workers.dev/sinemaaile.m3u8
-#EXTINF:0,SINEMA 1001
-https://proud-river-e20b.pantonum1.workers.dev/sinema1001.m3u8
-#EXTINF:0,SINEMA 1002
-https://proud-river-e20b.pantonum1.workers.dev/sinema1002.m3u8
-#EXTINF:0,SINEMA TV 1
-https://proud-river-e20b.pantonum1.workers.dev/sinema.m3u8
-#EXTINF:0,SINEMA TV 2
-https://proud-river-e20b.pantonum1.workers.dev/sinema2.m3u8
-#EXTINF:0,FX
-https://saran-live.ercdn.net/fx/index.m3u8
-#EXTINF:0,MOVIE SMART TüRK
-https://proud-river-e20b.pantonum1.workers.dev/mvturk.m3u8
-#EXTINF:0,BEIN PREMIER
-https://proud-river-e20b.pantonum1.workers.dev/bspremier1.m3u8
-#EXTINF:0,BEIN STARS
-https://proud-river-e20b.pantonum1.workers.dev/bsstars.m3u8
-#EXTINF:0,BEIN FAMILY
-https://proud-river-e20b.pantonum1.workers.dev/bsfamily.m3u8
-#EXTINF:0,BEIN TüRK
-https://proud-river-e20b.pantonum1.workers.dev/bsturk.m3u8
-#EXTINF:0,BEIN ACTION
-https://proud-river-e20b.pantonum1.workers.dev/bsaction1.m3u8
-#EXTINF:0,BEIN BOX 1
-https://proud-river-e20b.pantonum1.workers.dev/box1.m3u8
-#EXTINF:0,BEIN BOX 2
-https://proud-river-e20b.pantonum1.workers.dev/box2.m3u8
-#EXTINF:0,BEIN BOX 3
-https://proud-river-e20b.pantonum1.workers.dev/box3.m3u8
-#EXTINF:0,BEIN SERIES 1
-https://proud-river-e20b.pantonum1.workers.dev/bsseries1.m3u8
-#EXTINF:0,BEIN SERIES 2
-https://proud-river-e20b.pantonum1.workers.dev/bsseries2.m3u8
-#EXTINF:0,BEIN SERIES 3
-https://proud-river-e20b.pantonum1.workers.dev/bsseries3.m3u8
-#EXTINF:0,BEIN SERIES 4
-https://proud-river-e20b.pantonum1.workers.dev/bsseries4.m3u8
-#EXTINF:0,DISCOVERY ID
-https://proud-river-e20b.pantonum1.workers.dev/discs.m3u8
-#EXTINF:0,DISCOVERY
-https://proud-river-e20b.pantonum1.workers.dev/discovery.m3u8
-#EXTINF:0,TARIH TV
-https://proud-river-e20b.pantonum1.workers.dev/tarihtv.m3u8
-#EXTINF:0,HISTORY
-https://proud-river-e20b.pantonum1.workers.dev/history.m3u8
-#EXTINF:0,BBC EARTH
-https://proud-river-e20b.pantonum1.workers.dev/bbc.m3u8
-#EXTINF:0,NAT WILD
-https://saran-live.ercdn.net/natgeowild/index.m3u8
-#EXTINF:0,LOVE NATURE
-https://proud-river-e20b.pantonum1.workers.dev/lovenature.m3u8
-#EXTINF:0,VIASAT HISTORY
-https://proud-river-e20b.pantonum1.workers.dev/viasathistory.m3u8
-#EXTINF:0,BEIN SPORT 1
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub1.m3u8
-#EXTINF:0,BEIN SPORT 2
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub2.m3u8
-#EXTINF:0,BEIN SPORT 3
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub3.m3u8
-#EXTINF:0,BEIN SPORT 4
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub4.m3u8
-#EXTINF:0,S SPORT
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydus1.m3u8
-#EXTINF:0,S SPORT 2
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydus2.m3u8
-#EXTINF:0,TIVIBU SPOR 1
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut1.m3u8
-#EXTINF:0,TIVIBU SPOR 2
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut2.m3u8
-#EXTINF:0,TIVIBU SPOR 3
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut3.m3u8
-#EXTINF:0,BEIN SPORT 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs1.m3u8
-#EXTINF:0,BEIN SPORT 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebiraz1.m3u8
-#EXTINF:0,BEIN SPORT 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs2.m3u8
-#EXTINF:0,BEIN SPORT 3
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs3.m3u8
-#EXTINF:0,BEIN SPORT 4
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs4.m3u8
-#EXTINF:0,BEIN SPORT 5
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs5.m3u8
-#EXTINF:0,BEIN SPORT MAX 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebsm1.m3u8
-#EXTINF:0,BEIN SPORT MAX 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebsm2.m3u8
-#EXTINF:0,S SPORT 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivess1.m3u8
-#EXTINF:0,S SPORT 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivess2.m3u8
-#EXTINF:0,TIVIBU SPORT
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets.m3u8
-#EXTINF:0,TIVIBU SPORT 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets1.m3u8
-#EXTINF:0,TIVIBU SPORT 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets2.m3u8
-#EXTINF:0,TIVIBU SPORT 3
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets3.m3u8
-#EXTINF:0,TIVIBU SPORT 4
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets4.m3u8
-#EXTINF:0,SMART SPORT 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivesm1.m3u8
-#EXTINF:0,SMART SPORT 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivesm2.m3u8
-#EXTINF:0,EURO SPORT 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivees1.m3u8
-#EXTINF:0,EURO SPORT 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivees2.m3u8
-#EXTINF:0,TABII
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb.m3u8
-#EXTINF:0,TABII 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb1.m3u8
-#EXTINF:0,TABII 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb2.m3u8
-#EXTINF:0,TABII 3
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb3.m3u8
-#EXTINF:0,TABII 4
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb4.m3u8
-#EXTINF:0,TABII 5
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb5.m3u8
-#EXTINF:0,TABII 6
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb6.m3u8
-#EXTINF:0,TABII 7
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb7.m3u8
-#EXTINF:0,TABII 8
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb8.m3u8
-#EXTINF:0,EXXEN
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamliveexn.m3u8
-#EXTINF:0,EXXEN 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamliveexn1.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/80196fc2-f4f6-4e35-ae29-7925a5885a20.png" tvg-name="Trt 1 " ,TRT 1
 https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/14a65b49-958f-497f-be22-52d958ef8498.png" tvg-name="Trt 2  " ,TRT 2
@@ -1643,90 +1503,6 @@ https://saran-live.ercdn.net/fx/index.m3u8
 https://saran-live.ercdn.net/natgeohd/index.m3u8
 #EXTINF:-1 xui-id="{XuI_ID}" tvg-id="TR" tvg-name="TR: Nat Wild" tvg-logo="https://cdn.digiturkburada.com.tr/kanallar2/logo1_0.jpg" group-title="DeaTHLesS-TV",Nat Wild
 https://saran-live.ercdn.net/natgeowild/index.m3u8
-#EXTINF:-1 xui-id="{XuI_ID}" tvg-id="TR" tvg-name="TR: Love Nature" tvg-logo="https://i.hizliresim.com/8po4g48.png" group-title="DeaTHLesS-TV",Love Nature
-https://proud-river-e20b.pantonum1.workers.dev/lovenature.m3u8
-#EXTINF:-1 xui-id="{XuI_ID}" tvg-id="TR" tvg-name="TR: Viasat History" tvg-logo="https://i.hizliresim.com/aoofg4e.png" group-title="DeaTHLesS-TV",Viasat History
-https://proud-river-e20b.pantonum1.workers.dev/viasathistory.m3u8
-#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="TR:beIN Sport 1" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport 1
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub1.m3u8
-#EXTINF:-1 tvg-id="bein-sports-2" tvg-name="TR:beIN Sport 2" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport 2
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub2.m3u8
-#EXTINF:-1 tvg-id="bein-sports-3" tvg-name="TR:beIN Sport 3" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport 3
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub3.m3u8
-#EXTINF:-1 tvg-id="bein-sports-4" tvg-name="TR:beIN Sport 4" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport 4
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub4.m3u8
-#EXTINF:-1 tvg-id="s-sport" tvg-name="TR:S Sport" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",S Sport
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydus1.m3u8
-#EXTINF:-1 tvg-id="s-sport-2" tvg-name="TR:S Sport 2" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",S Sport 2
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydus2.m3u8
-#EXTINF:-1 tvg-id="tivibu-spor-1" tvg-name="TR:Tivibu Spor 1" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tivibu Spor 1
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut1.m3u8
-#EXTINF:-1 tvg-id="tivibu-spor-2" tvg-name="TR:Tivibu Spor 2" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tivibu Spor 2
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut2.m3u8
-#EXTINF:-1 tvg-id="tivibu-spor-3" tvg-name="TR:Tivibu Spor 3" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tivibu Spor 3
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut3.m3u8
-#EXTINF:-1 tvg-id="tivibu-spor-4" tvg-name="TR:Tivibu Spor 4" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tivibu Spor 4
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut4.m3u8
-#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="TR:beIN Sport 1" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs1.m3u8
-#EXTINF:-1 tvg-id="bein-sports-1" tvg-name="TR:beIN Sport 1" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebiraz1.m3u8
-#EXTINF:-1 tvg-id="bein-sports-2" tvg-name="TR:beIN Sport 2" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs2.m3u8
-#EXTINF:-1 tvg-id="bein-sports-3" tvg-name="TR:beIN Sport 3" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport 3
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs3.m3u8
-#EXTINF:-1 tvg-id="bein-sports-4" tvg-name="TR:beIN Sport 4" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport 4
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs4.m3u8
-#EXTINF:-1 tvg-id="bein-sports-5" tvg-name="TR:beIN Sport 5" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport 5
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs5.m3u8
-#EXTINF:-1 tvg-id="bein-sports-max-1" tvg-name="TR:beIN Sport Max 1" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport Max 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebsm1.m3u8
-#EXTINF:-1 tvg-id="bein-sports-max-2" tvg-name="TR:beIN Sport Max 2" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",beIN Sport Max 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebsm2.m3u8
-#EXTINF:-1 tvg-id="s-sport" tvg-name="TR:S Sport 1" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",S Sport 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivess1.m3u8
-#EXTINF:-1 tvg-id="s-sport-2" tvg-name="TR:S Sport 2" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",S Sport 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivess2.m3u8
-#EXTINF:-1 tvg-id="tivibu-spor" tvg-name="TR:Tivibu Sport" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tivibu Sport
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets.m3u8
-#EXTINF:-1 tvg-id="tivibu-spor-1" tvg-name="TR:Tivibu Sport 1" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tivibu Sport 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets1.m3u8
-#EXTINF:-1 tvg-id="tivibu-spor-2" tvg-name="TR:Tivibu Sport 2" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tivibu Sport 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets2.m3u8
-#EXTINF:-1 tvg-id="tivibu-spor-3" tvg-name="TR:Tivibu Sport 3" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tivibu Sport 3
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets3.m3u8
-#EXTINF:-1 tvg-id="tivibu-spor-4" tvg-name="TR:Tivibu Sport 4" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tivibu Sport 4
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets4.m3u8
-#EXTINF:-1 tvg-id="smart-sport-1" tvg-name="TR:Smart Sport 1" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Smart Sport 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivesm1.m3u8
-#EXTINF:-1 tvg-id="smart-sport-2" tvg-name="TR:Smart Sport 2" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Smart Sport 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivesm2.m3u8
-#EXTINF:-1 tvg-id="euro-sport-1" tvg-name="TR:Euro Sport 1" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Euro Sport 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivees1.m3u8
-#EXTINF:-1 tvg-id="euro-sport-2" tvg-name="TR:Euro Sport 2" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Euro Sport 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivees2.m3u8
-#EXTINF:-1 tvg-id="tabii" tvg-name="TR:Tabii" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tabii
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb.m3u8
-#EXTINF:-1 tvg-id="tabii-1" tvg-name="TR:Tabii 1" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tabii 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb1.m3u8
-#EXTINF:-1 tvg-id="tabii-2" tvg-name="TR:Tabii 2" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tabii 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb2.m3u8
-#EXTINF:-1 tvg-id="tabii-3" tvg-name="TR:Tabii 3" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tabii 3
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb3.m3u8
-#EXTINF:-1 tvg-id="tabii-4" tvg-name="TR:Tabii 4" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tabii 4
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb4.m3u8
-#EXTINF:-1 tvg-id="tabii-5" tvg-name="TR:Tabii 5" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tabii 5
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb5.m3u8
-#EXTINF:-1 tvg-id="tabii-6" tvg-name="TR:Tabii 6" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tabii 6
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb6.m3u8
-#EXTINF:-1 tvg-id="tabii-7" tvg-name="TR:Tabii 7" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tabii 7
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb7.m3u8
-#EXTINF:-1 tvg-id="tabii-8" tvg-name="TR:Tabii 8" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Tabii 8
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb8.m3u8
-#EXTINF:-1 tvg-id="exxen" tvg-name="TR:Exxen" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Exxen
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamliveexn.m3u8
-#EXTINF:-1 tvg-id="exxen-1" tvg-name="TR:Exxen 1" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",Exxen 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamliveexn1.m3u8
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1985.jpg?9938" group-title="TR| TÜRKIYE  TV",ATV 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=281613&extension=ts&play_token=rJnNcZQ5us
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/882.jpg?13545" group-title="TR| TÜRKIYE  TV",ATV Avrupa
@@ -1985,266 +1761,6 @@ http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=668793&exten
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=668792&extension=ts&play_token=v8oQShBDES
 #EXTINF:-1 tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15169.png?43395" group-title="TR| FIMLER ",FILMBOX DRAMA 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=668790&extension=ts&play_token=3Y3x2CVnk0
-#EXTINF:-1 tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15169.png?43395" group-title="TR| FIMLER ",FILMBOX CUNEYT ARKIN 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=668789&extension=ts&play_token=jbiH9UQxB1
-#EXTINF:-1 tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15169.png?43395" group-title="TR| FIMLER ",FILMBOX ILYAS SALMAN 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=668788&extension=ts&play_token=oOsrI3x97j
-#EXTINF:-1 tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15169.png?43395" group-title="TR| FIMLER ",FILMBOX KADIR INANIR 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=668787&extension=ts&play_token=9y9ANJmRI1
-#EXTINF:-1 tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15169.png?43395" group-title="TR| FIMLER ",FILMBOX TARIK AKAN 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=668786&extension=ts&play_token=f5L4Pcz7TC
-#EXTINF:-1 tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15169.png?43395" group-title="TR| FIMLER ",FILMBOX ZEKI & METIN 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=668785&extension=ts&play_token=aeuYon3Gty
-#EXTINF:-1 tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15169.png?43395" group-title="TR| FIMLER ",FILMBOX SENER SEN 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=668784&extension=ts&play_token=v4ljKE1HUg
-#EXTINF:-1 tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15169.png?43395" group-title="TR| FIMLER ",FILMBOX YESILCAM 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=668783&extension=ts&play_token=KFN4m8guod
-#EXTINF:-1 tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15169.png?43395" group-title="TR| FIMLER ",FILMBOX YERLI 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=668782&extension=ts&play_token=ameyEs4upV
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 1 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373927&extension=ts&play_token=gV7NkcNRMH
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 2 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373926&extension=ts&play_token=OGX1uhw9cE
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 3 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373925&extension=ts&play_token=aSAmNgfCwX
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 4 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373924&extension=ts&play_token=DAcgWzRcuh
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 5 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373923&extension=ts&play_token=yewsSkDgKh
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 6 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373922&extension=ts&play_token=mBJQVJdEKj
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 7 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373921&extension=ts&play_token=kvSFOEvsDR
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 8 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373920&extension=ts&play_token=odj5k4TIwu
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 9 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373919&extension=ts&play_token=LgOE2M5opL
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 10 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373918&extension=ts&play_token=bXvyg9UN5s
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 11 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373917&extension=ts&play_token=sjm4j6Z0s7
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 12 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373916&extension=ts&play_token=YLW0A4SXKx
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 13 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373915&extension=ts&play_token=Ymiem5NYPl
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 14 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373914&extension=ts&play_token=VcVJRj3wEf
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 15 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373913&extension=ts&play_token=YzSEVn1p20
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 16 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373912&extension=ts&play_token=qX03QDS3SR
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 17 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373911&extension=ts&play_token=B6najaMI54
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 18 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373910&extension=ts&play_token=KVBd5SYrrq
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 19 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373909&extension=ts&play_token=2szRNjJDgP
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 20 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373908&extension=ts&play_token=xMXblJ6i0I
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 21 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373907&extension=ts&play_token=XB9cGXTTAD
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 22 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373906&extension=ts&play_token=TRNBoYaW9c
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 23 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373905&extension=ts&play_token=fEAygZI0Y9
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 24 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373904&extension=ts&play_token=1zz165eA5E
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 25 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373903&extension=ts&play_token=5BhR3LbQoz
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 26 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373902&extension=ts&play_token=K6hirn6G4O
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 27 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373901&extension=ts&play_token=2y7qBAWqVU
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 28 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373900&extension=ts&play_token=iktapi2WBq
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 29 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373899&extension=ts&play_token=JVwE496nd4
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| FIMLER ",8kGo OD 30 FİLMLER 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373898&extension=ts&play_token=w0PzHr7IAW
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Animated-Flag-Turkey.gif" group-title="TR| DIZILER ",##### DIZILER  #####
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375425&extension=ts&play_token=XzExj2DRjM
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13585.jpg?62930" group-title="TR| DIZILER ",Adı Sevgi 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=385308&extension=ts&play_token=HPMo0Ibf8F
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13584.jpg?37109" group-title="TR| DIZILER ",Aşk Mantık İntikam 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=385309&extension=ts&play_token=EkqaL3f9rm
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13583.jpg?44129" group-title="TR| DIZILER ",Kalp Yarası 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=385310&extension=ts&play_token=rrb52EFnvD
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13582.jpg?1818" group-title="TR| DIZILER ",Sadakatsiz 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=385311&extension=ts&play_token=4r3wIuRKTW
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13581.png?31183" group-title="TR| DIZILER ",Ada Masalı 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=384764&extension=ts&play_token=fxmTzCs8iO
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13581.png?31183" group-title="TR| DIZILER ",Annemizi Saklarken 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=384765&extension=ts&play_token=tmArQXgpqZ
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13581.png?31183" group-title="TR| DIZILER ",Destiny 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=384766&extension=ts&play_token=u8QeQVbFCS
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13581.png?31183" group-title="TR| DIZILER ",Elbet Bir Gün 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=384767&extension=ts&play_token=A8vJJbSORd
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13581.png?31183" group-title="TR| DIZILER ",Gülümse Kaderine 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=384768&extension=ts&play_token=wN3onuimTp
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13581.png?31183" group-title="TR| DIZILER ",Iffet 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=384769&extension=ts&play_token=06i3lWUUSB
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13581.png?31183" group-title="TR| DIZILER ",Kanunsuz Topraklar 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=384770&extension=ts&play_token=6scLk6XVG7
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13581.png?31183" group-title="TR| DIZILER ",Son Nefesime Kadar 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=384771&extension=ts&play_token=486Sug2x4A
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13581.png?31183" group-title="TR| DIZILER ",Kırmızı Oda 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=384772&extension=ts&play_token=byGe6BEBas
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6429.jpg?47345" group-title="TR| DIZILER ",Elimi Bırakma 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=380137&extension=ts&play_token=BJyDw7qlxt
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6420.jpg?37407" group-title="TR| DIZILER ",Teşkilat 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=380136&extension=ts&play_token=Rdrpupvshg
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| DIZILER ",Evil Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=379325&extension=ts&play_token=j2SV7a1Lgp
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| DIZILER ",Evil Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=379324&extension=ts&play_token=H5xBPmHHNz
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| DIZILER ",Masum 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=379323&extension=ts&play_token=KWjaxKavLB
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| DIZILER ",Spy City 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=379322&extension=ts&play_token=CcarPboaNO
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| DIZILER ",The Man Who Fell to Earth 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=379321&extension=ts&play_token=w12QZdqSob
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13302.png?ver=13030" group-title="TR| DIZILER ",Üç Kuruş 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=379320&extension=ts&play_token=r4rzo1VuHC
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13570.jpg?29090" group-title="TR| DIZILER ",Kuruluş Osman Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=378995&extension=ts&play_token=aLqMXtvkJZ
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13570.jpg?29090" group-title="TR| DIZILER ",Kuruluş Osman Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=378996&extension=ts&play_token=Sgv1p8qycy
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13570.jpg?29090" group-title="TR| DIZILER ",Kuruluş Osman Sezon 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=378997&extension=ts&play_token=3WKK5ASoHh
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13569.jpg?6992" group-title="TR| DIZILER ",Aziz 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=378998&extension=ts&play_token=WGQSKq9czF
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13568.jpg?98647" group-title="TR| DIZILER ",Destan 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=378999&extension=ts&play_token=3l6LU5SzA7
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13567.jpg?11747" group-title="TR| DIZILER ",Sevmek Zamanı 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=379000&extension=ts&play_token=op6mjVt6w3
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13566.jpg?9316" group-title="TR| DIZILER ",Var Bunlar 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=379001&extension=ts&play_token=XDmngLz5nE
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13565.jpg?81848" group-title="TR| DIZILER ",Yalnız Kurt 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=379002&extension=ts&play_token=JDS1jD1lNo
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13564.jpg?38622" group-title="TR| DIZILER ",İçimizdeki Ateş 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=379003&extension=ts&play_token=2PY1dTy1g6
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",50 m² 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375426&extension=ts&play_token=QZd4ROBuVL
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",All of Us Are Dead 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375427&extension=ts&play_token=Kf83nISLJt
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Altered Carbon Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375428&extension=ts&play_token=ye2pSmJqrP
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Altered Carbon Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375429&extension=ts&play_token=q4ZKZDckWO
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Aşk 101 Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375430&extension=ts&play_token=19oPXOwCbL
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Aşk 101 Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375431&extension=ts&play_token=csl7hImaOW
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Dark Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375432&extension=ts&play_token=yiHto6WAEk
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Dark Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375433&extension=ts&play_token=jRTDWnDbjc
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Dark Sezon 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375434&extension=ts&play_token=tfJwaO627d
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",El Chapo Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375435&extension=ts&play_token=l70MkHAqPE
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",El Chapo Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375436&extension=ts&play_token=FVNjXJl34T
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",El Chapo Sezon 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375437&extension=ts&play_token=yrGQOf7SJr
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Erşan Kuneri 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375438&extension=ts&play_token=lYyj4eCQMa
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Eski Polis Komiserinin Sırrı 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375439&extension=ts&play_token=wplL7YPXpN
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",First Kill 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375440&extension=ts&play_token=vq3BlmDtEJ
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Into The Night Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375441&extension=ts&play_token=6GY6wTG6wh
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Into The Night Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375442&extension=ts&play_token=IOdPK4fDwj
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Kuş Uçuşu 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375443&extension=ts&play_token=fKYaonpbBo
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",La Casa de Papel Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375444&extension=ts&play_token=CczP8KCySB
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",La Casa de Papel Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375445&extension=ts&play_token=GjzvYcLsqD
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",La Casa de Papel Sezon 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375446&extension=ts&play_token=gLR5NwQaaH
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",La Casa de Papel Sezon 4 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375447&extension=ts&play_token=PmlbyAyXye
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",La Casa de Papel Sezon 5 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375448&extension=ts&play_token=V4nZKIj6J7
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Lupin Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375449&extension=ts&play_token=ApTii963cT
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Lupin Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375450&extension=ts&play_token=deGBbTbWIr
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Man Vs Bee 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375451&extension=ts&play_token=rh5bXykrNc
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",My Name 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375452&extension=ts&play_token=3xXue9Jy52
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Narcos  Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375453&extension=ts&play_token=PAryo1D6Om
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Narcos Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375454&extension=ts&play_token=obT2kBYPA9
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Narcos Sezon 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375455&extension=ts&play_token=84eNZfSzil
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Pera Palasta Gece Yarısı 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375456&extension=ts&play_token=K2NzArVASX
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Queen Of The South  Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375457&extension=ts&play_token=OfNL7S1sqR
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Queen Of The South Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375458&extension=ts&play_token=PCPAhGbcrL
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Queen Of The South Sezon 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375459&extension=ts&play_token=QIoJndSI9C
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Queen Of The South Sezon 4 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375460&extension=ts&play_token=OwMSeRN5kv
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Queen Of The South Sezon 5 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375461&extension=ts&play_token=6N5Lrt1iYy
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Space Force  Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375462&extension=ts&play_token=eUh9LFBB2g
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Space Force Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375463&extension=ts&play_token=aOjd7tKLVX
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Squid Game 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375464&extension=ts&play_token=NpIKJpzCHE
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Suits Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375465&extension=ts&play_token=CfuMZUCzuZ
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Suits Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375466&extension=ts&play_token=DdHB7NJa52
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Suits Sezon 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375467&extension=ts&play_token=r3vhM7jEIg
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Suits Sezon 4 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375468&extension=ts&play_token=gOeD72rd
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Suits Sezon 5 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375469&extension=ts&play_token=ux1ndGOwRt
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Suits Sezon 6 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375470&extension=ts&play_token=JXcNDov01d
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Suits Sezon 7 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375471&extension=ts&play_token=IRZB5Qthmo
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Suits Sezon 8 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375472&extension=ts&play_token=dPii9yMqM8
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Suits Sezon 9 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375473&extension=ts&play_token=Ho0HmM5mjj
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Titans Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375474&extension=ts&play_token=i85FgA9snz
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Titans Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375475&extension=ts&play_token=p3ftkBchux
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Titans Sezon 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375476&extension=ts&play_token=ccZumJ7k2g
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Top Boy Sezon 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375477&extension=ts&play_token=3V0lKVGSKx
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Top Boy Sezon 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375478&extension=ts&play_token=xdNZSdIa66
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",V Wars 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375479&extension=ts&play_token=RWJdBLxOXy
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Vikings Valhalla 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375480&extension=ts&play_token=iOzkVhlW3y
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13562.png?26246" group-title="TR| DIZILER ",Yakamoz S-245 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=375481&extension=ts&play_token=bpizz75DXK
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/883.jpg?75058" group-title="TR| DIZILER ",Doğduğun Ev Kaderindir 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=299827&extension=ts&play_token=beXcjRvdJF
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/883.jpg?94465" group-title="TR| DIZILER ",Kağıt Ev 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=299826&extension=ts&play_token=rQFhwAJiYE
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/9377.jpg?85130" group-title="TR| DIZILER ",Kahraman Babam 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=299825&extension=ts&play_token=VeH5M2zwb7
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2277.jpg?12107" group-title="TR| DIZILER ",Öğretmen 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=299824&extension=ts&play_token=h3gWPlSO5A
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Animated-Flag-Turkey.gif" group-title="TR| HABER ",###### HABER  ######
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373932&extension=ts&play_token=INcFGmFVwb
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12043.png?61440" group-title="TR| HABER ",TRT Haber 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=3387&extension=ts&play_token=7Z1PDNCuUT
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/9795.jpg?14803" group-title="TR| HABER ",Haber Turk 
@@ -2475,64 +1991,6 @@ http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868610&exten
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868609&extension=ts&play_token=tz48yxYorg
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/9365.png?ver=64189" group-title="TR| SPOR KANALI GOLD",GOLD: SMART SPORT 2 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=868608&extension=ts&play_token=2Jtk43K8DB
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Animated-Flag-Turkey.gif" group-title="TR| SPOR KANALI VIP",#### SPOR KANALI VIP ####
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401309&extension=ts&play_token=OLEbmWB0jV
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1366.png?ver=16866" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401288&extension=ts&play_token=gnS8T8sMAp
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1366.png?ver=16866" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 1 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401285&extension=ts&play_token=cGPTagUZgx
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/532.png?78788" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401286&extension=ts&play_token=Bu08yl1HiY
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/532.png?33244" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 2 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401289&extension=ts&play_token=pxnaKfvQF2
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/532.png?20300" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 2 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401294&extension=ts&play_token=2qM4O4UAJ9
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/533.png?36077" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401287&extension=ts&play_token=45pRhqOce5
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/533.png?10337" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 3 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401290&extension=ts&play_token=k2iBIgW8tT
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/1368.png?15245" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401295&extension=ts&play_token=CXYRrZrXvX
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/540.png?79100" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 4 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401291&extension=ts&play_token=e8gXYv5lMU
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/540.png?76050" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 4 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401296&extension=ts&play_token=Gk6VUqhvsp
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/542.png?91785" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 5 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=425474&extension=ts&play_token=I7GSgDAmlO
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/542.png?91785" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo 5 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=425475&extension=ts&play_token=sNdtRmrNRl
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11550.jpg?40616" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo MAX 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401292&extension=ts&play_token=10bN5sEDQT
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11550.jpg?79087" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo MAX 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401297&extension=ts&play_token=KxSbbCgthb
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11551.jpg?35041" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo MAX 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401293&extension=ts&play_token=xcg45ZHfLc
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11551.jpg?8118" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo MAX 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401298&extension=ts&play_token=Ok7iPxYpg9
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/565.png?53881" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo MAÇ SAATI (FEED)
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401300&extension=ts&play_token=j6YmRnc9H0
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/565.png?53881" group-title="TR| SPOR KANALI VIP",TR VIP: 8kGo MAÇ SAATI (FEED) 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401299&extension=ts&play_token=v1XmqWsqkc
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/615.jpg?13836" group-title="TR| SPOR KANALI VIP",TR VIP: EUROSPORT 1 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401279&extension=ts&play_token=eWRddP8Nmr
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/722.png?59630" group-title="TR| SPOR KANALI VIP",TR VIP: EUROSPORT 2 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401278&extension=ts&play_token=nN2yi8oOos
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3197.png?ver=53185" group-title="TR| SPOR KANALI VIP",TR VIP: EXXEN 1 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401306&extension=ts&play_token=y4oOkoBfid
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3197.png?ver=53185" group-title="TR| SPOR KANALI VIP",TR VIP: EXXEN 2 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401307&extension=ts&play_token=T6olR1JcbQ
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3197.png?ver=53185" group-title="TR| SPOR KANALI VIP",TR VIP: EXXEN 3 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401308&extension=ts&play_token=J7tVylLeVf
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3197.png?ver=53185" group-title="TR| SPOR KANALI VIP",TR VIP: EXXEN 4 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401305&extension=ts&play_token=wOtOQaYtGz
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3197.png?ver=53185" group-title="TR| SPOR KANALI VIP",TR VIP: EXXEN 5 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401304&extension=ts&play_token=Mhbjvw5HOU
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3197.png?ver=53185" group-title="TR| SPOR KANALI VIP",TR VIP: EXXEN 6 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401303&extension=ts&play_token=vtxpf1IoKp
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3197.png?ver=53185" group-title="TR| SPOR KANALI VIP",TR VIP: EXXEN 7 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401302&extension=ts&play_token=sgkSuSPc6q
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3197.png?ver=53185" group-title="TR| SPOR KANALI VIP",TR VIP: EXXEN 8 +
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401301&extension=ts&play_token=ViF3PcN3c8
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/10882.jpg?73029" group-title="TR| SPOR KANALI VIP",TR VIP: FB TV 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401277&extension=ts&play_token=K7ptXh8x8O
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/9973.jpg?84189" group-title="TR| SPOR KANALI VIP",TR VIP: FIGHTBOX 
@@ -2563,7 +2021,7 @@ http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401274&exten
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401284&extension=ts&play_token=pKyOaRBsrh
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/871.png?48855" group-title="TR| SPOR KANALI VIP",TR VIP: SPORTS TV
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401273&extension=ts&play_token=ilqB8Y9LiA
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3768.png?39815" group-title="TR| SPOR KANALI VIP",TR VIP: A SPOR +
+#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/3768.png?39815" group-title="TR| SPOR KANALI VIP",TR VIP: A SPOR 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401280&extension=ts&play_token=xHFk2kmVzz
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11544.jpg?6884" group-title="TR| SPOR KANALI VIP",TR VIP: TIVIBU SPOR 1 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401272&extension=ts&play_token=dl6zH3x91D
@@ -2571,7 +2029,7 @@ http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401272&exten
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401271&extension=ts&play_token=lmAwlqupAY
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/11544.jpg?6884" group-title="TR| SPOR KANALI VIP",TR VIP: TIVIBU SPOR 3 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401270&extension=ts&play_token=gvplQ0kEE0
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/908.png?23378" group-title="TR| SPOR KANALI VIP",TR VIP: TRT SPOR YıLDıZ +
+#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/908.png?23378" group-title="TR| SPOR KANALI VIP",TR VIP: TRT SPOR YıLDıZ 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=401269&extension=ts&play_token=O37CMozFBs
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Animated-Flag-Turkey.gif" group-title="TR| SPOR KANALI LOCAL",###### SPOR KANALI LOCAL ######
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373929&extension=ts&play_token=FTuAIiS8xY
@@ -2579,28 +2037,12 @@ http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=373929&exten
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=200343&extension=ts&play_token=x7HMJ9x0
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/120/908.png?96922" group-title="TR| SPOR KANALI LOCAL",TRT SPOR 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=374967&extension=ts&play_token=nRtYTGfnn5
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/120/908.png?96922" group-title="TR| SPOR KANALI LOCAL",TRT SPOR +
+#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/120/908.png?96922" group-title="TR| SPOR KANALI LOCAL",TRT SPOR 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=860767&extension=ts&play_token=cC7aPOO9cu
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/120/908.png?96922" group-title="TR| SPOR KANALI LOCAL",TRT SPOR 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=860766&extension=ts&play_token=dfRSS6qrTN
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/10135.png?3269" group-title="TR| SPOR KANALI LOCAL",A Spor 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=8679&extension=ts&play_token=uB0HGrKX76
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Animated-Flag-Turkey.gif" group-title="TR| TABII SPORT ",####### TABII SPORT  #######
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1007240&extension=ts&play_token=JCjbwkKcw5
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13820.png?ver=76711" group-title="TR| TABII SPORT ",TABII SPORT 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1069950&extension=ts&play_token=4MV2oFJFnf
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13820.png?ver=76711" group-title="TR| TABII SPORT ",TABII SPORT 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1007239&extension=ts&play_token=MgMV4rvIwe
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13820.png?ver=76711" group-title="TR| TABII SPORT ",TABII SPORT 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1007238&extension=ts&play_token=LOoBK6aDhW
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13820.png?ver=76711" group-title="TR| TABII SPORT ",TABII SPORT 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1007237&extension=ts&play_token=JSzaBwjQlg
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13820.png?ver=76711" group-title="TR| TABII SPORT ",TABII SPORT 4 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1007236&extension=ts&play_token=miT6N3S7te
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13820.png?ver=76711" group-title="TR| TABII SPORT ",TABII SPORT 5 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1007235&extension=ts&play_token=SXewtUknll
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13820.png?ver=76711" group-title="TR| TABII SPORT ",TABII SPORT 6 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1007234&extension=ts&play_token=u31uw88GAz
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13820.png?ver=76711" group-title="TR| TABII SPORT ",TABII SPORT YALDIZ 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1966389&extension=ts&play_token=hojGR1Q5gg
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13820.png?ver=76711" group-title="TR| TABII SPORT ",TRT 1 
@@ -2647,48 +2089,6 @@ http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=281702&exten
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=200355&extension=ts&play_token=C6JkUxCuRA
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6088.jpg?30833" group-title="TR| BELGESEL ",Love Nature  
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=736326&extension=ts&play_token=VKlYGH0kFo
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Animated-Flag-Turkey.gif" group-title="TR| REDBOX 24/7 ",####### REDBOX 24/7  #######
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275583&extension=ts&play_token=Vrd8vPfRol
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",007 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275556&extension=ts&play_token=AsvfA7NRVh
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",AKSIYON 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275555&extension=ts&play_token=BbF3r8bw7o
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",AKSIYON 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275554&extension=ts&play_token=OnNqa4ssRA
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",AKSIYON 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275553&extension=ts&play_token=QU7r6URZrk
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",ANIMASYON 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275552&extension=ts&play_token=lnbal16Vw4
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",ANIMASYON 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275551&extension=ts&play_token=YeRpHQHMzk
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",BELGESEL 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275550&extension=ts&play_token=yPElqMB2sf
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",BILIMKURGU 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275549&extension=ts&play_token=sS6qnbf9WS
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",BILIMKURGU 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275548&extension=ts&play_token=wRb3k4U8uQ
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",GOLD MIX 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275547&extension=ts&play_token=yiqhpbRr9y
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",KOMEDI 90'LAR 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275546&extension=ts&play_token=ujH7Iw3UE8
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",MARVEL 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275545&extension=ts&play_token=qOEYLQZfmH
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",SINEMA TURK 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275544&extension=ts&play_token=wA6QY45vj9
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",SINEMA TURK 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275543&extension=ts&play_token=2APIfT5XtQ
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",SINEMA TURK 3 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275542&extension=ts&play_token=ONhvMMDFFm
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",TURKCE SHOW 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275541&extension=ts&play_token=mUAyQDL72Y
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",VIZYON 1 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275540&extension=ts&play_token=JWxABnpL0I
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",VIZYON 2 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275539&extension=ts&play_token=Ggsjm8WaZW
-#EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13870.png?ver=89063" group-title="TR| REDBOX 24/7 ",YESILCAM 
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=1275538&extension=ts&play_token=mWD5CVqTPt
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Animated-Flag-Turkey.gif" group-title="TR| TURKISH  NA",###### TURKISH   NA ######
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=557175&extension=ts&play_token=1POdFJgDBH
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/882.jpg?90952" group-title="TR| TURKISH  NA",ATV 
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:76:D0:D3&stream=557174&extension=ts&play_token=blg57PSz
 #EXTINF:-1 tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/2318.jpg?44314" group-title="TR| TURKISH  NA",SHOW TV 
@@ -3077,48 +2477,6 @@ http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197344&exte
 http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197363&extension=ts&play_token=bHBz9ZRpwX
 #EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/vatan.png" group-title=" MÜZIK", VATAN TV
 http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197349&extension=ts&play_token=M2Apl16HZ9
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU TURKCE POP
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724311&extension=ts&play_token=d927rKPahC
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU TURKCE SLOW
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724310&extension=ts&play_token=aPCZLO9p9V
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU TURK HALK MUZIK
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724309&extension=ts&play_token=DT9XaTJsLb
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU TURK SANAT MUZIK
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724308&extension=ts&play_token=hlCoaZ9iQ1
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU TAS PLAK
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724307&extension=ts&play_token=23TFLesbOt
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU DİNİ MUSİKİ
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724306&extension=ts&play_token=2uGeqfhTva
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU ARABESK
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724305&extension=ts&play_token=xk68DCnqAd
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU 90 LAR
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724304&extension=ts&play_token=CCg8JW4l4g
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU YABANCI POP
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724303&extension=ts&play_token=67gRM7TitD
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU YABANCI ROCK
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724302&extension=ts&play_token=4wjWr28ie9
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU YABANCI SLOW
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724301&extension=ts&play_token=DmxrmVDzBX
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU FİLM MÜZİKLERİ
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724300&extension=ts&play_token=5GLEp6Alfq
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU OLDIES
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724299&extension=ts&play_token=xlc0usjriY
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU BLUES
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724298&extension=ts&play_token=QW4bKs7N4Y
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU JAZZ
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724297&extension=ts&play_token=ajKqWIhRS5
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU KLASİK MÜZİK
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724296&extension=ts&play_token=4QZBiQdgcg
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU RETRO
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724295&extension=ts&play_token=Ga8PQHFKlT
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU AKUSTİK
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724294&extension=ts&play_token=0aTWFjOfQx
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU LOUNGE
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724293&extension=ts&play_token=G0u6jsD0Db
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU MUTLU
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724292&extension=ts&play_token=dcWLFbOumC
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/MÜZIK/TIVIBU TURKCE POP.png" group-title=" MÜZIK", TIVIBU ÇALIŞIRKEN
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=724291&extension=ts&play_token=x5dbjIrbIo
 #EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/nickjr.png" group-title=" COCUK", NICK JR
 http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197419&extension=ts&play_token=LgWVg7wQt4
 #EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/BabyTV.png" group-title=" COCUK", BABY TV
@@ -3147,48 +2505,6 @@ http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197369&exte
 http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197368&extension=ts&play_token=7EfJTwAhHg
 #EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/TRT_EBA_TV_Lise.png" group-title=" COCUK", TRT EBA TV LISE
 http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197367&extension=ts&play_token=AUiSYh92
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/Barbietv.png" group-title=" COCUK", BARBIE TV
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197408&extension=ts&play_token=Q2PvZB4Imv
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/Peppa-Pig-Logo.png" group-title=" COCUK", PEPPA PIG
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197407&extension=ts&play_token=zszU5d2jtq
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/kuzucuk.png" group-title=" COCUK", KUZUCUK
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197405&extension=ts&play_token=IrniVfc449
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/kare.png" group-title=" COCUK", KARE
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197404&extension=ts&play_token=gqILU1ay78
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/rafadantayfa.png" group-title=" COCUK", RAFADAN TAYFA
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197403&extension=ts&play_token=aZUHGyuxkk
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/Kral_Sakir_logo.png" group-title=" COCUK", KRAL SAKIR
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197401&extension=ts&play_token=J9MDdiyrsS
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/pijamaskeliler.png" group-title=" COCUK", PIJAMASKELILER
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197400&extension=ts&play_token=TL1gvwxGsA
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/masailekocaayi.png" group-title=" COCUK", MASA ILE KOCA AYI
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197399&extension=ts&play_token=LD3keqmEYj
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/Barbietv.png" group-title=" COCUK", BARBIE
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197398&extension=ts&play_token=WrqVith5oj
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/kukuli.png" group-title=" COCUK", KUKULI
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197397&extension=ts&play_token=0oVZXiaePj
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/Niloya.png" group-title=" COCUK", NILOYA
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197396&extension=ts&play_token=j4OlXbOI3L
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/peppe.png" group-title=" COCUK", PEPPE
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197395&extension=ts&play_token=Lkc7O4Qeyt
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/sirinler.png" group-title=" COCUK", SIRINLER
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197394&extension=ts&play_token=jRNabm0rNr
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/cinecocuk.png" group-title=" COCUK", CINE COCUK
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197392&extension=ts&play_token=RTvkqAjgEz
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/konusantom.png" group-title=" COCUK", KONUSAN TOM
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197386&extension=ts&play_token=2PagXGRdz2
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/doruhd.png" group-title=" COCUK", DORU
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197385&extension=ts&play_token=dyri7ChyCE
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/Caillou_new_logo.png" group-title=" COCUK", CAILLOU
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=197382&extension=ts&play_token=OYsJQbket6
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/ TiviOne PLATFORM/TiviOne SERIES.png" group-title=" TiviOne PLATFORM", TiviOne SERIES 1
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=1471673&extension=ts&play_token=fDOWsHHnSf
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/ TiviOne PLATFORM/TiviOne SERIES.png" group-title=" TiviOne PLATFORM", TiviOne SERIES 2
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=1471674&extension=ts&play_token=5gfhIkzuQg
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/ TiviOne PLATFORM/TiviOne SERIES.png" group-title=" TiviOne PLATFORM", TiviOne SERIES 3
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=1471675&extension=ts&play_token=gzHjnGWvXz
-#EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/ TiviOne PLATFORM/TiviOne SERIES.png" group-title=" TiviOne PLATFORM", TiviOne SERIES 4
-http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=1471676&extension=ts&play_token=x3dLMvs808
 #EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/ TiviOne PLATFORM/TiviOne MOVIES PREMIERE.png" group-title=" TiviOne PLATFORM", TiviOne MOVIES PREMIERE
 http://me.mdmfista.com:80/play/live.php?mac=00:1A:79:F5:CE:D7&stream=1471678&extension=ts&play_token=pCSHS8y6a9
 #EXTINF:-1 tvg-logo="http://picon.tivi-ott.net:25461/picon/TURKEY/ TiviOne PLATFORM/TiviOne MOVIES PREMIERE.png" group-title=" TiviOne PLATFORM", TiviOne MOVIES PREMIERE 2
