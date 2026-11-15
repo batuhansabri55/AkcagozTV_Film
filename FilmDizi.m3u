@@ -1,32 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ KANAL D" group-title="┃TR┃ ULUSAL",KANAL D
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196696&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ BEYAZ TV" group-title="┃TR┃ ULUSAL",BEYAZ TV
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196675&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ TRT 2" group-title="┃TR┃ ULUSAL",TRT 2
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196688&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ 360" group-title="┃TR┃ ULUSAL",360
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196686&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ ATV" group-title="┃TR┃ ULUSAL",ATV
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196682&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ NOW TV" group-title="┃TR┃ ULUSAL",NOW TV
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196678&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ BEYAZ TV" group-title="┃TR┃ ULUSAL",BEYAZ TV
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196691&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ BEYAZ TV" group-title="┃TR┃ ULUSAL",BEYAZ TV
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196707&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ TV 8 INT" group-title="┃TR┃ ULUSAL",TV 8 INT
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196662&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ KAYSERI TV" group-title="┃TR┃ YEREL",KAYSERI TV
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197173&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ TRT HABER" group-title="┃TR┃ HABER",TRT HABER
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197285&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ BEIN SERIES 2" group-title="┃TR┃ BEIN PLATFORM",BEIN SERIES 2
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=1471674&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ BEIN SPORTS 1" group-title="┃TR┃ BEIN SPORTS",BEIN SPORTS 1
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=988852&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ YABAN TV" group-title="┃TR┃ BELGESEL",YABAN TV
-http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=197439&extension=ts
 #EXTINF:0,TRT 1
 https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:0,TRT 2
@@ -565,12 +537,8 @@ https://live.artidijitalmedya.com/artidijital_astv/astv/playlist.m3u8
 https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://r.resimlink.com/TuqyeDo.webp" group-title="HABER KANALLARI",NTV
 https://dogus.daioncdn.net/ntv/ntv.m3u8?app=7c4bb802-0c41-409e-8cd2-799984995694
-#EXTINF:-1 tvg-logo="https://r.resimlink.com/diamQPgXyh4G.png" group-title="HABER KANALLARI",AKİT TV
-http://umperisn.mywire.org/index.php?id=594236&token=DeaTHLesS
 #EXTINF:-1 tvg-logo="https://r.resimlink.com/C_IUKsSD.png" group-title="HABER KANALLARI",BENGÜ TÜRK
 https://tv.ensonhaber.com/benguturk/benguturk.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/6qkkWfXk/CNN-Turk-logo-svg.webp" group-title="HABER KANALLARI",CNN TÜRK
-http://umperisn.mywire.org/index.php?id=594252&token=DeaTHLesS
 #EXTINF:-1 tvg-logo="https://flashhabertv.com.tr/assets/img/logo-v4.png" group-title="HABER KANALLARI",FLASH HABER
 https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/mt_0.m3u8
 #EXTINF:-1 tvg-logo="https://s.haberglobal.com/assets/web/images/hg_logo.svg" group-title="HABER KANALLARI",HABER GLOBAL
@@ -587,8 +555,6 @@ https://live.artidijitalmedya.com/artidijital_kanal23/kanal23/chunks.m3u8
 https://live.artidijitalmedya.com/artidijital_mavikaradeniz/mavikaradeniz/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://tele1comtr.teimg.com/tele1-com-tr/uploads/2024/12/tele1-logo-1.svg" group-title="HABER KANALLARI",TELE1
 https://tele1-live.ercdn.net/tele1/tele1.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/RFJpWzq0/1708069491985.jpg" group-title="HABER KANALLARI",KRT
-http://umperisn.mywire.org/index.php?id=594231&token=DeaTHLesS
 #EXTINF:-1 tvg-logo="https://trthaberstatic.cdn.wp.trt.com.tr/static/images/logo.svg" group-title="HABER KANALLARI",TRT HABER
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="https://s.tgrthaber.com/s/i/i-logo-black.svg" group-title="HABER KANALLARI",TGRT HABER
@@ -599,8 +565,6 @@ http://europe77.xyz:2095/live/sevgul49/nFSNas21UA/120666.m3u8
 https://tvnet-live.lg.mncdn.com/tvnet/tvnet/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://liderhabercomtr.teimg.com/liderhaber-com-tr/uploads/2025/10/lider-haber-logo.svg" group-title="HABER KANALLARI",LİDER HABER
 http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/sec-f5-v1-a1.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/HLDqD22N/TV5.jpg" group-title="HABER KANALLARI",TV5
-http://umperisn.mywire.org/index.php?id=2967&token=DeaTHLesS
 #EXTINF:-1 tvg-logo="https://www.turkhabertv.com/wp-content/uploads/2024/06/Logo164x50.png" group-title="HABER KANALLARI",TÜRK HABER
 https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.haberrize.com.tr/uploads/logo-1732632177.png" group-title="HABER KANALLARI",HABER RİZE TV
@@ -629,14 +593,8 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
 https://fbtv.fenerbahce.org/fenerbahcetv.stream/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/W3p6xnNm/unnamed-removebg-preview-(1).png" group-title="SPOR KANALLARI",HT SPOR
 https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web&dfp_paln=AQzzBGQEBm1BO0E2iVe9tLfcsqJ3gAOMJ63P8Ch&ppid=675956db19f9bb686edda21d15d911e8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/jdCtQwfR/sifir-tv-logo.png" group-title="SPOR KANALLARI",SIFIR TV
-http://umperisn.mywire.org/index.php?id=611874&token=DeaTHLesS
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/XYwhw4Qh/20250815850937.png" group-title="SPOR KANALLARI",EKOL SPORTS
 https://ekoltv-live.ercdn.net/ekolsport/ekolsport.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/g2SMyj3t/TRT-3-Spor-logo-(2022)-svg.webp" group-title="SPOR KANALLARI",TRT3 SPOR
-http://umperisn.mywire.org/index.php?id=2020&token=DeaTHLesS
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/ZRkxjdns/ebqgat1642602905.png" group-title="SPOR KANALLARI",TRT SPOR YILDIZ
-http://umperisn.mywire.org/index.php?id=2019&token=DeaTHLesS
 #EXTINF:-1 tvg-logo="https://admin.aztv.az/userfiles/files/4AA0BSfjB7Kev11a29qo.png" group-title="SPOR KANALLARI",İDMAN TV
 http://str.yodacdn.net/idmantele/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/J0GqdxsP/TJKTV-Logo-removebg-preview.png" group-title="SPOR KANALLARI",TJK TV
@@ -653,8 +611,6 @@ https://tv-trtturk.medya.trt.com.tr/master.m3u8
 https://tv-trtavaz.medya.trt.com.tr/master_1440.m3u8
 #EXTINF:-1 tvg-logo="https://r.resimlink.com/a-3zy4e9dPc.png" group-title="AVRUPA KANALLARI",MC EU
 https://n2.burst.cdn.jetstre.am/session/450f4c594b612903b7d42d421fb93c21/sz/mceutv/wowza4/live/mc2/chunklist.m3u8
-#EXTINF:-1 tvg-logo="https://tgrteu.com/canliyayin/images/tgrteu.png" group-title="AVRUPA KANALLARI",TGRT EU
-http://umperisn.mywire.org/index.php?id=594199&token=DeaTHLesS
 #EXTINF:-1 tvg-logo="https://kanalavrupa.tv/wp-content/uploads/2025/04/KanalAvrupaLogo.png" group-title="AVRUPA KANALLARI",KANAL AVRUPA
 https://cdn-kanalavrupa.yayin.com.tr/kanalavrupa/tracks-v2a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://kanal15.com.tr/assets/logo-D_1WVj9x.png" group-title="YEREL KANALLAR",KANAL 15
@@ -2106,3 +2062,1291 @@ https://tv100-live.daioncdn.net/tv100/tv100.m3u8
 https://tvnet-live.lg.mncdn.com/tvnet/tvnet/playlist.m3u8
 #EXTINF:-1 tvg-id="UlkeTV.tr@SD" tvg-logo="https://i.imgur.com/wdWR7Qk.png" group-title="Undefined",Ülke TV 
 https://mn-nl.mncdn.com/blutv_ulketv2/live.m3u8
+
+#EXTINF:0,24 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a001
+#EXTINF:0,24 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06m
+#EXTINF:0,24 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07c
+#EXTINF:0,360
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a002
+#EXTINF:0,360
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a066
+#EXTINF:0,A Haber
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05x
+#EXTINF:0,A Haber
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a003
+#EXTINF:0,A Haber
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07d
+#EXTINF:0,A Spor
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a004
+#EXTINF:0,A Spor
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a062
+#EXTINF:0,A Spor
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a083
+#EXTINF:0,A V#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a005
+#EXTINF:0,A V#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09s
+#EXTINF:0,A2
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a006
+#EXTINF:0,A2
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a064
+#EXTINF:0,A2 (Dizi & Sinema)
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a093
+#EXTINF:0,AKSU TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a007
+#EXTINF:0,AKSU TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09t
+#EXTINF:0,ARABESK TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08h
+#EXTINF:0,ARABESK TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00c
+#EXTINF:0,ARMA TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00e
+#EXTINF:0,ARMA TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09y
+#EXTINF:0,AS TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00f
+#EXTINF:0,AS TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09z
+#EXTINF:0,ATV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00g
+#EXTINF:0,ATV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05p
+#EXTINF:0,ATV Alanya
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00h
+#EXTINF:0,ATV Alanya
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0a0
+#EXTINF:0,Al QURAN KAREEM - KABE CANLI
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09c
+#EXTINF:0,Al QURAN KAREEM - KABE CANLI
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a008
+#EXTINF:0,Alanya Posta TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09u
+#EXTINF:0,Alanya Posta TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a009
+#EXTINF:0,Altas TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09v
+#EXTINF:0,Altas TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00a
+#EXTINF:0,Anadolu Net TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09w
+#EXTINF:0,Anadolu Net TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00b
+#EXTINF:0,Aras TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09x
+#EXTINF:0,Aras TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00d
+#EXTINF:0,BBC First Turkiye
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00j
+#EXTINF:0,BBC First Turkiye
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a094
+#EXTINF:0,BELEMTÜRK
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00l
+#EXTINF:0,BELEMTÜRK
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0a1
+#EXTINF:0,BRTV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00s
+#EXTINF:0,BRTV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0a3
+#EXTINF:0,BRÜKSEL TÜRK
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00t
+#EXTINF:0,BRÜKSEL TÜRK
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0a4
+#EXTINF:0,Baby TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06r
+#EXTINF:0,Baby TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a070
+#EXTINF:0,Baby TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00i
+#EXTINF:0,Bengütürk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07e
+#EXTINF:0,Bengütürk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00m
+#EXTINF:0,Bengütürk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06n
+#EXTINF:0,Beyaz TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00n
+#EXTINF:0,Bir TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00o
+#EXTINF:0,Bloomberg HT
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07f
+#EXTINF:0,Bloomberg HT
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06l
+#EXTINF:0,Bloomberg HT
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00p
+#EXTINF:0,Bodrum Kent TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00q
+#EXTINF:0,Bodrum Kent TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0a2
+#EXTINF:0,Bric ve Satranc TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a085
+#EXTINF:0,Bric ve Satranc TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00r
+#EXTINF:0,CNBC-e
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00w
+#EXTINF:0,CNBC-e
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07g
+#EXTINF:0,CNBC-e
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a069
+#EXTINF:0,CNN Turk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00x
+#EXTINF:0,CNN Turk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0a5
+#EXTINF:0,CNN Türk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00y
+#EXTINF:0,Cartoon Network
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00u
+#EXTINF:0,Cartoon Network
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a071
+#EXTINF:0,Cartoon Network
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06e
+#EXTINF:0,Cine 1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a095
+#EXTINF:0,Cine 1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00v
+#EXTINF:0,DAMAR TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a011
+#EXTINF:0,DAMAR TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08i
+#EXTINF:0,DERiN TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a013
+#EXTINF:0,DERiN TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0a8
+#EXTINF:0,Deniz Postasi TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0a7
+#EXTINF:0,Deniz Postasi TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a012
+#EXTINF:0,Disney Jr.
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a072
+#EXTINF:0,Disney Jr.
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a014
+#EXTINF:0,Disney Jr.
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06f
+#EXTINF:0,Diyanet TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05n
+#EXTINF:0,Diyanet TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09d
+#EXTINF:0,Diyanet TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a015
+#EXTINF:0,Diyar TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a016
+#EXTINF:0,Diyar TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0a9
+#EXTINF:0,Dost TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a018
+#EXTINF:0,Dream Türk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06v
+#EXTINF:0,Dream Türk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08j
+#EXTINF:0,Dream Türk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a019
+#EXTINF:0,D#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a017
+#EXTINF:0,D#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0aa
+#EXTINF:0,ERTV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01f
+#EXTINF:0,ERTV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ad
+#EXTINF:0,ES TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01h
+#EXTINF:0,ES TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0af
+#EXTINF:0,ETV Kayseri
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01i
+#EXTINF:0,ETV Kayseri
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ag
+#EXTINF:0,ETV MANiSA
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01j
+#EXTINF:0,ETV MANiSA
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ah
+#EXTINF:0,EZO TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01l
+#EXTINF:0,EZO TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ai
+#EXTINF:0,Edessa TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ab
+#EXTINF:0,Edessa TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01a
+#EXTINF:0,Ekol Sports
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01b
+#EXTINF:0,Ekol Sports
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a086
+#EXTINF:0,Ekol TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07h
+#EXTINF:0,Ekol TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01c
+#EXTINF:0,Ekol TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06o
+#EXTINF:0,Ekotürk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07i
+#EXTINF:0,Ekotürk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01d
+#EXTINF:0,Erciyes TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ac
+#EXTINF:0,Erciyes TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01e
+#EXTINF:0,Erzurum Web TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01g
+#EXTINF:0,Erzurum Web TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ae
+#EXTINF:0,Euro D
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06y
+#EXTINF:0,Euro D
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01k
+#EXTINF:0,FB TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06j
+#EXTINF:0,FB TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a087
+#EXTINF:0,FB TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01m
+#EXTINF:0,Film Screen HD
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01n
+#EXTINF:0,Film Screen HD
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a096
+#EXTINF:0,Finans Turk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07j
+#EXTINF:0,Finans Turk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01o
+#EXTINF:0,Flash Haber TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07k
+#EXTINF:0,Flash Haber TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01p
+#EXTINF:0,Fortuna TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01q
+#EXTINF:0,Fortuna TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0aj
+#EXTINF:0,GENC SMS TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01s
+#EXTINF:0,GENC SMS TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0al
+#EXTINF:0,Gaziantep GRT TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ak
+#EXTINF:0,Gaziantep GRT TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01r
+#EXTINF:0,Gurbet 24 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01t
+#EXTINF:0,Gurbet 24 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07l
+#EXTINF:0,Güneydo#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01u
+#EXTINF:0,Güneydo#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0am
+#EXTINF:0,HTSpor TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a088
+#EXTINF:0,HTSpor TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06k
+#EXTINF:0,HTSpor TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07q
+#EXTINF:0,HTSpor TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01z
+#EXTINF:0,Haber Global
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a067
+#EXTINF:0,Haber Global
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01v
+#EXTINF:0,Haber Global
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07m
+#EXTINF:0,Haber61 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07n
+#EXTINF:0,Haber61 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01w
+#EXTINF:0,Habertürk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05z
+#EXTINF:0,Habertürk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01x
+#EXTINF:0,Habertürk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07o
+#EXTINF:0,Halk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a01y
+#EXTINF:0,Halk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a060
+#EXTINF:0,Halk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07p
+#EXTINF:0,Hunat TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a020
+#EXTINF:0,Hunat TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0an
+#EXTINF:0,HÜR TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a021
+#EXTINF:0,HÜR TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ao
+#EXTINF:0,Icel TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a022
+#EXTINF:0,Icel TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ap
+#EXTINF:0,Ilke TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07r
+#EXTINF:0,Ilke TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a023
+#EXTINF:0,KN Music TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08k
+#EXTINF:0,KN Music TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02s
+#EXTINF:0,KRT TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02w
+#EXTINF:0,KRT TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07s
+#EXTINF:0,KTV Konya
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02x
+#EXTINF:0,KTV Konya
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bc
+#EXTINF:0,Kanal 12
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0at
+#EXTINF:0,Kanal 12
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a027
+#EXTINF:0,Kanal 15
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0au
+#EXTINF:0,Kanal 15
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a028
+#EXTINF:0,Kanal 19
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0av
+#EXTINF:0,Kanal 19
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a029
+#EXTINF:0,Kanal 23
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0aw
+#EXTINF:0,Kanal 23
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02a
+#EXTINF:0,Kanal 26
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ax
+#EXTINF:0,Kanal 26
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02b
+#EXTINF:0,Kanal 3
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ay
+#EXTINF:0,Kanal 3
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02c
+#EXTINF:0,Kanal 32
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0az
+#EXTINF:0,Kanal 32
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02d
+#EXTINF:0,Kanal 33
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0b0
+#EXTINF:0,Kanal 33
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02e
+#EXTINF:0,Kanal 34
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0b1
+#EXTINF:0,Kanal 34
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02f
+#EXTINF:0,Kanal 53
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0b2
+#EXTINF:0,Kanal 53
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02g
+#EXTINF:0,Kanal 58
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0b3
+#EXTINF:0,Kanal 58
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02h
+#EXTINF:0,Kanal 7
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02i
+#EXTINF:0,Kanal 7 Avrupa
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05u
+#EXTINF:0,Kanal 7 Avrupa
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02j
+#EXTINF:0,Kanal Ada
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0b4
+#EXTINF:0,Kanal Ada
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02k
+#EXTINF:0,Kanal D
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05r
+#EXTINF:0,Kanal D
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02l
+#EXTINF:0,Kanal F#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0b5
+#EXTINF:0,Kanal F#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02m
+#EXTINF:0,Kanal Plus
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a097
+#EXTINF:0,Kanal Plus
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02n
+#EXTINF:0,Kanal Urfa
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0b6
+#EXTINF:0,Kanal Urfa
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02o
+#EXTINF:0,Kanal V
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0b7
+#EXTINF:0,Kanal V
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02p
+#EXTINF:0,Kay TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0b8
+#EXTINF:0,Kay TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02q
+#EXTINF:0,Kent Turk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0b9
+#EXTINF:0,Kent Turk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02r
+#EXTINF:0,Kocaeli TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ba
+#EXTINF:0,Kocaeli TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02t
+#EXTINF:0,Konya Olay TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bb
+#EXTINF:0,Konya Olay TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02u
+#EXTINF:0,Kral Pop TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06u
+#EXTINF:0,Kral Pop TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02v
+#EXTINF:0,Kral Pop TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08l
+#EXTINF:0,Lalegül TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09e
+#EXTINF:0,Lalegül TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02y
+#EXTINF:0,Life TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a02z
+#EXTINF:0,Life TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bd
+#EXTINF:0,Line TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a030
+#EXTINF:0,Line TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0be
+#EXTINF:0,MADINAH TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a031
+#EXTINF:0,MAKKAH TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a032
+#EXTINF:0,MC TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a035
+#EXTINF:0,MC TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bh
+#EXTINF:0,METROPOL TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a039
+#EXTINF:0,METROPOL TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bj
+#EXTINF:0,MTurk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03c
+#EXTINF:0,MTurk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bk
+#EXTINF:0,MUKABELE TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03e
+#EXTINF:0,MUKABELE TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09g
+#EXTINF:0,Malatya Vuslat TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bf
+#EXTINF:0,Malatya Vuslat TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a033
+#EXTINF:0,MaviKaradeniz TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bg
+#EXTINF:0,MaviKaradeniz TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a034
+#EXTINF:0,Med Müzik
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08m
+#EXTINF:0,Med Müzik
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a036
+#EXTINF:0,Meltem TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09f
+#EXTINF:0,Meltem TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a037
+#EXTINF:0,Mercan TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a038
+#EXTINF:0,Mercan TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bi
+#EXTINF:0,Minika Go
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06d
+#EXTINF:0,Minika Go
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03b
+#EXTINF:0,Minika Go
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a074
+#EXTINF:0,Minika Çocuk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06c
+#EXTINF:0,Minika Çocuk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a073
+#EXTINF:0,Minika Çocuk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03a
+#EXTINF:0,Mu#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03d
+#EXTINF:0,Mu#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bl
+#EXTINF:0,NOW
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05q
+#EXTINF:0,NOW
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03f
+#EXTINF:0,NR1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03g
+#EXTINF:0,NR1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08n
+#EXTINF:0,NR1 FASHION ONE
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03h
+#EXTINF:0,NR1 FASHION ONE
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08o
+#EXTINF:0,NTV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03i
+#EXTINF:0,NTV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07t
+#EXTINF:0,NTV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05y
+#EXTINF:0,Number 1 Ask
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03j
+#EXTINF:0,Number 1 Ask
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08p
+#EXTINF:0,Number 1 Damar
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03k
+#EXTINF:0,Number 1 Damar
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08q
+#EXTINF:0,Number 1 Dance
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03l
+#EXTINF:0,Number 1 Dance
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08r
+#EXTINF:0,Number 1 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03n
+#EXTINF:0,Number 1 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06w
+#EXTINF:0,Number 1 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08t
+#EXTINF:0,Number 1 Türk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08s
+#EXTINF:0,Number 1 Türk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03m
+#EXTINF:0,OLAY TURK
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03o
+#EXTINF:0,OLAY TURK
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bm
+#EXTINF:0,Ordu Bel TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03p
+#EXTINF:0,Ordu Bel TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bn
+#EXTINF:0,POWER DANCE
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03q
+#EXTINF:0,POWER DANCE
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08u
+#EXTINF:0,POWER LOVE
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03r
+#EXTINF:0,POWER LOVE
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08v
+#EXTINF:0,Power TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08w
+#EXTINF:0,Power TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06t
+#EXTINF:0,Power TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03s
+#EXTINF:0,PowerTurk Akustik
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03t
+#EXTINF:0,PowerTurk Akustik
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08x
+#EXTINF:0,PowerTurk Slow
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03u
+#EXTINF:0,PowerTurk Slow
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08y
+#EXTINF:0,PowerTurk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a090
+#EXTINF:0,PowerTurk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06s
+#EXTINF:0,PowerTurk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03w
+#EXTINF:0,PowerTurk Taptaze
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08z
+#EXTINF:0,PowerTurk Taptaze
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03v
+#EXTINF:0,RTG int.
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03z
+#EXTINF:0,RTG int.
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bp
+#EXTINF:0,Rehber TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09h
+#EXTINF:0,Rehber TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03x
+#EXTINF:0,Rize Türk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bo
+#EXTINF:0,Rize Türk TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a03y
+#EXTINF:0,SAGLIK CHANEL
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a040
+#EXTINF:0,SAGLIK CHANEL
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bq
+#EXTINF:0,SILA TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a044
+#EXTINF:0,SILA TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0br
+#EXTINF:0,Semerkand TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a041
+#EXTINF:0,Semerkand TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09i
+#EXTINF:0,Sercem TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a042
+#EXTINF:0,Sercem TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09j
+#EXTINF:0,Show TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a043
+#EXTINF:0,Sinema 1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a045
+#EXTINF:0,Sinema 1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a098
+#EXTINF:0,Sinema Aile
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a046
+#EXTINF:0,Sinema Aile
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a099
+#EXTINF:0,Sinema TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a047
+#EXTINF:0,Sinema TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09a
+#EXTINF:0,Sozcu TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a048
+#EXTINF:0,Sozcu TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bs
+#EXTINF:0,Spacetoon Turkey
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a049
+#EXTINF:0,Spacetoon Turkey
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a075
+#EXTINF:0,Star TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05s
+#EXTINF:0,Star TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04a
+#EXTINF:0,Sun RTV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04b
+#EXTINF:0,Sun RTV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bt
+#EXTINF:0,TBMM TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07u
+#EXTINF:0,TBMM TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04d
+#EXTINF:0,TGRT Belgesel
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04h
+#EXTINF:0,TGRT Belgesel
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08e
+#EXTINF:0,TGRT Belgesel
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06x
+#EXTINF:0,TGRT Haber
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04i
+#EXTINF:0,TGRT Haber
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07w
+#EXTINF:0,TGRT Haber
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06b
+#EXTINF:0,TJK TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a089
+#EXTINF:0,TJK TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06p
+#EXTINF:0,TJK TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04l
+#EXTINF:0,TOP POP TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04n
+#EXTINF:0,TOP POP TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a091
+#EXTINF:0,TRT 1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04o
+#EXTINF:0,TRT 1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05o
+#EXTINF:0,TRT 2
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04p
+#EXTINF:0,TRT 2
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09k
+#EXTINF:0,TRT 2
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06h
+#EXTINF:0,TRT 2 (Kültür & Belgesel)
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08f
+#EXTINF:0,TRT 3 / TBMM TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04q
+#EXTINF:0,TRT 3 / TBMM TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07x
+#EXTINF:0,TRT 3 Spor / TBMM TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08a
+#EXTINF:0,TRT Avaz
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04r
+#EXTINF:0,TRT Avaz
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09l
+#EXTINF:0,TRT Belgesel
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04s
+#EXTINF:0,TRT Belgesel
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08g
+#EXTINF:0,TRT Belgesel
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a063
+#EXTINF:0,TRT Diyanet Çocuk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a077
+#EXTINF:0,TRT Diyanet Çocuk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04u
+#EXTINF:0,TRT Diyanet Çocuk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06q
+#EXTINF:0,TRT EBA Lise
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04w
+#EXTINF:0,TRT EBA Lise
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a079
+#EXTINF:0,TRT EBA Ortaokul
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04x
+#EXTINF:0,TRT EBA Ortaokul
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07a
+#EXTINF:0,TRT EBA #EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04v
+#EXTINF:0,TRT EBA #EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a078
+#EXTINF:0,TRT Genc
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04y
+#EXTINF:0,TRT Genc
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09m
+#EXTINF:0,TRT Haber
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05w
+#EXTINF:0,TRT Haber
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04z
+#EXTINF:0,TRT Haber
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07y
+#EXTINF:0,TRT Kurdî
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a050
+#EXTINF:0,TRT Kurdî
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09n
+#EXTINF:0,TRT Müzik
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06g
+#EXTINF:0,TRT Müzik
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09o
+#EXTINF:0,TRT Müzik
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a092
+#EXTINF:0,TRT Müzik
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a051
+#EXTINF:0,TRT Spor
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08b
+#EXTINF:0,TRT Spor
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a052
+#EXTINF:0,TRT Spor
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a061
+#EXTINF:0,TRT Spor Y#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08c
+#EXTINF:0,TRT Spor Y#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a053
+#EXTINF:0,TRT Spor Y#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06i
+#EXTINF:0,TRT Türk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a054
+#EXTINF:0,TRT Türk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09p
+#EXTINF:0,TRT Çocuk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a076
+#EXTINF:0,TRT Çocuk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04t
+#EXTINF:0,TRT Çocuk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05v
+#EXTINF:0,TV 1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a056
+#EXTINF:0,TV 1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bx
+#EXTINF:0,TV 264
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a057
+#EXTINF:0,TV 264
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0by
+#EXTINF:0,TV 4
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06z
+#EXTINF:0,TV 4
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a058
+#EXTINF:0,TV 41
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a059
+#EXTINF:0,TV 41
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bz
+#EXTINF:0,TV 52
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05a
+#EXTINF:0,TV 52
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0c0
+#EXTINF:0,TV Den
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05b
+#EXTINF:0,TV Den
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0c1
+#EXTINF:0,TV100
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a080
+#EXTINF:0,TV100
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a068
+#EXTINF:0,TV100
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05c
+#EXTINF:0,TV8
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05t
+#EXTINF:0,TV8
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05d
+#EXTINF:0,TV8.5
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05e
+#EXTINF:0,TV8.5
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a065
+#EXTINF:0,TVNET
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a081
+#EXTINF:0,TVNET
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05f
+#EXTINF:0,Tabii
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09b
+#EXTINF:0,Tabii
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04c
+#EXTINF:0,Tele1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07v
+#EXTINF:0,Tele1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a06a
+#EXTINF:0,Tele1
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04e
+#EXTINF:0,Tempo TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bu
+#EXTINF:0,Tempo TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04f
+#EXTINF:0,Teve2
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04g
+#EXTINF:0,Thaqalayn TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bv
+#EXTINF:0,Thaqalayn TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04j
+#EXTINF:0,Tivi 6
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04k
+#EXTINF:0,Ton TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0bw
+#EXTINF:0,Ton TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a04m
+#EXTINF:0,TurkHaber TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07z
+#EXTINF:0,TurkHaber TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a055
+#EXTINF:0,Urfa Natik TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05g
+#EXTINF:0,Urfa Natik TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0c2
+#EXTINF:0,Van 65 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05i
+#EXTINF:0,Van 65 TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0c3
+#EXTINF:0,Vav TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05j
+#EXTINF:0,Vav TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09q
+#EXTINF:0,YOL TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05k
+#EXTINF:0,YOL TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a09r
+#EXTINF:0,ZEYNO TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05m
+#EXTINF:0,ZEYNO TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0c4
+#EXTINF:0,Zarok TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05l
+#EXTINF:0,Zarok TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a07b
+#EXTINF:0,beIN Sports 1 Turk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a084
+#EXTINF:0,beIN Sports 1 Turk
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00k
+#EXTINF:0,Çay TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0a6
+#EXTINF:0,Çay TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a00z
+#EXTINF:0,Çiftçi TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a010
+#EXTINF:0,Çiftçi TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a08d
+#EXTINF:0,Ülke TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a082
+#EXTINF:0,Ülke TV
+#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a05h
+#EXTINF:0,#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a024
+#EXTINF:0,#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0aq
+#EXTINF:0,#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a025
+#EXTINF:0,#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0ar
+#EXTINF:0,#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a026
+#EXTINF:0,#EXTVLCOPT:network-caching=1000
+http://80.253.255.35:8000/play/a0as
